@@ -1,4 +1,5 @@
-package com.kaartgroup.kaartjosmvalidator;
+// License: GPL. For details, see LICENSE file.
+package com.kaartgroup.kaartvalidator;
 
 import static org.openstreetmap.josm.gui.help.HelpUtil.ht;
 import static org.openstreetmap.josm.tools.I18n.trc;
@@ -18,7 +19,7 @@ import org.openstreetmap.josm.gui.preferences.PreferenceSetting;
 import org.openstreetmap.josm.plugins.Plugin;
 import org.openstreetmap.josm.plugins.PluginInformation;
 
-import com.kaartgroup.kaartjosmvalidator.validation.TurnLanes;
+import com.kaartgroup.kaartvalidator.validation.TurnLanes;
 /**
  * Primary class of the Kaart plugin
  * @author Taylor Smock

@@ -2,13 +2,15 @@
 <project name="kaartvalidation" default="dist" basedir=".">
 
     <!-- enter the *lowest* JOSM version this plugin is currently compatible with -->
+    <property name="commit.message" value="kaartvalidation plugin"/>
     <property name="plugin.main.version" value="14382"/>
-
-    <property name="plugin.author" value="Taylor Smock (taylor.smock@kaartgroup.com)"/>
-    <property name="plugin.class" value="KaartPlugin.class"/>
+    <property name="plugin.version" value="v0.0.1"/>
+    <property name="plugin.author" value="Taylor Smock"/>
+    <property name="plugin.class" value="com.kaartgroup.kaartvalidator.KaartPlugin"/>
     <property name="plugin.description" value="Kaart Validation Checks"/>
-    <!--<property name="plugin.icon" value="..."/>-->
+    <property name="plugin.icon" value="images/kaart/Kaart-Logo-2.png"/>
     <property name="plugin.link" value="http://kaartgroup.com"/>
+    <property name="plugin.canloadatruntime" value="true"/>
     <!--<property name="plugin.early" value="..."/>-->
     <!--<property name="plugin.requires" value="..."/>-->
     <!--<property name="plugin.stage" value="..."/>-->

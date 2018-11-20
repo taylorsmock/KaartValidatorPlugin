@@ -1,5 +1,5 @@
 // License: GPL. For details, see LICENSE file.
-package com.kaartgroup.kaartjosmvalidator.validation;
+package com.kaartgroup.kaartvalidator.validation;
 //package org.openstreetmap.josm.data.validation.tests;
 
 import static org.openstreetmap.josm.tools.I18n.tr;
@@ -91,6 +91,7 @@ public class TurnLanes extends Test {
                 }
                 // Check if the connected way(s) is a oneway
                 int numNodes = p.getNodesCount();
+                int numNodesConnected = 0;
                 Set<Way> connectedWays = new HashSet<>();
                 for (int i = 0; i < numNodes; i++) {
                     Node n = p.getNode(i);
@@ -100,7 +101,11 @@ public class TurnLanes extends Test {
                            connectedWays.add((Way) wp); 
                         }
                     }
+                    if (refs.size() > 1) {
+                        numNodesConnected++;
+                    }
                 }
+
                 if (connectedWays.size() > 2) {
                     errors.add(TestError.builder(this, Severity.WARNING, UNCLEAR_TURN_LANES)
                             .message(tr("Road has multiple possibilities for turning"))
