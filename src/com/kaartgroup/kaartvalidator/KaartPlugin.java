@@ -1,9 +1,6 @@
 // License: GPL. For details, see LICENSE file.
 package com.kaartgroup.kaartvalidator;
 
-import static org.openstreetmap.josm.gui.help.HelpUtil.ht;
-import static org.openstreetmap.josm.tools.I18n.trc;
-
 import org.openstreetmap.josm.data.validation.OsmValidator;
 import org.openstreetmap.josm.gui.preferences.PreferenceSetting;
 import org.openstreetmap.josm.plugins.Plugin;

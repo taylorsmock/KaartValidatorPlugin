@@ -32,12 +32,15 @@ public class KaartPluginPreferences extends DefaultTabPreferenceSetting {
 	public void addGui(PreferenceTabbedPane gui) {
 		JPanel mainPanel = new JPanel();
 		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
-		mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 10));
+		mainPanel.setBorder(BorderFactory.createEmptyBorder(5, 20, 5, 5));
 		
 		markCheckBoxes();
 
-		mainPanel.add(new JLabel("<html><b>Validator</b>: </html>"), GBC.eol().fill(GBC.HORIZONTAL));
+		mainPanel.add(new JLabel("<html><b>Validators :</b> (this is a placeholder)</html>"), GBC.eol().fill(GBC.HORIZONTAL));
+
 		mainPanel.add(checkturnlaneintersections);
+		
+		createPreferenceTabWithScrollPane(gui, mainPanel);
 	}
 
 	private void markCheckBoxes() {
