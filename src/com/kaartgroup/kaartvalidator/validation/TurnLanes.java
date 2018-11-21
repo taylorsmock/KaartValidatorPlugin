@@ -5,16 +5,11 @@ package com.kaartgroup.kaartvalidator.validation;
 import static org.openstreetmap.josm.tools.I18n.tr;
 
 import java.awt.geom.Area;
-import java.util.Arrays;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
-import org.openstreetmap.josm.command.ChangeCommand;
-import org.openstreetmap.josm.command.Command;
 import org.openstreetmap.josm.data.osm.Node;
 import org.openstreetmap.josm.data.osm.OsmPrimitive;
 import org.openstreetmap.josm.data.osm.Way;
@@ -22,9 +17,6 @@ import org.openstreetmap.josm.data.validation.Severity;
 import org.openstreetmap.josm.data.validation.Test;
 import org.openstreetmap.josm.data.validation.TestError;
 import org.openstreetmap.josm.gui.progress.ProgressMonitor;
-import org.openstreetmap.josm.tools.Logging;
-import org.openstreetmap.josm.tools.Utils;
-import org.openstreetmap.josm.tools.Geometry;
 
 /**
  * Check turn:lanes for errors
@@ -106,7 +98,7 @@ public class TurnLanes extends Test {
                     }
                 }
 
-                if (connectedWays.size() > 2) {
+                if (connectedWays.size() > 2 || numNodesConnected > 2) {
                     errors.add(TestError.builder(this, Severity.WARNING, UNCLEAR_TURN_LANES)
                             .message(tr("Road has multiple possibilities for turning"))
                             .primitives(p)

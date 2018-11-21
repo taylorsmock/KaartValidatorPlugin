@@ -9,18 +9,17 @@ import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import org.openstreetmap.josm.data.preferences.BooleanProperty;
 import org.openstreetmap.josm.gui.preferences.DefaultTabPreferenceSetting;
 import org.openstreetmap.josm.gui.preferences.PreferenceTabbedPane;
 import org.openstreetmap.josm.tools.GBC;
 
-import com.kaartgroup.kaartvalidator.KaartProperties;
+import com.kaartgroup.kaartvalidator.utils.KaartProperties;
 
 
 public class KaartPluginPreferences extends DefaultTabPreferenceSetting {
 	private final JCheckBox checkturnlaneintersections;
 	public KaartPluginPreferences() {
-		super("bus", tr("KaartPlugin Settings"), tr("Kaart Plugin Settings"));
+		super("Kaart-Logo-2", tr("KaartPlugin Settings"), tr("Kaart Plugin Settings"));
 		checkturnlaneintersections = new JCheckBox(tr("Check turn lanes going through intersections"));	
 	}
 	@Override
@@ -33,7 +32,7 @@ public class KaartPluginPreferences extends DefaultTabPreferenceSetting {
 	public void addGui(PreferenceTabbedPane gui) {
 		JPanel mainPanel = new JPanel();
 		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
-		mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 30, 40));
+		mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 10));
 		
 		markCheckBoxes();
 
