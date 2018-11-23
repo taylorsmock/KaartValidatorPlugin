@@ -82,6 +82,7 @@ public class TurnLanes extends Test {
         if (oneway == "yes" || oneway == "no") {
             List<OsmPrimitive> refs = lastNode.getReferrers();
             for (OsmPrimitive wp : refs) {
+                if (!(wp instanceof Way)) continue;
                 if (wp != p && (name != null && name == wp.get("name") || ref != null && ref == wp.get("ref"))) {
                     pContinue = (Way) wp;
                 } else if (wp.get("oneway") == "yes") {
@@ -91,8 +92,8 @@ public class TurnLanes extends Test {
             int[] continuingLanes = getContinuingLanes(p, "forward");
             Boolean pContinueTurnlanes = false;
             if (pContinue != null) pContinueTurnlanes = hasTurnLanes(pContinue);
-            int pContinueLanes = Integer.parseInt(pContinue.get("lanes"));
-            String lanes = p.get("turn:lanes");
+            int pContinueLanes = 0;
+            if (pContinue.hasKey("lanes")) pContinueLanes = Integer.parseInt(pContinue.get("lanes"));
             if (lastNodeOneway && (
                     (pContinueTurnlanes && pContinueLanes == continuingLanes[0])
                     || (!pContinueTurnlanes && pContinueLanes == continuingLanes[1] && continuingLanes[2] == 0))) {
@@ -109,6 +110,7 @@ public class TurnLanes extends Test {
             Node firstNode = p.getNode(0);
             List<OsmPrimitive> refs = firstNode.getReferrers();
             for (OsmPrimitive wp : refs) {
+                if (!(wp instanceof Way)) continue;
                 if (wp != p && (name != null && name == wp.get("name") || ref != null && ref == wp.get("ref"))) {
                     pContinue = (Way) wp;
                 } else if (wp.get("oneway") == "yes") {
@@ -147,7 +149,7 @@ public class TurnLanes extends Test {
             Node n = p.getNode(i);
             List<OsmPrimitive> refs = n.getReferrers();
             for (OsmPrimitive wp : refs) {
-                if (wp != p) {
+                if (wp != p && wp instanceof Way) {
                    connectedWays.add((Way) wp); 
                 }
             }
@@ -194,6 +196,7 @@ public class TurnLanes extends Test {
         List<OsmPrimitive> refs = node.getReferrers();
         String directions = null;
         for (OsmPrimitive wp : refs) {
+            if (!(wp instanceof Way)) continue;
             Way wpt = (Way) wp;
             if (wpt == way) continue;
             if (way.get("name") != null && way.get("name") != wpt.get("name")
