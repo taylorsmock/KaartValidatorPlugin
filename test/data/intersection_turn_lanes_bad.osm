@@ -1,0 +1,3172 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <bounds minlat='39.0771049' minlon='-108.5154712' maxlat='39.0775797' maxlon='-108.5148811' origin='CGImap 0.6.1 (13163 thorn-03.openstreetmap.org)' />
+  <node id='176209265' timestamp='2013-07-23T00:17:27Z' uid='227972' user='Your Village Maps' visible='true' version='6' changeset='17054288' lat='39.0772777' lon='-108.5152657'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='176219558' timestamp='2013-07-23T23:24:06Z' uid='227972' user='Your Village Maps' visible='true' version='6' changeset='17069034' lat='39.0758452' lon='-108.5153006' />
+  <node id='176219560' timestamp='2013-07-23T01:12:24Z' uid='227972' user='Your Village Maps' visible='true' version='6' changeset='17054288' lat='39.0780767' lon='-108.5151794' />
+  <node id='1336912707' timestamp='2013-07-23T01:12:26Z' uid='227972' user='Your Village Maps' visible='true' version='3' changeset='17054288' lat='39.077822' lon='-108.5152617' />
+  <node id='1339047631' timestamp='2013-07-23T01:12:26Z' uid='227972' user='Your Village Maps' visible='true' version='3' changeset='17054288' lat='39.0766078' lon='-108.515263' />
+  <node id='2390251358' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='3' changeset='62408895' lat='39.0768554' lon='-108.5148864' />
+  <node id='2390251360' timestamp='2013-07-24T00:02:45Z' uid='227972' user='Your Village Maps' visible='true' version='4' changeset='17069034' lat='39.0753043' lon='-108.5152932'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='2393454062' timestamp='2014-11-22T23:56:35Z' uid='994480' user='Mark Newnham' visible='true' version='2' changeset='26962688' lat='39.0773837' lon='-108.5158686' />
+  <node id='2393467751' timestamp='2013-07-23T23:24:06Z' uid='227972' user='Your Village Maps' visible='true' version='2' changeset='17069034' lat='39.076406' lon='-108.5152832' />
+  <node id='2393467774' timestamp='2013-07-23T01:12:19Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17054288' lat='39.0772776' lon='-108.5150738'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='2393467798' timestamp='2013-07-23T01:12:19Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17054288' lat='39.0779514' lon='-108.5151226' />
+  <node id='2393467802' timestamp='2013-07-23T23:45:31Z' uid='227972' user='Your Village Maps' visible='true' version='2' changeset='17069034' lat='39.0757565' lon='-108.5151029' />
+  <node id='2393467806' timestamp='2013-07-23T01:12:19Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17054288' lat='39.0778484' lon='-108.5150931' />
+  <node id='2393467813' timestamp='2013-07-23T23:45:31Z' uid='227972' user='Your Village Maps' visible='true' version='2' changeset='17069034' lat='39.0760532' lon='-108.5150831' />
+  <node id='2393467826' timestamp='2013-07-23T01:12:20Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17054288' lat='39.0773838' lon='-108.5150745'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='2393467829' timestamp='2013-07-24T00:02:45Z' uid='227972' user='Your Village Maps' visible='true' version='3' changeset='17069034' lat='39.0752906' lon='-108.5151072'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='2393467837' timestamp='2013-07-23T01:12:20Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17054288' lat='39.0779359' lon='-108.5152368' />
+  <node id='2393467848' timestamp='2013-07-23T01:12:20Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17054288' lat='39.0773838' lon='-108.5152649'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='2393467854' timestamp='2013-07-23T23:24:06Z' uid='227972' user='Your Village Maps' visible='true' version='2' changeset='17069034' lat='39.0762262' lon='-108.5153003' />
+  <node id='2393467895' timestamp='2013-07-23T01:12:21Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17054288' lat='39.0767719' lon='-108.5150743' />
+  <node id='2393467917' timestamp='2013-07-23T01:12:22Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17054288' lat='39.0777443' lon='-108.515077' />
+  <node id='2394568089' timestamp='2013-07-23T23:24:05Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17069034' lat='39.0760453' lon='-108.5153072' />
+  <node id='2394571853' timestamp='2013-07-23T23:45:28Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17069034' lat='39.074838' lon='-108.5151255' />
+  <node id='2394571858' timestamp='2013-07-24T00:02:45Z' uid='227972' user='Your Village Maps' visible='true' version='2' changeset='17069034' lat='39.0746266' lon='-108.5151225' />
+  <node id='2394580636' timestamp='2013-07-24T00:02:42Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17069034' lat='39.0747203' lon='-108.5152683' />
+  <node id='2394580669' timestamp='2013-07-24T00:02:42Z' uid='227972' user='Your Village Maps' visible='true' version='1' changeset='17069034' lat='39.0756365' lon='-108.5152978' />
+  <node id='3200831472' timestamp='2018-10-28T12:06:25Z' uid='2078753' user='vorpalblade77' visible='true' version='4' changeset='63948269' lat='39.0773838' lon='-108.5153576'>
+    <tag k='button_operated' v='yes' />
+    <tag k='crossing' v='traffic_signals' />
+    <tag k='highway' v='crossing' />
+    <tag k='source' v='Bing' />
+    <tag k='tactile_paving' v='no' />
+  </node>
+  <node id='3200831492' timestamp='2018-10-28T12:06:25Z' uid='2078753' user='vorpalblade77' visible='true' version='4' changeset='63948269' lat='39.0772781' lon='-108.5153576'>
+    <tag k='button_operated' v='yes' />
+    <tag k='crossing' v='traffic_signals' />
+    <tag k='highway' v='crossing' />
+    <tag k='source' v='Bing' />
+    <tag k='tactile_paving' v='no' />
+  </node>
+  <node id='3200831493' timestamp='2018-10-04T23:42:59Z' uid='2078753' user='vorpalblade77' visible='true' version='3' changeset='63212703' lat='39.0772776' lon='-108.5149901'>
+    <tag k='crossing' v='traffic_signals' />
+    <tag k='highway' v='crossing' />
+    <tag k='source' v='Bing' />
+    <tag k='tactile_paving' v='no' />
+  </node>
+  <node id='3200831502' timestamp='2018-10-04T23:43:00Z' uid='2078753' user='vorpalblade77' visible='true' version='3' changeset='63212703' lat='39.0773836' lon='-108.5149875'>
+    <tag k='crossing' v='traffic_signals' />
+    <tag k='highway' v='crossing' />
+    <tag k='source' v='Bing' />
+    <tag k='tactile_paving' v='no' />
+  </node>
+  <node id='3200831504' timestamp='2014-11-22T23:56:27Z' uid='994480' user='Mark Newnham' visible='true' version='1' changeset='26962688' lat='39.0772806' lon='-108.5160308' />
+  <node id='3201638957' timestamp='2014-11-23T15:06:35Z' uid='994480' user='Mark Newnham' visible='true' version='1' changeset='26974885' lat='39.0773817' lon='-108.514333' />
+  <node id='3201645376' timestamp='2014-11-23T15:06:36Z' uid='994480' user='Mark Newnham' visible='true' version='1' changeset='26974885' lat='39.0772773' lon='-108.5144617' />
+  <node id='4886565342' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='2' changeset='62408895' lat='39.0768561' lon='-108.5147127' />
+  <node id='4886565343' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='2' changeset='62408895' lat='39.0769545' lon='-108.5147134' />
+  <node id='4886565344' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='2' changeset='62408895' lat='39.0769547' lon='-108.5146757' />
+  <node id='4886565345' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='2' changeset='62408895' lat='39.0770381' lon='-108.5146763' />
+  <node id='4886565346' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='2' changeset='62408895' lat='39.0770379' lon='-108.5147135' />
+  <node id='4886565347' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='2' changeset='62408895' lat='39.0771398' lon='-108.5147142' />
+  <node id='4886565348' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='2' changeset='62408895' lat='39.0771391' lon='-108.5148884' />
+  <node id='5893301170' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='1' changeset='62408895' lat='39.0769536' lon='-108.5148871' />
+  <node id='5893301171' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='1' changeset='62408895' lat='39.077037' lon='-108.5148877' />
+  <node id='6019238451' action='delete' timestamp='2018-10-28T12:06:24Z' uid='2078753' user='vorpalblade77' visible='true' version='1' changeset='63948269' lat='39.0774943' lon='-108.5153611'>
+    <tag k='emergency' v='fire_hydrant' />
+    <tag k='fire_hydrant:type' v='pillar' />
+  </node>
+  <way id='230913516' timestamp='2018-10-28T23:01:52Z' uid='2078753' user='vorpalblade77' visible='true' version='8' changeset='63961805'>
+    <nd ref='2393467774' />
+    <nd ref='3200831493' />
+    <nd ref='3201645376' />
+    <tag k='CDOT_route' v='006B' />
+    <tag k='NHS' v='yes' />
+    <tag k='alt_name' v='United States Highway 6' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='2' />
+    <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='40 mph' />
+    <tag k='maxspeed:type' v='sign' />
+    <tag k='name' v='North Avenue' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='US 6' />
+    <tag k='sidewalk' v='right' />
+    <tag k='source' v='tiger' />
+    <tag k='source:hgv:national_network' v='CDOT &quot;Highway Data Explorer&quot;' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tracktype' v='grade1' />
+  </way>
+  <way id='230913517' timestamp='2018-10-04T23:43:05Z' uid='2078753' user='vorpalblade77' visible='true' version='14' changeset='63212707'>
+    <nd ref='2393467826' />
+    <nd ref='2393467848' />
+    <tag k='CDOT_route' v='006B' />
+    <tag k='NHS' v='yes' />
+    <tag k='alt_name' v='United States Highway 6' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='2' />
+    <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='35 mph' />
+    <tag k='name' v='North Avenue' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='US 6' />
+    <tag k='sidewalk' v='right' />
+    <tag k='source' v='tiger' />
+    <tag k='source:hgv:national_network' v='CDOT &quot;Highway Data Explorer&quot;' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tracktype' v='grade1' />
+  </way>
+  <way id='230913521' timestamp='2017-06-03T17:59:30Z' uid='1330847' user='TheDutchMan13' visible='true' version='7' changeset='49225299'>
+    <nd ref='176219560' />
+    <nd ref='2393467837' />
+    <nd ref='1336912707' />
+    <nd ref='2393467848' />
+    <tag k='FIXME' v='not a dual carriageway' />
+    <tag k='bicycle' v='yes' />
+    <tag k='cycleway:right' v='lane' />
+    <tag k='highway' v='tertiary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='29 Road' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='29' />
+    <tag k='source' v='bing' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tiger:cfcc' v='A41' />
+    <tag k='tiger:county' v='Mesa, CO' />
+    <tag k='tiger:name_base' v='29' />
+    <tag k='tiger:name_type' v='Rd' />
+    <tag k='tiger:reviewed' v='no' />
+  </way>
+  <way id='231039305' timestamp='2017-06-03T17:59:36Z' uid='1330847' user='TheDutchMan13' visible='true' version='5' changeset='49225299'>
+    <nd ref='2394571858' />
+    <nd ref='2394571853' />
+    <nd ref='2393467829' />
+    <nd ref='2393467802' />
+    <nd ref='2393467813' />
+    <nd ref='2393467895' />
+    <nd ref='2393467774' />
+    <tag k='bicycle' v='yes' />
+    <tag k='cycleway' v='lane' />
+    <tag k='highway' v='tertiary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='29 Road' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='29' />
+    <tag k='source' v='bing' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tiger:cfcc' v='A41' />
+    <tag k='tiger:county' v='Mesa, CO' />
+    <tag k='tiger:name_base' v='29' />
+    <tag k='tiger:name_type' v='Rd' />
+    <tag k='tiger:reviewed' v='no' />
+  </way>
+  <way id='314048252' timestamp='2018-10-28T01:27:40Z' uid='2078753' user='vorpalblade77' visible='true' version='5' changeset='63940120'>
+    <nd ref='3200831504' />
+    <nd ref='3200831492' />
+    <nd ref='176209265' />
+    <tag k='CDOT_route' v='006B' />
+    <tag k='NHS' v='yes' />
+    <tag k='alt_name' v='United States Highway 6' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='4' />
+    <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='35 mph' />
+    <tag k='maxspeed:type' v='sign' />
+    <tag k='name' v='North Avenue' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='US 6' />
+    <tag k='sidewalk' v='right' />
+    <tag k='source' v='tiger' />
+    <tag k='source:hgv:national_network' v='CDOT &quot;Highway Data Explorer&quot;' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tracktype' v='grade1' />
+    <tag k='turn:lanes' v='left|through|through|right' />
+  </way>
+  <way id='314119191' timestamp='2018-10-04T23:43:22Z' uid='2078753' user='vorpalblade77' visible='true' version='5' changeset='63212707'>
+    <nd ref='3201638957' />
+    <nd ref='3200831502' />
+    <nd ref='2393467826' />
+    <tag k='CDOT_route' v='006B' />
+    <tag k='NHS' v='yes' />
+    <tag k='alt_name' v='United States Highway 6' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='4' />
+    <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='40 mph' />
+    <tag k='name' v='North Avenue' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='US 6' />
+    <tag k='sidewalk' v='right' />
+    <tag k='source' v='tiger' />
+    <tag k='source:hgv:national_network' v='CDOT &quot;Highway Data Explorer&quot;' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tracktype' v='grade1' />
+    <tag k='turn:lanes' v='left|through|through|right' />
+  </way>
+  <way id='460459627' timestamp='2017-06-03T18:03:33Z' uid='1330847' user='TheDutchMan13' visible='true' version='2' changeset='49225299'>
+    <nd ref='2393467848' />
+    <nd ref='176209265' />
+    <nd ref='1339047631' />
+    <nd ref='2393467751' />
+    <nd ref='2393467854' />
+    <nd ref='2394568089' />
+    <nd ref='176219558' />
+    <nd ref='2394580669' />
+    <nd ref='2390251360' />
+    <nd ref='2394580636' />
+    <tag k='FIXME' v='not a dual carriageway' />
+    <tag k='bicycle' v='yes' />
+    <tag k='cycleway' v='lane' />
+    <tag k='highway' v='tertiary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='29 Road' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='29' />
+    <tag k='source' v='bing' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tiger:cfcc' v='A41' />
+    <tag k='tiger:county' v='Mesa, CO' />
+    <tag k='tiger:name_base' v='29' />
+    <tag k='tiger:name_type' v='Rd' />
+    <tag k='tiger:reviewed' v='no' />
+  </way>
+  <way id='460459628' timestamp='2018-10-04T23:43:26Z' uid='2078753' user='vorpalblade77' visible='true' version='4' changeset='63212707'>
+    <nd ref='2393467848' />
+    <nd ref='3200831472' />
+    <nd ref='2393454062' />
+    <tag k='CDOT_route' v='006B' />
+    <tag k='NHS' v='yes' />
+    <tag k='alt_name' v='United States Highway 6' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='2' />
+    <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='35 mph' />
+    <tag k='name' v='North Avenue' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='US 6' />
+    <tag k='sidewalk' v='right' />
+    <tag k='source' v='tiger' />
+    <tag k='source:hgv:national_network' v='CDOT &quot;Highway Data Explorer&quot;' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tracktype' v='grade1' />
+  </way>
+  <way id='460459629' timestamp='2017-06-03T18:03:33Z' uid='1330847' user='TheDutchMan13' visible='true' version='2' changeset='49225299'>
+    <nd ref='2393467826' />
+    <nd ref='2393467917' />
+    <nd ref='2393467806' />
+    <nd ref='2393467798' />
+    <nd ref='176219560' />
+    <tag k='bicycle' v='yes' />
+    <tag k='cycleway:right' v='lane' />
+    <tag k='highway' v='tertiary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='29 Road' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='29' />
+    <tag k='source' v='bing' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tiger:cfcc' v='A41' />
+    <tag k='tiger:county' v='Mesa, CO' />
+    <tag k='tiger:name_base' v='29' />
+    <tag k='tiger:name_type' v='Rd' />
+    <tag k='tiger:reviewed' v='no' />
+  </way>
+  <way id='480461232' timestamp='2018-10-28T23:01:56Z' uid='2078753' user='vorpalblade77' visible='true' version='5' changeset='63961805'>
+    <nd ref='176209265' />
+    <nd ref='2393467774' />
+    <tag k='CDOT_route' v='006B' />
+    <tag k='NHS' v='yes' />
+    <tag k='alt_name' v='United States Highway 6' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='2' />
+    <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='35 mph' />
+    <tag k='maxspeed:type' v='sign' />
+    <tag k='name' v='North Avenue' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='US 6' />
+    <tag k='sidewalk' v='right' />
+    <tag k='source' v='tiger' />
+    <tag k='source:hgv:national_network' v='CDOT &quot;Highway Data Explorer&quot;' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tracktype' v='grade1' />
+  </way>
+  <way id='480461242' timestamp='2017-06-03T18:03:58Z' uid='1330847' user='TheDutchMan13' visible='true' version='2' changeset='49225299'>
+    <nd ref='2393467774' />
+    <nd ref='2393467826' />
+    <tag k='bicycle' v='yes' />
+    <tag k='cycleway' v='lane' />
+    <tag k='highway' v='tertiary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='29 Road' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='29' />
+    <tag k='source' v='bing' />
+    <tag k='surface' v='asphalt' />
+    <tag k='tiger:cfcc' v='A41' />
+    <tag k='tiger:county' v='Mesa, CO' />
+    <tag k='tiger:name_base' v='29' />
+    <tag k='tiger:name_type' v='Rd' />
+    <tag k='tiger:reviewed' v='no' />
+  </way>
+  <way id='497021501' action='delete' timestamp='2018-09-12T22:23:04Z' uid='2078753' user='vorpalblade77' visible='true' version='4' changeset='62535809'>
+    <tag k='addr:city' v='Grand Junction' />
+    <tag k='addr:housenumber' v='2903' />
+    <tag k='addr:postcode' v='81504' />
+    <tag k='addr:state' v='CO' />
+    <tag k='addr:street' v='North Avenue' />
+    <tag k='amenity' v='fuel' />
+    <tag k='building' v='roof' />
+    <tag k='name' v='Bradley Sinclair' />
+  </way>
+  <way id='624114912' action='delete' timestamp='2018-09-08T18:38:24Z' uid='2078753' user='vorpalblade77' visible='true' version='1' changeset='62408895'>
+    <tag k='building:part' v='roof' />
+  </way>
+  <relation id='398569' timestamp='2017-09-25T23:40:27Z' uid='339581' user='nyuriks' visible='true' version='346' changeset='52369774'>
+    <member type='relation' ref='7499279' role='east' />
+    <member type='relation' ref='7499272' role='west' />
+    <tag k='is_in:state' v='CO' />
+    <tag k='name' v='US 6 (CO, Super)' />
+    <tag k='network' v='US:US' />
+    <tag k='ref' v='6' />
+    <tag k='route' v='road' />
+    <tag k='symbol' v='http://upload.wikimedia.org/wikipedia/commons/e/ef/US_6.svg' />
+    <tag k='type' v='route' />
+    <tag k='wikidata' v='Q2139368' />
+    <tag k='wikipedia' v='en:U.S. Route 6 in Colorado' />
+  </relation>
+  <relation id='7070903' timestamp='2018-10-13T15:34:57Z' uid='2078753' user='vorpalblade77' visible='true' version='12' changeset='63488153'>
+    <member type='node' ref='2388218671' role='' />
+    <member type='node' ref='4729560267' role='' />
+    <member type='node' ref='4729560268' role='' />
+    <member type='node' ref='4729560269' role='' />
+    <member type='node' ref='4729560270' role='' />
+    <member type='node' ref='4729560271' role='' />
+    <member type='node' ref='4729560272' role='' />
+    <member type='node' ref='4729560273' role='' />
+    <member type='node' ref='4729560274' role='' />
+    <member type='node' ref='4729560275' role='' />
+    <member type='node' ref='4729560276' role='' />
+    <member type='node' ref='4729560277' role='' />
+    <member type='node' ref='4729560278' role='' />
+    <member type='node' ref='4729560279' role='' />
+    <member type='node' ref='4729560280' role='' />
+    <member type='node' ref='4729560281' role='' />
+    <member type='node' ref='4729560282' role='' />
+    <member type='node' ref='4729560283' role='' />
+    <member type='node' ref='4729560284' role='' />
+    <member type='node' ref='4729560285' role='' />
+    <member type='node' ref='4729560286' role='' />
+    <member type='node' ref='4729560287' role='' />
+    <member type='node' ref='4724325585' role='' />
+    <member type='node' ref='4702162440' role='' />
+    <member type='node' ref='4729560288' role='' />
+    <member type='node' ref='4729560889' role='' />
+    <member type='node' ref='4729560890' role='' />
+    <member type='node' ref='4729560891' role='' />
+    <member type='node' ref='4729560892' role='' />
+    <member type='node' ref='4729560893' role='' />
+    <member type='node' ref='4729560894' role='' />
+    <member type='node' ref='4729560895' role='' />
+    <member type='node' ref='4729560896' role='' />
+    <member type='node' ref='4729560897' role='' />
+    <member type='node' ref='4729560898' role='' />
+    <member type='node' ref='4729560899' role='' />
+    <member type='node' ref='4729560900' role='' />
+    <member type='node' ref='4729560901' role='' />
+    <member type='node' ref='4729560902' role='' />
+    <member type='node' ref='4729560903' role='' />
+    <member type='node' ref='4729560904' role='' />
+    <member type='node' ref='4729560905' role='' />
+    <member type='node' ref='4729560906' role='' />
+    <member type='node' ref='4729560907' role='' />
+    <member type='node' ref='4729560908' role='' />
+    <member type='node' ref='2388218671' role='' />
+    <member type='way' ref='231159858' role='' />
+    <member type='way' ref='480290449' role='' />
+    <member type='way' ref='314272369' role='' />
+    <member type='way' ref='480461204' role='' />
+    <member type='way' ref='314272365' role='' />
+    <member type='way' ref='314272370' role='' />
+    <member type='way' ref='314156377' role='' />
+    <member type='way' ref='533392554' role='' />
+    <member type='way' ref='314138388' role='' />
+    <member type='way' ref='314138389' role='' />
+    <member type='way' ref='16999424' role='' />
+    <member type='way' ref='314134870' role='' />
+    <member type='way' ref='314061527' role='' />
+    <member type='way' ref='17001253' role='' />
+    <member type='way' ref='314061528' role='' />
+    <member type='way' ref='314134869' role='' />
+    <member type='way' ref='314061523' role='' />
+    <member type='way' ref='314061524' role='' />
+    <member type='way' ref='480290448' role='' />
+    <member type='way' ref='230624361' role='' />
+    <member type='way' ref='16999065' role='' />
+    <member type='way' ref='230624357' role='' />
+    <member type='way' ref='631424947' role='' />
+    <member type='way' ref='631424950' role='' />
+    <member type='way' ref='427856166' role='' />
+    <member type='way' ref='631420905' role='' />
+    <member type='way' ref='230297716' role='' />
+    <member type='way' ref='376168589' role='' />
+    <member type='way' ref='631304979' role='' />
+    <member type='way' ref='230297738' role='' />
+    <member type='way' ref='631304849' role='' />
+    <member type='way' ref='631304855' role='' />
+    <member type='way' ref='230297737' role='' />
+    <member type='way' ref='16996897' role='' />
+    <member type='way' ref='460461140' role='' />
+    <member type='way' ref='17002720' role='' />
+    <member type='way' ref='480290442' role='' />
+    <member type='way' ref='314047077' role='' />
+    <member type='way' ref='314047096' role='' />
+    <member type='way' ref='314047079' role='' />
+    <member type='way' ref='314047087' role='' />
+    <member type='way' ref='314047088' role='' />
+    <member type='way' ref='314047090' role='' />
+    <member type='way' ref='230910287' role='' />
+    <member type='way' ref='314048240' role='' />
+    <member type='way' ref='314048230' role='' />
+    <member type='way' ref='314048236' role='' />
+    <member type='way' ref='314048271' role='' />
+    <member type='way' ref='314048263' role='' />
+    <member type='way' ref='314048264' role='' />
+    <member type='way' ref='314048234' role='' />
+    <member type='way' ref='314048270' role='' />
+    <member type='way' ref='314048239' role='' />
+    <member type='way' ref='314048268' role='' />
+    <member type='way' ref='314048259' role='' />
+    <member type='way' ref='314048250' role='' />
+    <member type='way' ref='314048232' role='' />
+    <member type='way' ref='314048275' role='' />
+    <member type='way' ref='314048248' role='' />
+    <member type='way' ref='314048261' role='' />
+    <member type='way' ref='314048238' role='' />
+    <member type='way' ref='314048274' role='' />
+    <member type='way' ref='314048258' role='' />
+    <member type='way' ref='314048229' role='' />
+    <member type='way' ref='314048262' role='' />
+    <member type='way' ref='314048279' role='' />
+    <member type='way' ref='314048272' role='' />
+    <member type='way' ref='314048235' role='' />
+    <member type='way' ref='314048242' role='' />
+    <member type='way' ref='314048280' role='' />
+    <member type='way' ref='314048252' role='' />
+    <member type='way' ref='480461232' role='' />
+    <member type='way' ref='230913516' role='' />
+    <member type='way' ref='314119201' role='' />
+    <member type='way' ref='314119197' role='' />
+    <member type='way' ref='314119179' role='' />
+    <member type='way' ref='314119171' role='' />
+    <member type='way' ref='314119182' role='' />
+    <member type='way' ref='314119160' role='' />
+    <member type='way' ref='314119162' role='' />
+    <member type='way' ref='314119159' role='' />
+    <member type='way' ref='314119195' role='' />
+    <member type='way' ref='314119192' role='' />
+    <member type='way' ref='314119190' role='' />
+    <member type='way' ref='314119180' role='' />
+    <member type='way' ref='314119174' role='' />
+    <member type='way' ref='314119198' role='' />
+    <member type='way' ref='314119165' role='' />
+    <member type='way' ref='17001221' role='' />
+    <member type='way' ref='460459631' role='' />
+    <member type='way' ref='121895149' role='' />
+    <member type='way' ref='121895152' role='' />
+    <member type='way' ref='121895205' role='' />
+    <member type='way' ref='460459620' role='' />
+    <member type='way' ref='121894966' role='' />
+    <member type='way' ref='121894964' role='' />
+    <member type='way' ref='16998756' role='' />
+    <member type='way' ref='230300553' role='' />
+    <member type='way' ref='230913521' role='' />
+    <member type='way' ref='460459628' role='' />
+    <member type='way' ref='314048254' role='' />
+    <member type='way' ref='314048237' role='' />
+    <member type='way' ref='314048251' role='' />
+    <member type='way' ref='314048269' role='' />
+    <member type='way' ref='314048277' role='' />
+    <member type='way' ref='314048231' role='' />
+    <member type='way' ref='314048246' role='' />
+    <member type='way' ref='314048273' role='' />
+    <member type='way' ref='314048256' role='' />
+    <member type='way' ref='314048255' role='' />
+    <member type='way' ref='314048260' role='' />
+    <member type='way' ref='314048276' role='' />
+    <member type='way' ref='314048245' role='' />
+    <member type='way' ref='314048244' role='' />
+    <member type='way' ref='314048249' role='' />
+    <member type='way' ref='314048281' role='' />
+    <member type='way' ref='314048247' role='' />
+    <member type='way' ref='314048267' role='' />
+    <member type='way' ref='314048233' role='' />
+    <member type='way' ref='314048278' role='' />
+    <member type='way' ref='314048265' role='' />
+    <member type='way' ref='314048257' role='' />
+    <member type='way' ref='314048243' role='' />
+    <member type='way' ref='314048241' role='' />
+    <member type='way' ref='314048282' role='' />
+    <member type='way' ref='314048253' role='' />
+    <member type='way' ref='314048266' role='' />
+    <member type='way' ref='314047091' role='' />
+    <member type='way' ref='314047078' role='' />
+    <member type='way' ref='314047073' role='' />
+    <member type='way' ref='314047099' role='' />
+    <member type='way' ref='314047072' role='' />
+    <member type='way' ref='314047104' role='' />
+    <member type='way' ref='480290441' role='' />
+    <member type='way' ref='480290442' role='' />
+    <member type='way' ref='17002720' role='' />
+    <member type='way' ref='460461140' role='' />
+    <member type='way' ref='16996897' role='' />
+    <member type='way' ref='631304855' role='' />
+    <member type='way' ref='230297737' role='' />
+    <member type='way' ref='631304979' role='' />
+    <member type='way' ref='230297738' role='' />
+    <member type='way' ref='631304849' role='' />
+    <member type='way' ref='376168589' role='' />
+    <member type='way' ref='230297716' role='' />
+    <member type='way' ref='631420905' role='' />
+    <member type='way' ref='427856166' role='' />
+    <member type='way' ref='230624357' role='' />
+    <member type='way' ref='631424947' role='' />
+    <member type='way' ref='631424950' role='' />
+    <member type='way' ref='230624374' role='' />
+    <member type='way' ref='633674330' role='' />
+    <member type='way' ref='230624359' role='' />
+    <member type='way' ref='314054637' role='' />
+    <member type='way' ref='230624373' role='' />
+    <member type='way' ref='314061525' role='' />
+    <member type='way' ref='314061526' role='' />
+    <member type='way' ref='314061530' role='' />
+    <member type='way' ref='230623200' role='' />
+    <member type='way' ref='489667170' role='' />
+    <member type='way' ref='49179764' role='' />
+    <member type='way' ref='460630705' role='' />
+    <member type='way' ref='480290432' role='' />
+    <member type='way' ref='231154720' role='' />
+    <member type='way' ref='480290431' role='' />
+    <member type='way' ref='631424955' role='' />
+    <member type='way' ref='555303054' role='' />
+    <member type='way' ref='631420901' role='' />
+    <member type='way' ref='631420902' role='' />
+    <member type='way' ref='631420903' role='' />
+    <member type='way' ref='631420902' role='' />
+    <member type='way' ref='631420901' role='' />
+    <member type='way' ref='555303054' role='' />
+    <member type='way' ref='631424955' role='' />
+    <member type='way' ref='631420903' role='' />
+    <member type='way' ref='631420902' role='' />
+    <member type='way' ref='631420901' role='' />
+    <member type='way' ref='555303054' role='' />
+    <member type='way' ref='631424955' role='' />
+    <member type='way' ref='631420903' role='' />
+    <member type='way' ref='631420902' role='' />
+    <member type='way' ref='631420901' role='' />
+    <member type='way' ref='555303054' role='' />
+    <member type='way' ref='631424955' role='' />
+    <member type='way' ref='631420903' role='' />
+    <tag k='charge' v='1.50' />
+    <tag k='duration' v='00:50' />
+    <tag k='fee' v='yes' />
+    <tag k='name' v='Route 5 - Midtown' />
+    <tag k='opening_hours' v='Mo-Sa 05:15-20:05' />
+    <tag k='operator' v='Grand Valley Transit' />
+    <tag k='route' v='bus' />
+    <tag k='source' v='http://gvt.mesacounty.us/' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='7073779' timestamp='2018-10-07T22:25:53Z' uid='2078753' user='vorpalblade77' visible='true' version='4' changeset='63291339'>
+    <member type='node' ref='2388218671' role='' />
+    <member type='node' ref='4734610221' role='' />
+    <member type='node' ref='4734610222' role='' />
+    <member type='node' ref='4734610223' role='' />
+    <member type='node' ref='4734610224' role='' />
+    <member type='node' ref='4734610225' role='' />
+    <member type='node' ref='4734610226' role='' />
+    <member type='node' ref='4734610227' role='' />
+    <member type='node' ref='4734610228' role='' />
+    <member type='node' ref='4734610229' role='' />
+    <member type='node' ref='4734610230' role='' />
+    <member type='node' ref='4734610231' role='' />
+    <member type='node' ref='4734610232' role='' />
+    <member type='node' ref='4734610233' role='' />
+    <member type='node' ref='4734610234' role='' />
+    <member type='node' ref='4734610235' role='' />
+    <member type='node' ref='4734610236' role='' />
+    <member type='node' ref='4734610237' role='' />
+    <member type='node' ref='4729560285' role='' />
+    <member type='node' ref='4729560286' role='' />
+    <member type='node' ref='4729560287' role='' />
+    <member type='node' ref='4724432564' role='' />
+    <member type='node' ref='4729560891' role='' />
+    <member type='node' ref='4734610238' role='' />
+    <member type='node' ref='4734610239' role='' />
+    <member type='node' ref='4734610240' role='' />
+    <member type='node' ref='4734610241' role='' />
+    <member type='node' ref='4734610242' role='' />
+    <member type='node' ref='4734610243' role='' />
+    <member type='node' ref='4734610244' role='' />
+    <member type='node' ref='4734610245' role='' />
+    <member type='node' ref='4734610246' role='' />
+    <member type='node' ref='4734610247' role='' />
+    <member type='node' ref='4734610248' role='' />
+    <member type='node' ref='4734610249' role='' />
+    <member type='node' ref='4734610250' role='' />
+    <member type='node' ref='4734610251' role='' />
+    <member type='node' ref='4734610252' role='' />
+    <member type='node' ref='4734610253' role='' />
+    <member type='node' ref='2388218671' role='' />
+    <member type='way' ref='231159858' role='' />
+    <member type='way' ref='480290449' role='' />
+    <member type='way' ref='314272359' role='' />
+    <member type='way' ref='119613555' role='' />
+    <member type='way' ref='119613554' role='' />
+    <member type='way' ref='230308211' role='' />
+    <member type='way' ref='230308193' role='' />
+    <member type='way' ref='231306578' role='' />
+    <member type='way' ref='551774549' role='' />
+    <member type='way' ref='314269550' role='' />
+    <member type='way' ref='460464109' role='' />
+    <member type='way' ref='551774550' role='' />
+    <member type='way' ref='314269541' role='' />
+    <member type='way' ref='314269540' role='' />
+    <member type='way' ref='16999941' role='' />
+    <member type='way' ref='314269543' role='' />
+    <member type='way' ref='480461223' role='' />
+    <member type='way' ref='480461309' role='' />
+    <member type='way' ref='17000740' role='' />
+    <member type='way' ref='17000180' role='' />
+    <member type='way' ref='480461283' role='' />
+    <member type='way' ref='480461277' role='' />
+    <member type='way' ref='16996861' role='' />
+    <member type='way' ref='480461268' role='' />
+    <member type='way' ref='16996987' role='' />
+    <member type='way' ref='16996989' role='' />
+    <member type='way' ref='314204725' role='' />
+    <member type='way' ref='314204732' role='' />
+    <member type='way' ref='480461252' role='' />
+    <member type='way' ref='118272673' role='' />
+    <member type='way' ref='118266661' role='' />
+    <member type='way' ref='16998758' role='' />
+    <member type='way' ref='230526189' role='' />
+    <member type='way' ref='230526191' role='' />
+    <member type='way' ref='119122778' role='' />
+    <member type='way' ref='119122779' role='' />
+    <member type='way' ref='230300563' role='' />
+    <member type='way' ref='230300555' role='' />
+    <member type='way' ref='16998748' role='' />
+    <member type='way' ref='158942786' role='' />
+    <member type='way' ref='231038845' role='' />
+    <member type='way' ref='231038842' role='' />
+    <member type='way' ref='231038839' role='' />
+    <member type='way' ref='231039305' role='' />
+    <member type='way' ref='230913516' role='' />
+    <member type='way' ref='314119201' role='' />
+    <member type='way' ref='314119197' role='' />
+    <member type='way' ref='314119179' role='' />
+    <member type='way' ref='314119171' role='' />
+    <member type='way' ref='314119182' role='' />
+    <member type='way' ref='314119160' role='' />
+    <member type='way' ref='314119162' role='' />
+    <member type='way' ref='314119159' role='' />
+    <member type='way' ref='314119195' role='' />
+    <member type='way' ref='314119192' role='' />
+    <member type='way' ref='314119190' role='' />
+    <member type='way' ref='314119180' role='' />
+    <member type='way' ref='314119174' role='' />
+    <member type='way' ref='314119198' role='' />
+    <member type='way' ref='314119165' role='' />
+    <member type='way' ref='17001221' role='' />
+    <member type='way' ref='480290438' role='' />
+    <member type='way' ref='460459632' role='' />
+    <member type='way' ref='230300553' role='' />
+    <member type='way' ref='230913521' role='' />
+    <member type='way' ref='460459627' role='' />
+    <member type='way' ref='231039304' role='' />
+    <member type='way' ref='231038838' role='' />
+    <member type='way' ref='231038840' role='' />
+    <member type='way' ref='231038846' role='' />
+    <member type='way' ref='16998748' role='' />
+    <member type='way' ref='230300555' role='' />
+    <member type='way' ref='230300563' role='' />
+    <member type='way' ref='119122779' role='' />
+    <member type='way' ref='119122778' role='' />
+    <member type='way' ref='230526191' role='' />
+    <member type='way' ref='230526189' role='' />
+    <member type='way' ref='230526122' role='' />
+    <member type='way' ref='480461268' role='' />
+    <member type='way' ref='16996861' role='' />
+    <member type='way' ref='480461277' role='' />
+    <member type='way' ref='480461283' role='' />
+    <member type='way' ref='17000180' role='' />
+    <member type='way' ref='17000740' role='' />
+    <member type='way' ref='480461309' role='' />
+    <member type='way' ref='17002987' role='' />
+    <member type='way' ref='460464108' role='' />
+    <member type='way' ref='551774550' role='' />
+    <member type='way' ref='460464109' role='' />
+    <member type='way' ref='314269550' role='' />
+    <member type='way' ref='551774549' role='' />
+    <member type='way' ref='231306578' role='' />
+    <member type='way' ref='231306613' role='' />
+    <member type='way' ref='49179766' role='' />
+    <member type='way' ref='314269547' role='' />
+    <member type='way' ref='230627074' role='' />
+    <member type='way' ref='314269544' role='' />
+    <member type='way' ref='230627059' role='' />
+    <member type='way' ref='231159065' role='' />
+    <member type='way' ref='314272363' role='' />
+    <member type='way' ref='314272369' role='' />
+    <member type='way' ref='480290432' role='' />
+    <member type='way' ref='231154720' role='' />
+    <member type='way' ref='480290431' role='' />
+    <tag k='charge' v='1.50' />
+    <tag k='duration' v='00:50' />
+    <tag k='fee' v='yes' />
+    <tag k='name' v='Route 6 - Orchard Mesa' />
+    <tag k='opening_hours' v='Mo-Sa 05:15-20:05' />
+    <tag k='operator' v='Grand Valley Transit' />
+    <tag k='route' v='bus' />
+    <tag k='source' v='http://gvt.mesacounty.us/' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='7119192' timestamp='2018-10-07T22:20:33Z' uid='2078753' user='vorpalblade77' visible='true' version='8' changeset='63291279'>
+    <member type='node' ref='2388218671' role='' />
+    <member type='node' ref='4698240432' role='' />
+    <member type='node' ref='4724325573' role='' />
+    <member type='node' ref='2395638055' role='' />
+    <member type='node' ref='4724325574' role='' />
+    <member type='node' ref='4735185848' role='' />
+    <member type='node' ref='4735185849' role='' />
+    <member type='node' ref='4749880213' role='' />
+    <member type='node' ref='4749880214' role='' />
+    <member type='node' ref='4729560279' role='' />
+    <member type='node' ref='4729560280' role='' />
+    <member type='node' ref='4729560281' role='' />
+    <member type='node' ref='4729560282' role='' />
+    <member type='node' ref='4729560283' role='' />
+    <member type='node' ref='4729560284' role='' />
+    <member type='node' ref='4729560285' role='' />
+    <member type='node' ref='4749880215' role='' />
+    <member type='node' ref='2390244305' role='' />
+    <member type='node' ref='4749880216' role='' />
+    <member type='node' ref='4749880217' role='' />
+    <member type='node' ref='4729560892' role='' />
+    <member type='node' ref='4729560893' role='' />
+    <member type='node' ref='4729560894' role='' />
+    <member type='node' ref='4729560895' role='' />
+    <member type='node' ref='4749880218' role='' />
+    <member type='node' ref='4749880219' role='' />
+    <member type='node' ref='2401101035' role='' />
+    <member type='node' ref='4724432574' role='' />
+    <member type='node' ref='2395638039' role='' />
+    <member type='node' ref='4724432575' role='' />
+    <member type='node' ref='2388218671' role='' />
+    <member type='way' ref='231159858' role='' />
+    <member type='way' ref='476368671' role='' />
+    <member type='way' ref='480290431' role='' />
+    <member type='way' ref='460461572' role='' />
+    <member type='way' ref='231522885' role='' />
+    <member type='way' ref='231158427' role='' />
+    <member type='way' ref='631422499' role='' />
+    <member type='way' ref='631422489' role='' />
+    <member type='way' ref='231158416' role='' />
+    <member type='way' ref='476368693' role='' />
+    <member type='way' ref='476368673' role='' />
+    <member type='way' ref='479328589' role='' />
+    <member type='way' ref='231158407' role='' />
+    <member type='way' ref='631422564' role='' />
+    <member type='way' ref='631422554' role='' />
+    <member type='way' ref='631422602' role='' />
+    <member type='way' ref='631422592' role='' />
+    <member type='way' ref='231154726' role='' />
+    <member type='way' ref='231154723' role='' />
+    <member type='way' ref='314044995' role='' />
+    <member type='way' ref='314044983' role='' />
+    <member type='way' ref='314044982' role='' />
+    <member type='way' ref='314044969' role='' />
+    <member type='way' ref='314044963' role='' />
+    <member type='way' ref='314045002' role='' />
+    <member type='way' ref='314044978' role='' />
+    <member type='way' ref='314044985' role='' />
+    <member type='way' ref='314044988' role='' />
+    <member type='way' ref='314044975' role='' />
+    <member type='way' ref='230910289' role='' />
+    <member type='way' ref='314047101' role='' />
+    <member type='way' ref='314047095' role='' />
+    <member type='way' ref='314047102' role='' />
+    <member type='way' ref='314047083' role='' />
+    <member type='way' ref='314047075' role='' />
+    <member type='way' ref='314047074' role='' />
+    <member type='way' ref='314047092' role='' />
+    <member type='way' ref='314047082' role='' />
+    <member type='way' ref='314047093' role='' />
+    <member type='way' ref='314047100' role='' />
+    <member type='way' ref='314047103' role='' />
+    <member type='way' ref='314047071' role='' />
+    <member type='way' ref='314047094' role='' />
+    <member type='way' ref='314047080' role='' />
+    <member type='way' ref='314047086' role='' />
+    <member type='way' ref='314047069' role='' />
+    <member type='way' ref='314047097' role='' />
+    <member type='way' ref='314047067' role='' />
+    <member type='way' ref='314047098' role='' />
+    <member type='way' ref='314047077' role='' />
+    <member type='way' ref='314047096' role='' />
+    <member type='way' ref='314047079' role='' />
+    <member type='way' ref='314047087' role='' />
+    <member type='way' ref='314047088' role='' />
+    <member type='way' ref='314047090' role='' />
+    <member type='way' ref='230910287' role='' />
+    <member type='way' ref='314048240' role='' />
+    <member type='way' ref='314048230' role='' />
+    <member type='way' ref='314048236' role='' />
+    <member type='way' ref='314048271' role='' />
+    <member type='way' ref='314048263' role='' />
+    <member type='way' ref='314048264' role='' />
+    <member type='way' ref='314048234' role='' />
+    <member type='way' ref='314048270' role='' />
+    <member type='way' ref='314048239' role='' />
+    <member type='way' ref='314048268' role='' />
+    <member type='way' ref='314048259' role='' />
+    <member type='way' ref='314048250' role='' />
+    <member type='way' ref='314048232' role='' />
+    <member type='way' ref='314048275' role='' />
+    <member type='way' ref='314048248' role='' />
+    <member type='way' ref='314048261' role='' />
+    <member type='way' ref='314048238' role='' />
+    <member type='way' ref='314048274' role='' />
+    <member type='way' ref='314048258' role='' />
+    <member type='way' ref='314048229' role='' />
+    <member type='way' ref='314048262' role='' />
+    <member type='way' ref='314048279' role='' />
+    <member type='way' ref='314048272' role='' />
+    <member type='way' ref='314048235' role='' />
+    <member type='way' ref='314048242' role='' />
+    <member type='way' ref='314048280' role='' />
+    <member type='way' ref='314048252' role='' />
+    <member type='way' ref='480461232' role='' />
+    <member type='way' ref='230913516' role='' />
+    <member type='way' ref='314119201' role='' />
+    <member type='way' ref='314119197' role='' />
+    <member type='way' ref='314119179' role='' />
+    <member type='way' ref='314119171' role='' />
+    <member type='way' ref='314119182' role='' />
+    <member type='way' ref='314119160' role='' />
+    <member type='way' ref='314119162' role='' />
+    <member type='way' ref='314119159' role='' />
+    <member type='way' ref='314119195' role='' />
+    <member type='way' ref='314119192' role='' />
+    <member type='way' ref='314119190' role='' />
+    <member type='way' ref='314119180' role='' />
+    <member type='way' ref='314119174' role='' />
+    <member type='way' ref='314119198' role='' />
+    <member type='way' ref='314119165' role='' />
+    <member type='way' ref='314119155' role='' />
+    <member type='way' ref='314119200' role='' />
+    <member type='way' ref='314119158' role='' />
+    <member type='way' ref='314119196' role='' />
+    <member type='way' ref='314119187' role='' />
+    <member type='way' ref='314119178' role='' />
+    <member type='way' ref='314119156' role='' />
+    <member type='way' ref='314119157' role='' />
+    <member type='way' ref='124376154' role='' />
+    <member type='way' ref='230620891' role='' />
+    <member type='way' ref='617630089' role='' />
+    <member type='way' ref='617630088' role='' />
+    <member type='way' ref='120911111' role='' />
+    <member type='way' ref='314159713' role='' />
+    <member type='way' ref='230620897' role='' />
+    <member type='way' ref='230620882' role='' />
+    <member type='way' ref='314159736' role='' />
+    <member type='way' ref='314159700' role='' />
+    <member type='way' ref='121895502' role='' />
+    <member type='way' ref='120908464' role='' />
+    <member type='way' ref='314159718' role='' />
+    <member type='way' ref='314159751' role='' />
+    <member type='way' ref='314159706' role='' />
+    <member type='way' ref='314159745' role='' />
+    <member type='way' ref='314159733' role='' />
+    <member type='way' ref='314159755' role='' />
+    <member type='way' ref='314159709' role='' />
+    <member type='way' ref='314159703' role='' />
+    <member type='way' ref='314159734' role='' />
+    <member type='way' ref='230522921' role='' />
+    <member type='way' ref='479919292' role='' />
+    <member type='way' ref='476747766' role='' />
+    <member type='way' ref='476747766' role='' />
+    <member type='way' ref='479919292' role='' />
+    <member type='way' ref='230522921' role='' />
+    <member type='way' ref='479919197' role='' />
+    <member type='way' ref='314159739' role='' />
+    <member type='way' ref='314159747' role='' />
+    <member type='way' ref='314159741' role='' />
+    <member type='way' ref='314159753' role='' />
+    <member type='way' ref='314159702' role='' />
+    <member type='way' ref='314159754' role='' />
+    <member type='way' ref='314159752' role='' />
+    <member type='way' ref='120911095' role='' />
+    <member type='way' ref='120912046' role='' />
+    <member type='way' ref='314159727' role='' />
+    <member type='way' ref='314159723' role='' />
+    <member type='way' ref='314159743' role='' />
+    <member type='way' ref='314159749' role='' />
+    <member type='way' ref='314159707' role='' />
+    <member type='way' ref='314159730' role='' />
+    <member type='way' ref='230620908' role='' />
+    <member type='way' ref='120912180' role='' />
+    <member type='way' ref='483526615' role='' />
+    <member type='way' ref='17002150' role='' />
+    <member type='way' ref='314119185' role='' />
+    <member type='way' ref='314119176' role='' />
+    <member type='way' ref='314119183' role='' />
+    <member type='way' ref='314119194' role='' />
+    <member type='way' ref='314119175' role='' />
+    <member type='way' ref='314119203' role='' />
+    <member type='way' ref='314119173' role='' />
+    <member type='way' ref='314119170' role='' />
+    <member type='way' ref='314119188' role='' />
+    <member type='way' ref='314119186' role='' />
+    <member type='way' ref='314119181' role='' />
+    <member type='way' ref='314119199' role='' />
+    <member type='way' ref='314119189' role='' />
+    <member type='way' ref='314119184' role='' />
+    <member type='way' ref='314119193' role='' />
+    <member type='way' ref='314119168' role='' />
+    <member type='way' ref='314119163' role='' />
+    <member type='way' ref='314119177' role='' />
+    <member type='way' ref='314119191' role='' />
+    <member type='way' ref='230913517' role='' />
+    <member type='way' ref='460459628' role='' />
+    <member type='way' ref='314048254' role='' />
+    <member type='way' ref='314048237' role='' />
+    <member type='way' ref='314048251' role='' />
+    <member type='way' ref='314048269' role='' />
+    <member type='way' ref='314048277' role='' />
+    <member type='way' ref='314048231' role='' />
+    <member type='way' ref='314048246' role='' />
+    <member type='way' ref='314048273' role='' />
+    <member type='way' ref='314048256' role='' />
+    <member type='way' ref='314048255' role='' />
+    <member type='way' ref='314048260' role='' />
+    <member type='way' ref='314048276' role='' />
+    <member type='way' ref='314048245' role='' />
+    <member type='way' ref='314048244' role='' />
+    <member type='way' ref='314048249' role='' />
+    <member type='way' ref='314048281' role='' />
+    <member type='way' ref='314048247' role='' />
+    <member type='way' ref='314048267' role='' />
+    <member type='way' ref='314048233' role='' />
+    <member type='way' ref='314048278' role='' />
+    <member type='way' ref='314048265' role='' />
+    <member type='way' ref='314048257' role='' />
+    <member type='way' ref='314048243' role='' />
+    <member type='way' ref='314048241' role='' />
+    <member type='way' ref='314048282' role='' />
+    <member type='way' ref='314048253' role='' />
+    <member type='way' ref='314048266' role='' />
+    <member type='way' ref='314047091' role='' />
+    <member type='way' ref='314047078' role='' />
+    <member type='way' ref='314047073' role='' />
+    <member type='way' ref='314047099' role='' />
+    <member type='way' ref='314047072' role='' />
+    <member type='way' ref='314047104' role='' />
+    <member type='way' ref='314047105' role='' />
+    <member type='way' ref='314047076' role='' />
+    <member type='way' ref='314047089' role='' />
+    <member type='way' ref='314047084' role='' />
+    <member type='way' ref='314047070' role='' />
+    <member type='way' ref='314047081' role='' />
+    <member type='way' ref='314047068' role='' />
+    <member type='way' ref='314047085' role='' />
+    <member type='way' ref='230910284' role='' />
+    <member type='way' ref='314044962' role='' />
+    <member type='way' ref='314044979' role='' />
+    <member type='way' ref='314044984' role='' />
+    <member type='way' ref='314044970' role='' />
+    <member type='way' ref='314045007' role='' />
+    <member type='way' ref='314045005' role='' />
+    <member type='way' ref='314045009' role='' />
+    <member type='way' ref='314045010' role='' />
+    <member type='way' ref='314044977' role='' />
+    <member type='way' ref='483526616' role='' />
+    <member type='way' ref='231154723' role='' />
+    <member type='way' ref='231154721' role='' />
+    <member type='way' ref='231154729' role='' />
+    <member type='way' ref='631422613' role='' />
+    <member type='way' ref='631422583' role='' />
+    <member type='way' ref='631422574' role='' />
+    <member type='way' ref='376168590' role='' />
+    <member type='way' ref='231158418' role='' />
+    <member type='way' ref='231158428' role='' />
+    <member type='way' ref='631422480' role='' />
+    <member type='way' ref='631422470' role='' />
+    <member type='way' ref='533406082' role='' />
+    <member type='way' ref='231158427' role='' />
+    <member type='way' ref='231522885' role='' />
+    <member type='way' ref='460461572' role='' />
+    <member type='way' ref='480290431' role='' />
+    <member type='way' ref='485581035' role='' />
+    <member type='way' ref='485581034' role='' />
+    <member type='way' ref='555303055' role='' />
+    <tag k='charge' v='1.50' />
+    <tag k='duration' v='00:50' />
+    <tag k='fee' v='yes' />
+    <tag k='name' v='Route 9 - North Avenue' />
+    <tag k='opening_hours' v='Mo-Sa 05:15-20:05' />
+    <tag k='operator' v='Grand Valley Transit' />
+    <tag k='route' v='bus' />
+    <tag k='source' v='http://gvt.mesacounty.us/' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='7185095' timestamp='2018-10-07T22:20:34Z' uid='2078753' user='vorpalblade77' visible='true' version='3' changeset='63291279'>
+    <member type='node' ref='2390244305' role='' />
+    <member type='node' ref='4781990478' role='' />
+    <member type='node' ref='4781990479' role='' />
+    <member type='node' ref='4781990480' role='' />
+    <member type='node' ref='4781990481' role='' />
+    <member type='node' ref='4781990482' role='' />
+    <member type='node' ref='4781990483' role='' />
+    <member type='node' ref='4781990484' role='' />
+    <member type='node' ref='4781990485' role='' />
+    <member type='node' ref='4781990486' role='' />
+    <member type='node' ref='4781990487' role='' />
+    <member type='node' ref='4781990488' role='' />
+    <member type='node' ref='4781990489' role='' />
+    <member type='node' ref='4781990490' role='' />
+    <member type='node' ref='4813932008' role='' />
+    <member type='node' ref='4781990491' role='' />
+    <member type='node' ref='4781990492' role='' />
+    <member type='node' ref='4781990493' role='' />
+    <member type='node' ref='4781990494' role='' />
+    <member type='node' ref='4781990495' role='' />
+    <member type='node' ref='4781990496' role='' />
+    <member type='node' ref='4781990497' role='' />
+    <member type='node' ref='4734610237' role='' />
+    <member type='node' ref='4729560285' role='' />
+    <member type='node' ref='4729560286' role='' />
+    <member type='node' ref='4729560287' role='' />
+    <member type='node' ref='4724325585' role='' />
+    <member type='node' ref='4724325586' role='' />
+    <member type='node' ref='4781990498' role='' />
+    <member type='node' ref='4781990499' role='' />
+    <member type='node' ref='4781990500' role='' />
+    <member type='node' ref='4781990501' role='' />
+    <member type='node' ref='4781990502' role='' />
+    <member type='node' ref='4781990503' role='' />
+    <member type='node' ref='4781990504' role='' />
+    <member type='node' ref='4781990505' role='' />
+    <member type='node' ref='4781990506' role='' />
+    <member type='node' ref='4781990507' role='' />
+    <member type='node' ref='4781990508' role='' />
+    <member type='node' ref='4781990509' role='' />
+    <member type='node' ref='4781990510' role='' />
+    <member type='node' ref='4781990511' role='' />
+    <member type='node' ref='4781990512' role='' />
+    <member type='node' ref='4781990513' role='' />
+    <member type='node' ref='2390244305' role='' />
+    <member type='way' ref='476747766' role='' />
+    <member type='way' ref='479919292' role='' />
+    <member type='way' ref='230525410' role='' />
+    <member type='way' ref='479919291' role='' />
+    <member type='way' ref='230525432' role='' />
+    <member type='way' ref='314179755' role='' />
+    <member type='way' ref='314179744' role='' />
+    <member type='way' ref='106365577' role='' />
+    <member type='way' ref='106365578' role='' />
+    <member type='way' ref='314179745' role='' />
+    <member type='way' ref='314179748' role='' />
+    <member type='way' ref='314179761' role='' />
+    <member type='way' ref='106365573' role='' />
+    <member type='way' ref='314179750' role='' />
+    <member type='way' ref='314179757' role='' />
+    <member type='way' ref='314179756' role='' />
+    <member type='way' ref='314179742' role='' />
+    <member type='way' ref='314179758' role='' />
+    <member type='way' ref='314179746' role='' />
+    <member type='way' ref='121895690' role='' />
+    <member type='way' ref='121895689' role='' />
+    <member type='way' ref='314179760' role='' />
+    <member type='way' ref='16999444' role='' />
+    <member type='way' ref='17002034' role='' />
+    <member type='way' ref='121896334' role='' />
+    <member type='way' ref='121896333' role='' />
+    <member type='way' ref='17002290' role='' />
+    <member type='way' ref='121896366' role='' />
+    <member type='way' ref='121896367' role='' />
+    <member type='way' ref='16998204' role='' />
+    <member type='way' ref='489117883' role='' />
+    <member type='way' ref='489117885' role='' />
+    <member type='way' ref='314179762' role='' />
+    <member type='way' ref='314179752' role='' />
+    <member type='way' ref='314187735' role='' />
+    <member type='way' ref='314187742' role='' />
+    <member type='way' ref='314187734' role='' />
+    <member type='way' ref='314187744' role='' />
+    <member type='way' ref='314187740' role='' />
+    <member type='way' ref='314187738' role='' />
+    <member type='way' ref='314187736' role='' />
+    <member type='way' ref='314187751' role='' />
+    <member type='way' ref='314187746' role='' />
+    <member type='way' ref='17002210' role='' />
+    <member type='way' ref='489117882' role='' />
+    <member type='way' ref='489117885' role='' />
+    <member type='way' ref='314179762' role='' />
+    <member type='way' ref='314179752' role='' />
+    <member type='way' ref='314187735' role='' />
+    <member type='way' ref='314187742' role='' />
+    <member type='way' ref='314187734' role='' />
+    <member type='way' ref='314187744' role='' />
+    <member type='way' ref='314187740' role='' />
+    <member type='way' ref='314187738' role='' />
+    <member type='way' ref='314187736' role='' />
+    <member type='way' ref='314187751' role='' />
+    <member type='way' ref='314187746' role='' />
+    <member type='way' ref='489117884' role='' />
+    <member type='way' ref='41815794' role='' />
+    <member type='way' ref='17002216' role='' />
+    <member type='way' ref='17002209' role='' />
+    <member type='way' ref='16998748' role='' />
+    <member type='way' ref='158942786' role='' />
+    <member type='way' ref='231038845' role='' />
+    <member type='way' ref='231038842' role='' />
+    <member type='way' ref='231038839' role='' />
+    <member type='way' ref='231039305' role='' />
+    <member type='way' ref='230913516' role='' />
+    <member type='way' ref='314119201' role='' />
+    <member type='way' ref='314119197' role='' />
+    <member type='way' ref='314119179' role='' />
+    <member type='way' ref='314119171' role='' />
+    <member type='way' ref='314119182' role='' />
+    <member type='way' ref='314119160' role='' />
+    <member type='way' ref='314119162' role='' />
+    <member type='way' ref='314119159' role='' />
+    <member type='way' ref='314119195' role='' />
+    <member type='way' ref='314119192' role='' />
+    <member type='way' ref='314119190' role='' />
+    <member type='way' ref='314119180' role='' />
+    <member type='way' ref='314119174' role='' />
+    <member type='way' ref='314119198' role='' />
+    <member type='way' ref='314119165' role='' />
+    <member type='way' ref='17001221' role='' />
+    <member type='way' ref='460459631' role='' />
+    <member type='way' ref='121895149' role='' />
+    <member type='way' ref='121895152' role='' />
+    <member type='way' ref='480290436' role='' />
+    <member type='way' ref='121895206' role='' />
+    <member type='way' ref='230621321' role='' />
+    <member type='way' ref='230621320' role='' />
+    <member type='way' ref='230525421' role='' />
+    <member type='way' ref='16997610' role='' />
+    <member type='way' ref='489117881' role='' />
+    <member type='way' ref='231039299' role='' />
+    <member type='way' ref='314179747' role='' />
+    <member type='way' ref='314179753' role='' />
+    <member type='way' ref='314179749' role='' />
+    <member type='way' ref='314179760' role='' />
+    <member type='way' ref='121895689' role='' />
+    <member type='way' ref='121895690' role='' />
+    <member type='way' ref='314179746' role='' />
+    <member type='way' ref='314179758' role='' />
+    <member type='way' ref='314179742' role='' />
+    <member type='way' ref='314179756' role='' />
+    <member type='way' ref='314179757' role='' />
+    <member type='way' ref='314179750' role='' />
+    <member type='way' ref='106365573' role='' />
+    <member type='way' ref='314179761' role='' />
+    <member type='way' ref='314179748' role='' />
+    <member type='way' ref='314179745' role='' />
+    <member type='way' ref='106365578' role='' />
+    <member type='way' ref='106365577' role='' />
+    <member type='way' ref='314179744' role='' />
+    <member type='way' ref='314179755' role='' />
+    <member type='way' ref='106365594' role='' />
+    <member type='way' ref='314163875' role='' />
+    <member type='way' ref='479919197' role='' />
+    <member type='way' ref='230522921' role='' />
+    <member type='way' ref='479919292' role='' />
+    <member type='way' ref='476747766' role='' />
+    <tag k='charge' v='1.50' />
+    <tag k='duration' v='00:50' />
+    <tag k='fee' v='yes' />
+    <tag k='name' v='Route 10 Clifton' />
+    <tag k='opening_hours' v='Mo-Sa 04:45-20:35' />
+    <tag k='operator' v='Grand Valley Transit' />
+    <tag k='route' v='bus' />
+    <tag k='source' v='http://gvt.mesacounty.us/' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='7499272' timestamp='2018-11-22T16:00:18Z' uid='8107451' user='njtbusfan' visible='true' version='58' changeset='64786972'>
+    <member type='way' ref='17116928' role='backward' />
+    <member type='way' ref='539232940' role='backward' />
+    <member type='way' ref='539232941' role='backward' />
+    <member type='way' ref='141018338' role='backward' />
+    <member type='way' ref='141018339' role='backward' />
+    <member type='way' ref='17117042' role='backward' />
+    <member type='way' ref='140779023' role='backward' />
+    <member type='way' ref='140779022' role='backward' />
+    <member type='way' ref='17116770' role='backward' />
+    <member type='way' ref='17116934' role='forward' />
+    <member type='way' ref='17117227' role='forward' />
+    <member type='way' ref='17116936' role='forward' />
+    <member type='way' ref='17117104' role='forward' />
+    <member type='way' ref='17116763' role='forward' />
+    <member type='way' ref='168309336' role='forward' />
+    <member type='way' ref='16989766' role='forward' />
+    <member type='way' ref='397588060' role='forward' />
+    <member type='way' ref='140728626' role='forward' />
+    <member type='way' ref='140728632' role='forward' />
+    <member type='way' ref='16990286' role='forward' />
+    <member type='way' ref='16990438' role='forward' />
+    <member type='way' ref='16989757' role='backward' />
+    <member type='way' ref='16990754' role='forward' />
+    <member type='way' ref='16989754' role='forward' />
+    <member type='way' ref='263610004' role='forward' />
+    <member type='way' ref='119057178' role='forward' />
+    <member type='way' ref='119057172' role='forward' />
+    <member type='way' ref='172868576' role='forward' />
+    <member type='way' ref='472425737' role='forward' />
+    <member type='way' ref='374663671' role='forward' />
+    <member type='way' ref='374663672' role='forward' />
+    <member type='way' ref='374657584' role='forward' />
+    <member type='way' ref='33539786' role='forward' />
+    <member type='way' ref='137283797' role='forward' />
+    <member type='way' ref='137283796' role='forward' />
+    <member type='way' ref='137283795' role='forward' />
+    <member type='way' ref='137283798' role='forward' />
+    <member type='way' ref='137283361' role='forward' />
+    <member type='way' ref='137283362' role='forward' />
+    <member type='way' ref='16989591' role='forward' />
+    <member type='way' ref='16990245' role='forward' />
+    <member type='way' ref='137624944' role='forward' />
+    <member type='way' ref='49231415' role='forward' />
+    <member type='way' ref='49231414' role='forward' />
+    <member type='way' ref='16989297' role='forward' />
+    <member type='way' ref='49231412' role='forward' />
+    <member type='way' ref='16989489' role='backward' />
+    <member type='way' ref='140486415' role='backward' />
+    <member type='way' ref='230455474' role='backward' />
+    <member type='way' ref='137367462' role='backward' />
+    <member type='way' ref='137367463' role='forward' />
+    <member type='way' ref='137367504' role='forward' />
+    <member type='way' ref='137367503' role='forward' />
+    <member type='way' ref='233812420' role='forward' />
+    <member type='way' ref='233812418' role='forward' />
+    <member type='way' ref='186241531' role='backward' />
+    <member type='way' ref='137368933' role='backward' />
+    <member type='way' ref='16989745' role='backward' />
+    <member type='way' ref='16990805' role='backward' />
+    <member type='way' ref='136958552' role='backward' />
+    <member type='way' ref='136958550' role='backward' />
+    <member type='way' ref='137186176' role='backward' />
+    <member type='way' ref='137186177' role='backward' />
+    <member type='way' ref='136958551' role='backward' />
+    <member type='way' ref='136958549' role='backward' />
+    <member type='way' ref='136958499' role='backward' />
+    <member type='way' ref='136958497' role='backward' />
+    <member type='way' ref='16989762' role='backward' />
+    <member type='way' ref='42032099' role='backward' />
+    <member type='way' ref='233065160' role='backward' />
+    <member type='way' ref='233065159' role='backward' />
+    <member type='way' ref='233124779' role='backward' />
+    <member type='way' ref='233124777' role='backward' />
+    <member type='way' ref='17111497' role='backward' />
+    <member type='way' ref='17111912' role='backward' />
+    <member type='way' ref='253280312' role='backward' />
+    <member type='way' ref='253280306' role='backward' />
+    <member type='way' ref='253280307' role='backward' />
+    <member type='way' ref='253280317' role='backward' />
+    <member type='way' ref='550625467' role='backward' />
+    <member type='way' ref='49231407' role='backward' />
+    <member type='way' ref='17110288' role='forward' />
+    <member type='way' ref='49233573' role='forward' />
+    <member type='way' ref='136554940' role='forward' />
+    <member type='way' ref='136554943' role='forward' />
+    <member type='way' ref='136554929' role='forward' />
+    <member type='way' ref='136554945' role='forward' />
+    <member type='way' ref='263387966' role='forward' />
+    <member type='way' ref='89389188' role='forward' />
+    <member type='way' ref='263387965' role='forward' />
+    <member type='way' ref='136554927' role='forward' />
+    <member type='way' ref='136554944' role='forward' />
+    <member type='way' ref='136554924' role='forward' />
+    <member type='way' ref='631858465' role='forward' />
+    <member type='way' ref='631858460' role='forward' />
+    <member type='way' ref='136554938' role='forward' />
+    <member type='way' ref='164922825' role='forward' />
+    <member type='way' ref='164922824' role='forward' />
+    <member type='way' ref='263266615' role='forward' />
+    <member type='way' ref='136554934' role='forward' />
+    <member type='way' ref='136554920' role='forward' />
+    <member type='way' ref='136554931' role='forward' />
+    <member type='way' ref='136554922' role='forward' />
+    <member type='way' ref='136554935' role='forward' />
+    <member type='way' ref='48987976' role='forward' />
+    <member type='way' ref='136554973' role='forward' />
+    <member type='way' ref='136554970' role='forward' />
+    <member type='way' ref='52482623' role='forward' />
+    <member type='way' ref='136554977' role='forward' />
+    <member type='way' ref='136554978' role='forward' />
+    <member type='way' ref='52482593' role='forward' />
+    <member type='way' ref='136554972' role='forward' />
+    <member type='way' ref='33458907' role='forward' />
+    <member type='way' ref='81275070' role='forward' />
+    <member type='way' ref='81275069' role='forward' />
+    <member type='way' ref='7686068' role='forward' />
+    <member type='way' ref='81275307' role='forward' />
+    <member type='way' ref='81275306' role='forward' />
+    <member type='way' ref='81276654' role='forward' />
+    <member type='way' ref='81276658' role='forward' />
+    <member type='way' ref='81292454' role='forward' />
+    <member type='way' ref='81292447' role='forward' />
+    <member type='way' ref='263264486' role='forward' />
+    <member type='way' ref='81278711' role='forward' />
+    <member type='way' ref='81278714' role='forward' />
+    <member type='way' ref='417752242' role='forward' />
+    <member type='way' ref='417752239' role='forward' />
+    <member type='way' ref='16970177' role='forward' />
+    <member type='way' ref='259154665' role='forward' />
+    <member type='way' ref='259154664' role='forward' />
+    <member type='way' ref='81287133' role='forward' />
+    <member type='way' ref='81287136' role='forward' />
+    <member type='way' ref='259155835' role='forward' />
+    <member type='way' ref='259155836' role='forward' />
+    <member type='way' ref='265150257' role='forward' />
+    <member type='way' ref='265150256' role='forward' />
+    <member type='way' ref='259153558' role='forward' />
+    <member type='way' ref='265106707' role='forward' />
+    <member type='way' ref='265106708' role='forward' />
+    <member type='way' ref='416582470' role='forward' />
+    <member type='way' ref='136556267' role='forward' />
+    <member type='way' ref='136556270' role='forward' />
+    <member type='way' ref='136556269' role='forward' />
+    <member type='way' ref='136556265' role='forward' />
+    <member type='way' ref='52709371' role='forward' />
+    <member type='way' ref='136556271' role='forward' />
+    <member type='way' ref='136556273' role='forward' />
+    <member type='way' ref='627872524' role='forward' />
+    <member type='way' ref='42084096' role='forward' />
+    <member type='way' ref='99819804' role='forward' />
+    <member type='way' ref='99819802' role='forward' />
+    <member type='way' ref='99819800' role='forward' />
+    <member type='way' ref='46869924' role='forward' />
+    <member type='way' ref='427835080' role='forward' />
+    <member type='way' ref='628822026' role='forward' />
+    <member type='way' ref='427835078' role='forward' />
+    <member type='way' ref='628822025' role='forward' />
+    <member type='way' ref='647582803' role='forward' />
+    <member type='way' ref='628822022' role='forward' />
+    <member type='way' ref='427834097' role='forward' />
+    <member type='way' ref='628822013' role='forward' />
+    <member type='way' ref='427835079' role='forward' />
+    <member type='way' ref='427835082' role='forward' />
+    <member type='way' ref='628822000' role='forward' />
+    <member type='way' ref='427835083' role='forward' />
+    <member type='way' ref='628821997' role='forward' />
+    <member type='way' ref='427834102' role='forward' />
+    <member type='way' ref='628821996' role='forward' />
+    <member type='way' ref='628821995' role='forward' />
+    <member type='way' ref='628821994' role='forward' />
+    <member type='way' ref='628821990' role='forward' />
+    <member type='way' ref='628821991' role='forward' />
+    <member type='way' ref='351387705' role='forward' />
+    <member type='way' ref='106204224' role='forward' />
+    <member type='way' ref='628649495' role='forward' />
+    <member type='way' ref='427833037' role='forward' />
+    <member type='way' ref='427833035' role='forward' />
+    <member type='way' ref='628649485' role='forward' />
+    <member type='way' ref='628649484' role='forward' />
+    <member type='way' ref='111871664' role='forward' />
+    <member type='way' ref='628649483' role='forward' />
+    <member type='way' ref='628649481' role='forward' />
+    <member type='way' ref='42084091' role='forward' />
+    <member type='way' ref='117054977' role='forward' />
+    <member type='way' ref='44769375' role='forward' />
+    <member type='way' ref='111871642' role='forward' />
+    <member type='way' ref='628655281' role='forward' />
+    <member type='way' ref='42084097' role='forward' />
+    <member type='way' ref='42084098' role='forward' />
+    <member type='way' ref='16963556' role='forward' />
+    <member type='way' ref='43075650' role='forward' />
+    <member type='way' ref='628628801' role='forward' />
+    <member type='way' ref='628628810' role='forward' />
+    <member type='way' ref='111871639' role='forward' />
+    <member type='way' ref='628628813' role='forward' />
+    <member type='way' ref='628628814' role='forward' />
+    <member type='way' ref='427827137' role='forward' />
+    <member type='way' ref='43074998' role='forward' />
+    <member type='way' ref='49231016' role='forward' />
+    <member type='way' ref='99818925' role='forward' />
+    <member type='way' ref='628433155' role='forward' />
+    <member type='way' ref='628628844' role='forward' />
+    <member type='way' ref='628628845' role='forward' />
+    <member type='way' ref='49231020' role='forward' />
+    <member type='way' ref='628433164' role='forward' />
+    <member type='way' ref='318995681' role='forward' />
+    <member type='way' ref='24817570' role='forward' />
+    <member type='way' ref='88471269' role='forward' />
+    <member type='way' ref='628433187' role='forward' />
+    <member type='way' ref='511388104' role='forward' />
+    <member type='way' ref='88471271' role='forward' />
+    <member type='way' ref='88471273' role='forward' />
+    <member type='way' ref='24817702' role='forward' />
+    <member type='way' ref='119057134' role='forward' />
+    <member type='way' ref='49230949' role='forward' />
+    <member type='way' ref='628415596' role='forward' />
+    <member type='way' ref='318545124' role='forward' />
+    <member type='way' ref='40679892' role='forward' />
+    <member type='way' ref='40679891' role='forward' />
+    <member type='way' ref='628415625' role='forward' />
+    <member type='way' ref='119057149' role='forward' />
+    <member type='way' ref='36080755' role='forward' />
+    <member type='way' ref='36080746' role='forward' />
+    <member type='way' ref='37355955' role='forward' />
+    <member type='way' ref='37355954' role='forward' />
+    <member type='way' ref='628401840' role='forward' />
+    <member type='way' ref='318995871' role='forward' />
+    <member type='way' ref='427695675' role='forward' />
+    <member type='way' ref='427695676' role='forward' />
+    <member type='way' ref='628599826' role='forward' />
+    <member type='way' ref='325373359' role='forward' />
+    <member type='way' ref='628599830' role='forward' />
+    <member type='way' ref='628599829' role='forward' />
+    <member type='way' ref='325373361' role='forward' />
+    <member type='way' ref='25679249' role='forward' />
+    <member type='way' ref='628604559' role='' />
+    <member type='way' ref='645821620' role='forward' />
+    <member type='way' ref='95462055' role='forward' />
+    <member type='way' ref='95462051' role='forward' />
+    <member type='way' ref='25679242' role='forward' />
+    <member type='way' ref='37703751' role='forward' />
+    <member type='way' ref='95467762' role='forward' />
+    <member type='way' ref='95468217' role='forward' />
+    <member type='way' ref='37703747' role='forward' />
+    <member type='way' ref='177242493' role='forward' />
+    <member type='way' ref='335857778' role='forward' />
+    <member type='way' ref='8421089' role='forward' />
+    <member type='way' ref='335844727' role='forward' />
+    <member type='way' ref='335705589' role='forward' />
+    <member type='way' ref='37586591' role='forward' />
+    <member type='way' ref='37586590' role='forward' />
+    <member type='way' ref='336026129' role='forward' />
+    <member type='way' ref='335711880' role='forward' />
+    <member type='way' ref='335711878' role='forward' />
+    <member type='way' ref='335711883' role='forward' />
+    <member type='way' ref='336017810' role='forward' />
+    <member type='way' ref='394535364' role='forward' />
+    <member type='way' ref='427708171' role='forward' />
+    <member type='way' ref='427708172' role='forward' />
+    <member type='way' ref='335711885' role='forward' />
+    <member type='way' ref='627243542' role='forward' />
+    <member type='way' ref='335711881' role='forward' />
+    <member type='way' ref='334271303' role='forward' />
+    <member type='way' ref='37586121' role='forward' />
+    <member type='way' ref='37586120' role='forward' />
+    <member type='way' ref='334423243' role='forward' />
+    <member type='way' ref='37586118' role='forward' />
+    <member type='way' ref='37586119' role='forward' />
+    <member type='way' ref='38557999' role='forward' />
+    <member type='way' ref='130909807' role='forward' />
+    <member type='way' ref='488119616' role='forward' />
+    <member type='way' ref='335158784' role='forward' />
+    <member type='way' ref='488121921' role='forward' />
+    <member type='way' ref='38557614' role='forward' />
+    <member type='way' ref='43104036' role='forward' />
+    <member type='way' ref='647582754' role='forward' />
+    <member type='way' ref='359508411' role='forward' />
+    <member type='way' ref='647810746' role='forward' />
+    <member type='way' ref='37586195' role='forward' />
+    <member type='way' ref='647582788' role='forward' />
+    <member type='way' ref='38557095' role='forward' />
+    <member type='way' ref='427696020' role='forward' />
+    <member type='way' ref='17088051' role='forward' />
+    <member type='way' ref='427696018' role='forward' />
+    <member type='way' ref='427696019' role='forward' />
+    <member type='way' ref='37551870' role='forward' />
+    <member type='way' ref='484287795' role='forward' />
+    <member type='way' ref='492253010' role='forward' />
+    <member type='way' ref='427838688' role='forward' />
+    <member type='way' ref='427838687' role='forward' />
+    <member type='way' ref='427838686' role='forward' />
+    <member type='way' ref='492253011' role='forward' />
+    <member type='way' ref='37551855' role='forward' />
+    <member type='way' ref='533496339' role='forward' />
+    <member type='way' ref='645156330' role='forward' />
+    <member type='way' ref='533503591' role='forward' />
+    <member type='way' ref='533503590' role='forward' />
+    <member type='way' ref='642354069' role='forward' />
+    <member type='way' ref='533494590' role='forward' />
+    <member type='way' ref='642315649' role='forward' />
+    <member type='way' ref='17088053' role='forward' />
+    <member type='way' ref='35309128' role='forward' />
+    <member type='way' ref='627829719' role='forward' />
+    <member type='way' ref='35309129' role='forward' />
+    <member type='way' ref='642763383' role='forward' />
+    <member type='way' ref='642763381' role='forward' />
+    <member type='way' ref='642763382' role='forward' />
+    <member type='way' ref='627829718' role='forward' />
+    <member type='way' ref='17088048' role='forward' />
+    <member type='way' ref='627829712' role='forward' />
+    <member type='way' ref='642765275' role='forward' />
+    <member type='way' ref='642765274' role='forward' />
+    <member type='way' ref='642765273' role='forward' />
+    <member type='way' ref='119057114' role='forward' />
+    <member type='way' ref='119057166' role='forward' />
+    <member type='way' ref='642765276' role='forward' />
+    <member type='way' ref='642776349' role='forward' />
+    <member type='way' ref='35896830' role='forward' />
+    <member type='way' ref='35896829' role='forward' />
+    <member type='way' ref='56121142' role='forward' />
+    <member type='way' ref='56121143' role='forward' />
+    <member type='way' ref='56121089' role='forward' />
+    <member type='way' ref='56121088' role='forward' />
+    <member type='way' ref='35896687' role='forward' />
+    <member type='way' ref='35896686' role='forward' />
+    <member type='way' ref='35896684' role='forward' />
+    <member type='way' ref='35896685' role='forward' />
+    <member type='way' ref='56121011' role='forward' />
+    <member type='way' ref='618382953' role='forward' />
+    <member type='way' ref='618382978' role='forward' />
+    <member type='way' ref='618382962' role='forward' />
+    <member type='way' ref='56121008' role='forward' />
+    <member type='way' ref='618378734' role='forward' />
+    <member type='way' ref='618378736' role='forward' />
+    <member type='way' ref='517791573' role='forward' />
+    <member type='way' ref='56051495' role='backward' />
+    <member type='way' ref='618378737' role='backward' />
+    <member type='way' ref='618378733' role='backward' />
+    <member type='way' ref='35899013' role='backward' />
+    <member type='way' ref='35899014' role='backward' />
+    <member type='way' ref='56051470' role='backward' />
+    <member type='way' ref='56051471' role='backward' />
+    <member type='way' ref='618376842' role='backward' />
+    <member type='way' ref='618376844' role='backward' />
+    <member type='way' ref='618376843' role='backward' />
+    <member type='way' ref='35899034' role='backward' />
+    <member type='way' ref='35899035' role='backward' />
+    <member type='way' ref='56051420' role='backward' />
+    <member type='way' ref='56051419' role='backward' />
+    <member type='way' ref='618373520' role='backward' />
+    <member type='way' ref='618373519' role='backward' />
+    <member type='way' ref='618372588' role='backward' />
+    <member type='way' ref='49245447' role='backward' />
+    <member type='way' ref='618372587' role='backward' />
+    <member type='way' ref='618372594' role='backward' />
+    <member type='way' ref='618372589' role='backward' />
+    <member type='way' ref='618372595' role='backward' />
+    <member type='way' ref='618372593' role='backward' />
+    <member type='way' ref='618372590' role='backward' />
+    <member type='way' ref='618372592' role='backward' />
+    <member type='way' ref='618372591' role='backward' />
+    <member type='way' ref='179922747' role='backward' />
+    <member type='way' ref='17026608' role='backward' />
+    <member type='way' ref='17023891' role='forward' />
+    <member type='way' ref='58603277' role='forward' />
+    <member type='way' ref='618192150' role='forward' />
+    <member type='way' ref='372645676' role='forward' />
+    <member type='way' ref='32904200' role='forward' />
+    <member type='way' ref='32904201' role='forward' />
+    <member type='way' ref='372645677' role='forward' />
+    <member type='way' ref='618152040' role='forward' />
+    <member type='way' ref='399108858' role='forward' />
+    <member type='way' ref='399108859' role='forward' />
+    <member type='way' ref='618152030' role='forward' />
+    <member type='way' ref='32904063' role='forward' />
+    <member type='way' ref='32904066' role='forward' />
+    <member type='way' ref='32904059' role='forward' />
+    <member type='way' ref='32904060' role='forward' />
+    <member type='way' ref='617948529' role='forward' />
+    <member type='way' ref='617948530' role='forward' />
+    <member type='way' ref='617948537' role='forward' />
+    <member type='way' ref='617948532' role='forward' />
+    <member type='way' ref='617948535' role='forward' />
+    <member type='way' ref='32903077' role='forward' />
+    <member type='way' ref='32903078' role='forward' />
+    <member type='way' ref='81343473' role='forward' />
+    <member type='way' ref='81343474' role='forward' />
+    <member type='way' ref='617944243' role='forward' />
+    <member type='way' ref='617944244' role='forward' />
+    <member type='way' ref='617944251' role='forward' />
+    <member type='way' ref='617944246' role='forward' />
+    <member type='way' ref='80643765' role='forward' />
+    <member type='way' ref='80643754' role='forward' />
+    <member type='way' ref='617935971' role='forward' />
+    <member type='way' ref='617935972' role='forward' />
+    <member type='way' ref='562103180' role='forward' />
+    <member type='way' ref='32866485' role='forward' />
+    <member type='way' ref='32866486' role='forward' />
+    <member type='way' ref='617902013' role='forward' />
+    <member type='way' ref='617902014' role='forward' />
+    <member type='way' ref='608138049' role='forward' />
+    <member type='way' ref='608138048' role='forward' />
+    <member type='way' ref='562103181' role='forward' />
+    <member type='way' ref='32863789' role='forward' />
+    <member type='way' ref='32863790' role='forward' />
+    <member type='way' ref='617735256' role='forward' />
+    <member type='way' ref='617735268' role='forward' />
+    <member type='way' ref='617735271' role='forward' />
+    <member type='way' ref='32863783' role='forward' />
+    <member type='way' ref='32863785' role='forward' />
+    <member type='way' ref='32843429' role='forward' />
+    <member type='way' ref='32843430' role='forward' />
+    <member type='way' ref='49245437' role='forward' />
+    <member type='way' ref='32842701' role='forward' />
+    <member type='way' ref='32842702' role='forward' />
+    <member type='way' ref='32842023' role='forward' />
+    <member type='way' ref='32842025' role='forward' />
+    <member type='way' ref='32841839' role='forward' />
+    <member type='way' ref='32841840' role='forward' />
+    <member type='way' ref='133368999' role='forward' />
+    <member type='way' ref='32840987' role='forward' />
+    <member type='way' ref='32840989' role='forward' />
+    <member type='way' ref='17023395' role='forward' />
+    <member type='way' ref='49230938' role='forward' />
+    <member type='way' ref='133369011' role='forward' />
+    <member type='way' ref='17026580' role='backward' />
+    <member type='way' ref='38886676' role='backward' />
+    <member type='way' ref='531375320' role='backward' />
+    <member type='way' ref='38886626' role='backward' />
+    <member type='way' ref='90635665' role='backward' />
+    <member type='way' ref='90637233' role='forward' />
+    <member type='way' ref='135077970' role='forward' />
+    <member type='way' ref='570118572' role='forward' />
+    <member type='way' ref='570118571' role='forward' />
+    <member type='way' ref='570121202' role='forward' />
+    <member type='way' ref='570121210' role='forward' />
+    <member type='way' ref='570121201' role='forward' />
+    <member type='way' ref='570121212' role='forward' />
+    <member type='way' ref='570121192' role='forward' />
+    <member type='way' ref='570121206' role='forward' />
+    <member type='way' ref='570121196' role='forward' />
+    <member type='way' ref='570121193' role='forward' />
+    <member type='way' ref='90686577' role='forward' />
+    <member type='way' ref='90686847' role='backward' />
+    <member type='way' ref='90686851' role='backward' />
+    <member type='way' ref='117054844' role='backward' />
+    <member type='way' ref='107117097' role='forward' />
+    <member type='way' ref='107117095' role='forward' />
+    <member type='way' ref='107115717' role='forward' />
+    <member type='way' ref='135077991' role='forward' />
+    <member type='way' ref='107115727' role='forward' />
+    <member type='way' ref='135068575' role='forward' />
+    <member type='way' ref='107115677' role='forward' />
+    <member type='way' ref='630224912' role='forward' />
+    <member type='way' ref='630224913' role='forward' />
+    <member type='way' ref='39404236' role='forward' />
+    <member type='way' ref='106204218' role='forward' />
+    <member type='way' ref='32837565' role='forward' />
+    <member type='way' ref='32837566' role='forward' />
+    <member type='way' ref='310656807' role='forward' />
+    <member type='way' ref='310656808' role='forward' />
+    <member type='way' ref='310656812' role='forward' />
+    <member type='way' ref='106204142' role='forward' />
+    <member type='way' ref='32829080' role='forward' />
+    <member type='way' ref='32829081' role='forward' />
+    <member type='way' ref='134934075' role='forward' />
+    <member type='way' ref='32828863' role='forward' />
+    <member type='way' ref='134934076' role='forward' />
+    <member type='way' ref='32828866' role='forward' />
+    <member type='way' ref='135891982' role='forward' />
+    <member type='way' ref='135891963' role='forward' />
+    <member type='way' ref='125578287' role='forward' />
+    <member type='way' ref='125578288' role='forward' />
+    <member type='way' ref='125705891' role='forward' />
+    <member type='way' ref='125705890' role='forward' />
+    <member type='way' ref='125705948' role='forward' />
+    <member type='way' ref='125705951' role='forward' />
+    <member type='way' ref='125706114' role='forward' />
+    <member type='way' ref='125706113' role='forward' />
+    <member type='way' ref='135625681' role='forward' />
+    <member type='way' ref='135625679' role='forward' />
+    <member type='way' ref='32815190' role='forward' />
+    <member type='way' ref='32815191' role='forward' />
+    <member type='way' ref='125836963' role='forward' />
+    <member type='way' ref='125836964' role='forward' />
+    <member type='way' ref='32807196' role='forward' />
+    <member type='way' ref='32807197' role='forward' />
+    <member type='way' ref='32806865' role='forward' />
+    <member type='way' ref='32806866' role='forward' />
+    <member type='way' ref='32806561' role='forward' />
+    <member type='way' ref='32806562' role='forward' />
+    <member type='way' ref='32805921' role='forward' />
+    <member type='way' ref='32805922' role='forward' />
+    <member type='way' ref='32804310' role='forward' />
+    <member type='way' ref='32804311' role='forward' />
+    <member type='way' ref='165563993' role='forward' />
+    <member type='way' ref='165563995' role='forward' />
+    <member type='way' ref='122888709' role='forward' />
+    <member type='way' ref='122888712' role='forward' />
+    <member type='way' ref='32803826' role='forward' />
+    <member type='way' ref='32803827' role='forward' />
+    <member type='way' ref='17039673' role='forward' />
+    <member type='way' ref='630216380' role='forward' />
+    <member type='way' ref='49229941' role='forward' />
+    <member type='way' ref='179922733' role='forward' />
+    <member type='way' ref='236592918' role='forward' />
+    <member type='way' ref='17046318' role='forward' />
+    <member type='way' ref='236592919' role='forward' />
+    <member type='way' ref='236592920' role='forward' />
+    <member type='way' ref='201157626' role='forward' />
+    <member type='way' ref='517791582' role='forward' />
+    <member type='way' ref='201157630' role='forward' />
+    <member type='way' ref='201157607' role='forward' />
+    <member type='way' ref='17046264' role='forward' />
+    <member type='way' ref='17045727' role='forward' />
+    <member type='way' ref='119009568' role='forward' />
+    <member type='way' ref='119009567' role='forward' />
+    <member type='way' ref='106339566' role='forward' />
+    <member type='way' ref='17043965' role='forward' />
+    <member type='way' ref='17045684' role='forward' />
+    <member type='way' ref='32800024' role='backward' />
+    <member type='way' ref='32800023' role='backward' />
+    <member type='way' ref='17040493' role='backward' />
+    <member type='way' ref='494426184' role='backward' />
+    <member type='way' ref='240222384' role='backward' />
+    <member type='way' ref='240222390' role='backward' />
+    <member type='way' ref='118408603' role='backward' />
+    <member type='way' ref='118408602' role='backward' />
+    <member type='way' ref='17045743' role='backward' />
+    <member type='way' ref='387453719' role='forward' />
+    <member type='way' ref='32799541' role='forward' />
+    <member type='way' ref='441635703' role='forward' />
+    <member type='way' ref='517791576' role='forward' />
+    <member type='way' ref='517791572' role='forward' />
+    <member type='way' ref='17045679' role='forward' />
+    <member type='way' ref='449025272' role='forward' />
+    <member type='way' ref='449025271' role='forward' />
+    <member type='way' ref='117896141' role='forward' />
+    <member type='way' ref='117896142' role='forward' />
+    <member type='way' ref='201175173' role='forward' />
+    <member type='way' ref='201175172' role='forward' />
+    <member type='way' ref='17045690' role='forward' />
+    <member type='way' ref='201175175' role='forward' />
+    <member type='way' ref='492447760' role='forward' />
+    <member type='way' ref='492447759' role='forward' />
+    <member type='way' ref='32782058' role='backward' />
+    <member type='way' ref='105953455' role='backward' />
+    <member type='way' ref='364944782' role='backward' />
+    <member type='way' ref='364944785' role='backward' />
+    <member type='way' ref='364944784' role='backward' />
+    <member type='way' ref='451809033' role='forward' />
+    <member type='way' ref='451809019' role='forward' />
+    <member type='way' ref='451809024' role='forward' />
+    <member type='way' ref='451809025' role='forward' />
+    <member type='way' ref='451809030' role='forward' />
+    <member type='way' ref='165567947' role='forward' />
+    <member type='way' ref='165567961' role='forward' />
+    <member type='way' ref='17055760' role='forward' />
+    <member type='way' ref='42989308' role='forward' />
+    <member type='way' ref='42989318' role='forward' />
+    <member type='way' ref='32772317' role='forward' />
+    <member type='way' ref='32772319' role='forward' />
+    <member type='way' ref='159737340' role='forward' />
+    <member type='way' ref='159737342' role='forward' />
+    <member type='way' ref='32771433' role='forward' />
+    <member type='way' ref='32771434' role='forward' />
+    <member type='way' ref='42989314' role='forward' />
+    <member type='way' ref='32748709' role='forward' />
+    <member type='way' ref='32748710' role='forward' />
+    <member type='way' ref='32747543' role='forward' />
+    <member type='way' ref='62343921' role='forward' />
+    <member type='way' ref='42989335' role='forward' />
+    <member type='way' ref='42989365' role='forward' />
+    <member type='way' ref='179922641' role='forward' />
+    <member type='way' ref='179922620' role='forward' />
+    <member type='way' ref='105563580' role='forward' />
+    <member type='way' ref='105563583' role='forward' />
+    <member type='way' ref='179922569' role='forward' />
+    <member type='way' ref='179922616' role='forward' />
+    <member type='way' ref='179922589' role='forward' />
+    <member type='way' ref='179922594' role='forward' />
+    <member type='way' ref='179922602' role='forward' />
+    <member type='way' ref='179922632' role='forward' />
+    <member type='way' ref='223631841' role='forward' />
+    <member type='way' ref='223631838' role='forward' />
+    <member type='way' ref='105564667' role='forward' />
+    <member type='way' ref='105564668' role='forward' />
+    <member type='way' ref='223631839' role='forward' />
+    <member type='way' ref='223631837' role='forward' />
+    <member type='way' ref='32707315' role='forward' />
+    <member type='way' ref='32707316' role='forward' />
+    <member type='way' ref='32706671' role='forward' />
+    <member type='way' ref='32706672' role='forward' />
+    <member type='way' ref='32679781' role='forward' />
+    <member type='way' ref='32679780' role='forward' />
+    <member type='way' ref='133369007' role='forward' />
+    <member type='way' ref='17055743' role='forward' />
+    <member type='way' ref='32677885' role='forward' />
+    <member type='way' ref='32677888' role='forward' />
+    <member type='way' ref='17050850' role='forward' />
+    <member type='way' ref='32661725' role='backward' />
+    <member type='way' ref='223937665' role='backward' />
+    <member type='way' ref='223937670' role='backward' />
+    <member type='way' ref='311391838' role='backward' />
+    <member type='way' ref='311391844' role='backward' />
+    <member type='way' ref='311391836' role='backward' />
+    <member type='way' ref='311391842' role='backward' />
+    <member type='way' ref='311391843' role='backward' />
+    <member type='way' ref='311391840' role='backward' />
+    <member type='way' ref='311391835' role='backward' />
+    <member type='way' ref='311391846' role='backward' />
+    <member type='way' ref='17054076' role='backward' />
+    <member type='way' ref='17055285' role='forward' />
+    <member type='way' ref='311391848' role='forward' />
+    <member type='way' ref='311391837' role='backward' />
+    <member type='way' ref='311391849' role='backward' />
+    <member type='way' ref='311391845' role='backward' />
+    <member type='way' ref='311391839' role='backward' />
+    <member type='way' ref='17054246' role='backward' />
+    <member type='way' ref='311358339' role='backward' />
+    <member type='way' ref='311358341' role='backward' />
+    <member type='way' ref='311358340' role='backward' />
+    <member type='way' ref='17054067' role='backward' />
+    <member type='way' ref='17055808' role='forward' />
+    <member type='way' ref='311357560' role='forward' />
+    <member type='way' ref='517791551' role='forward' />
+    <member type='way' ref='311357558' role='forward' />
+    <member type='way' ref='311357559' role='forward' />
+    <member type='way' ref='311357124' role='forward' />
+    <member type='way' ref='311357125' role='forward' />
+    <member type='way' ref='311357568' role='forward' />
+    <member type='way' ref='17054248' role='forward' />
+    <member type='way' ref='17055062' role='forward' />
+    <member type='way' ref='311356744' role='forward' />
+    <member type='way' ref='311356738' role='forward' />
+    <member type='way' ref='311356743' role='forward' />
+    <member type='way' ref='311356741' role='forward' />
+    <member type='way' ref='311356745' role='forward' />
+    <member type='way' ref='311355802' role='forward' />
+    <member type='way' ref='311355361' role='backward' />
+    <member type='way' ref='311355362' role='backward' />
+    <member type='way' ref='49180850' role='backward' />
+    <member type='way' ref='311348282' role='backward' />
+    <member type='way' ref='117447333' role='backward' />
+    <member type='way' ref='117447329' role='backward' />
+    <member type='way' ref='311348969' role='backward' />
+    <member type='way' ref='311348970' role='backward' />
+    <member type='way' ref='286930000' role='backward' />
+    <member type='way' ref='49180852' role='backward' />
+    <member type='way' ref='286929999' role='backward' />
+    <member type='way' ref='17054066' role='backward' />
+    <member type='way' ref='49180135' role='backward' />
+    <member type='way' ref='179922884' role='forward' />
+    <member type='way' ref='371058142' role='forward' />
+    <member type='way' ref='32531222' role='forward' />
+    <member type='way' ref='32531223' role='forward' />
+    <member type='way' ref='32531040' role='forward' />
+    <member type='way' ref='32531042' role='forward' />
+    <member type='way' ref='115562977' role='forward' />
+    <member type='way' ref='115563003' role='forward' />
+    <member type='way' ref='32530122' role='forward' />
+    <member type='way' ref='32530121' role='forward' />
+    <member type='way' ref='115430699' role='forward' />
+    <member type='way' ref='520406557' role='forward' />
+    <member type='way' ref='520406556' role='forward' />
+    <member type='way' ref='520406555' role='forward' />
+    <member type='way' ref='520406554' role='forward' />
+    <member type='way' ref='115430704' role='forward' />
+    <member type='way' ref='32487466' role='forward' />
+    <member type='way' ref='32487467' role='forward' />
+    <member type='way' ref='32487333' role='forward' />
+    <member type='way' ref='32487334' role='forward' />
+    <member type='way' ref='32123955' role='forward' />
+    <member type='way' ref='32487194' role='forward' />
+    <member type='way' ref='32487196' role='forward' />
+    <member type='way' ref='120721510' role='forward' />
+    <member type='way' ref='120721509' role='forward' />
+    <member type='way' ref='120721511' role='forward' />
+    <member type='way' ref='120721507' role='forward' />
+    <member type='way' ref='49232693' role='forward' />
+    <member type='way' ref='32223506' role='forward' />
+    <member type='way' ref='32223507' role='forward' />
+    <member type='way' ref='120084154' role='forward' />
+    <member type='way' ref='120084157' role='forward' />
+    <member type='way' ref='120084155' role='forward' />
+    <member type='way' ref='120084150' role='forward' />
+    <member type='way' ref='133369001' role='forward' />
+    <member type='way' ref='32223174' role='forward' />
+    <member type='way' ref='32223173' role='forward' />
+    <member type='way' ref='32223171' role='forward' />
+    <member type='way' ref='32223176' role='forward' />
+    <member type='way' ref='32223175' role='forward' />
+    <member type='way' ref='133368998' role='forward' />
+    <member type='way' ref='120084153' role='forward' />
+    <member type='way' ref='120084158' role='forward' />
+    <member type='way' ref='32222855' role='forward' />
+    <member type='way' ref='32222856' role='forward' />
+    <member type='way' ref='49179790' role='forward' />
+    <member type='way' ref='32222249' role='forward' />
+    <member type='way' ref='515880386' role='forward' />
+    <member type='way' ref='515880389' role='forward' />
+    <member type='way' ref='17002767' role='forward' />
+    <member type='way' ref='49179773' role='forward' />
+    <member type='way' ref='541152615' role='forward' />
+    <member type='way' ref='541152612' role='forward' />
+    <member type='way' ref='119057175' role='forward' />
+    <member type='way' ref='17000308' role='forward' />
+    <member type='way' ref='17000309' role='forward' />
+    <member type='way' ref='119057106' role='forward' />
+    <member type='way' ref='479919220' role='forward' />
+    <member type='way' ref='17002771' role='forward' />
+    <member type='way' ref='479919224' role='forward' />
+    <member type='way' ref='16999100' role='backward' />
+    <member type='way' ref='479919274' role='backward' />
+    <member type='way' ref='479919241' role='backward' />
+    <member type='way' ref='479919246' role='backward' />
+    <member type='way' ref='479919253' role='backward' />
+    <member type='way' ref='479919259' role='backward' />
+    <member type='way' ref='479919265' role='backward' />
+    <member type='way' ref='230522926' role='backward' />
+    <member type='way' ref='230522927' role='backward' />
+    <member type='way' ref='17002149' role='backward' />
+    <member type='way' ref='630799510' role='backward' />
+    <member type='way' ref='230521346' role='backward' />
+    <member type='way' ref='119057171' role='backward' />
+    <member type='way' ref='479919289' role='backward' />
+    <member type='way' ref='479919290' role='backward' />
+    <member type='way' ref='124376146' role='backward' />
+    <member type='way' ref='49179770' role='forward' />
+    <member type='way' ref='120911097' role='forward' />
+    <member type='way' ref='314163847' role='forward' />
+    <member type='way' ref='314163827' role='forward' />
+    <member type='way' ref='314163829' role='forward' />
+    <member type='way' ref='314163836' role='forward' />
+    <member type='way' ref='314163862' role='forward' />
+    <member type='way' ref='314163855' role='forward' />
+    <member type='way' ref='314163875' role='forward' />
+    <member type='way' ref='314159739' role='forward' />
+    <member type='way' ref='314159747' role='forward' />
+    <member type='way' ref='314159741' role='forward' />
+    <member type='way' ref='314159753' role='forward' />
+    <member type='way' ref='314159702' role='forward' />
+    <member type='way' ref='314159754' role='forward' />
+    <member type='way' ref='314159752' role='forward' />
+    <member type='way' ref='120911095' role='forward' />
+    <member type='way' ref='120912046' role='forward' />
+    <member type='way' ref='314159727' role='forward' />
+    <member type='way' ref='314159723' role='forward' />
+    <member type='way' ref='314159743' role='forward' />
+    <member type='way' ref='314159749' role='forward' />
+    <member type='way' ref='314159707' role='forward' />
+    <member type='way' ref='314159730' role='forward' />
+    <member type='way' ref='230620908' role='forward' />
+    <member type='way' ref='120912180' role='forward' />
+    <member type='way' ref='483526615' role='forward' />
+    <member type='way' ref='17002150' role='forward' />
+    <member type='way' ref='314119185' role='forward' />
+    <member type='way' ref='314119176' role='forward' />
+    <member type='way' ref='314119183' role='forward' />
+    <member type='way' ref='314119194' role='forward' />
+    <member type='way' ref='314119175' role='forward' />
+    <member type='way' ref='314119203' role='forward' />
+    <member type='way' ref='314119173' role='forward' />
+    <member type='way' ref='314119170' role='forward' />
+    <member type='way' ref='314119188' role='forward' />
+    <member type='way' ref='314119186' role='forward' />
+    <member type='way' ref='314119181' role='forward' />
+    <member type='way' ref='314119199' role='forward' />
+    <member type='way' ref='314119189' role='forward' />
+    <member type='way' ref='314119184' role='forward' />
+    <member type='way' ref='314119193' role='forward' />
+    <member type='way' ref='314119168' role='forward' />
+    <member type='way' ref='314119163' role='forward' />
+    <member type='way' ref='314119177' role='forward' />
+    <member type='way' ref='314119191' role='forward' />
+    <member type='way' ref='230913517' role='forward' />
+    <member type='way' ref='460459628' role='forward' />
+    <member type='way' ref='314048254' role='forward' />
+    <member type='way' ref='314048237' role='forward' />
+    <member type='way' ref='314048251' role='forward' />
+    <member type='way' ref='314048269' role='forward' />
+    <member type='way' ref='314048277' role='forward' />
+    <member type='way' ref='314048231' role='forward' />
+    <member type='way' ref='314048246' role='forward' />
+    <member type='way' ref='314048273' role='forward' />
+    <member type='way' ref='314048256' role='forward' />
+    <member type='way' ref='314048255' role='forward' />
+    <member type='way' ref='314048260' role='forward' />
+    <member type='way' ref='314048276' role='forward' />
+    <member type='way' ref='314048245' role='forward' />
+    <member type='way' ref='314048244' role='forward' />
+    <member type='way' ref='314048249' role='forward' />
+    <member type='way' ref='314048281' role='forward' />
+    <member type='way' ref='314048247' role='forward' />
+    <member type='way' ref='314048267' role='forward' />
+    <member type='way' ref='314048233' role='forward' />
+    <member type='way' ref='314048278' role='forward' />
+    <member type='way' ref='314048265' role='forward' />
+    <member type='way' ref='314048257' role='forward' />
+    <member type='way' ref='314048243' role='forward' />
+    <member type='way' ref='314048241' role='forward' />
+    <member type='way' ref='314048282' role='forward' />
+    <member type='way' ref='314048253' role='forward' />
+    <member type='way' ref='314048266' role='forward' />
+    <member type='way' ref='314047091' role='forward' />
+    <member type='way' ref='314047078' role='forward' />
+    <member type='way' ref='314047073' role='forward' />
+    <member type='way' ref='314047099' role='forward' />
+    <member type='way' ref='314047072' role='forward' />
+    <member type='way' ref='314047104' role='forward' />
+    <member type='way' ref='314047105' role='forward' />
+    <member type='way' ref='314047076' role='forward' />
+    <member type='way' ref='314047089' role='forward' />
+    <member type='way' ref='314047084' role='forward' />
+    <member type='way' ref='314047070' role='forward' />
+    <member type='way' ref='314047081' role='forward' />
+    <member type='way' ref='314047068' role='forward' />
+    <member type='way' ref='314047085' role='forward' />
+    <member type='way' ref='230910284' role='forward' />
+    <member type='way' ref='314044962' role='forward' />
+    <member type='way' ref='314044979' role='forward' />
+    <member type='way' ref='314044984' role='forward' />
+    <member type='way' ref='314044970' role='forward' />
+    <member type='way' ref='314045007' role='forward' />
+    <member type='way' ref='314045005' role='forward' />
+    <member type='way' ref='314045009' role='forward' />
+    <member type='way' ref='314045010' role='forward' />
+    <member type='way' ref='314044977' role='forward' />
+    <member type='way' ref='314044999' role='forward' />
+    <member type='way' ref='314044991' role='forward' />
+    <member type='way' ref='314044965' role='forward' />
+    <member type='way' ref='314044980' role='forward' />
+    <member type='way' ref='314044996' role='forward' />
+    <member type='way' ref='314044976' role='forward' />
+    <member type='way' ref='314045006' role='forward' />
+    <member type='way' ref='314044973' role='forward' />
+    <member type='way' ref='314044981' role='forward' />
+    <member type='way' ref='314044964' role='forward' />
+    <member type='way' ref='314044968' role='forward' />
+    <member type='way' ref='314044989' role='forward' />
+    <member type='way' ref='314042758' role='forward' />
+    <member type='way' ref='314042759' role='forward' />
+    <member type='way' ref='124376203' role='forward' />
+    <member type='way' ref='124376206' role='forward' />
+    <member type='way' ref='625610285' role='forward' />
+    <member type='way' ref='625610284' role='forward' />
+    <member type='way' ref='314035652' role='forward' />
+    <member type='way' ref='314035650' role='forward' />
+    <member type='way' ref='314035654' role='forward' />
+    <member type='way' ref='314035651' role='forward' />
+    <member type='way' ref='625610283' role='forward' />
+    <member type='way' ref='314035646' role='forward' />
+    <member type='way' ref='625610282' role='forward' />
+    <member type='way' ref='314035653' role='forward' />
+    <member type='way' ref='314035656' role='forward' />
+    <member type='way' ref='230390228' role='forward' />
+    <member type='way' ref='314033388' role='forward' />
+    <member type='way' ref='489667184' role='forward' />
+    <member type='way' ref='314033389' role='forward' />
+    <member type='way' ref='314033379' role='forward' />
+    <member type='way' ref='314033381' role='forward' />
+    <member type='way' ref='314033380' role='forward' />
+    <member type='way' ref='314033385' role='forward' />
+    <member type='way' ref='314033374' role='forward' />
+    <member type='way' ref='314033377' role='forward' />
+    <member type='way' ref='314033391' role='forward' />
+    <member type='way' ref='314033386' role='forward' />
+    <member type='way' ref='314033383' role='forward' />
+    <member type='way' ref='314033376' role='forward' />
+    <member type='way' ref='230286142' role='forward' />
+    <member type='way' ref='314033372' role='forward' />
+    <member type='way' ref='495960335' role='forward' />
+    <member type='way' ref='314029912' role='forward' />
+    <member type='way' ref='314029902' role='forward' />
+    <member type='way' ref='314029914' role='forward' />
+    <member type='way' ref='230174609' role='forward' />
+    <member type='way' ref='314029905' role='forward' />
+    <member type='way' ref='230174601' role='forward' />
+    <member type='way' ref='314029917' role='forward' />
+    <member type='way' ref='314029904' role='forward' />
+    <member type='way' ref='314029903' role='forward' />
+    <member type='way' ref='314029906' role='forward' />
+    <member type='way' ref='314029915' role='forward' />
+    <member type='way' ref='230171973' role='forward' />
+    <member type='way' ref='314029922' role='forward' />
+    <member type='way' ref='387526661' role='forward' />
+    <member type='way' ref='279941742' role='forward' />
+    <member type='way' ref='279941745' role='forward' />
+    <member type='way' ref='314041362' role='forward' />
+    <member type='way' ref='387526662' role='forward' />
+    <member type='way' ref='279941748' role='forward' />
+    <member type='way' ref='279941743' role='forward' />
+    <member type='way' ref='314024093' role='forward' />
+    <member type='way' ref='279943240' role='forward' />
+    <member type='way' ref='314024097' role='forward' />
+    <member type='way' ref='314024094' role='forward' />
+    <member type='way' ref='314024095' role='forward' />
+    <member type='way' ref='314024096' role='forward' />
+    <member type='way' ref='279937049' role='backward' />
+    <member type='way' ref='119049109' role='backward' />
+    <member type='way' ref='313969944' role='backward' />
+    <member type='way' ref='313962900' role='backward' />
+    <member type='way' ref='230773992' role='backward' />
+    <member type='way' ref='313962898' role='backward' />
+    <member type='way' ref='313962910' role='backward' />
+    <member type='way' ref='313962905' role='backward' />
+    <member type='way' ref='313962896' role='backward' />
+    <member type='way' ref='313962917' role='backward' />
+    <member type='way' ref='313962897' role='backward' />
+    <member type='way' ref='263022348' role='backward' />
+    <member type='way' ref='313962913' role='backward' />
+    <member type='way' ref='313962912' role='backward' />
+    <member type='way' ref='313962911' role='backward' />
+    <member type='way' ref='313962904' role='backward' />
+    <member type='way' ref='313962909' role='backward' />
+    <member type='way' ref='313962908' role='backward' />
+    <member type='way' ref='313910977' role='backward' />
+    <member type='way' ref='313910975' role='backward' />
+    <member type='way' ref='313910976' role='backward' />
+    <member type='way' ref='515927114' role='backward' />
+    <member type='way' ref='313910755' role='backward' />
+    <member type='way' ref='313906712' role='backward' />
+    <member type='way' ref='313906715' role='backward' />
+    <member type='way' ref='313906705' role='backward' />
+    <member type='way' ref='313906700' role='backward' />
+    <member type='way' ref='313906719' role='backward' />
+    <member type='way' ref='313906702' role='backward' />
+    <member type='way' ref='313906709' role='backward' />
+    <member type='way' ref='313906707' role='backward' />
+    <member type='way' ref='313906706' role='backward' />
+    <member type='way' ref='313906718' role='backward' />
+    <member type='way' ref='313906713' role='backward' />
+    <member type='way' ref='313906714' role='backward' />
+    <member type='way' ref='313906704' role='backward' />
+    <member type='way' ref='313906711' role='backward' />
+    <member type='way' ref='313906710' role='backward' />
+    <member type='way' ref='313904852' role='backward' />
+    <member type='way' ref='313906703' role='backward' />
+    <member type='way' ref='313906708' role='backward' />
+    <member type='way' ref='313906716' role='backward' />
+    <member type='way' ref='313904857' role='backward' />
+    <member type='way' ref='313904856' role='backward' />
+    <member type='way' ref='313904850' role='backward' />
+    <member type='way' ref='313904845' role='backward' />
+    <member type='way' ref='313902793' role='backward' />
+    <member type='way' ref='313902796' role='backward' />
+    <member type='way' ref='49179753' role='backward' />
+    <member type='way' ref='16992218' role='forward' />
+    <member type='way' ref='313902794' role='forward' />
+    <member type='way' ref='313902799' role='forward' />
+    <member type='way' ref='460636917' role='forward' />
+    <member type='way' ref='49179756' role='forward' />
+    <member type='way' ref='49179761' role='forward' />
+    <member type='way' ref='32123747' role='forward' />
+    <member type='way' ref='32117124' role='forward' />
+    <member type='way' ref='32117125' role='forward' />
+    <member type='way' ref='32116643' role='forward' />
+    <tag k='direction' v='west' />
+    <tag k='is_in:state' v='CO' />
+    <tag k='name' v='US 6 (CO, Westbound)' />
+    <tag k='network' v='US:US' />
+    <tag k='ref' v='6' />
+    <tag k='route' v='road' />
+    <tag k='symbol' v='http://upload.wikimedia.org/wikipedia/commons/e/ef/US_6.svg' />
+    <tag k='type' v='route' />
+    <tag k='wikidata' v='Q2139368' />
+    <tag k='wikipedia' v='en:U.S. Route 6 in Colorado' />
+  </relation>
+  <relation id='7499279' timestamp='2018-11-20T16:40:07Z' uid='8107451' user='njtbusfan' visible='true' version='54' changeset='64705890'>
+    <member type='way' ref='16998925' role='forward' />
+    <member type='way' ref='16998928' role='forward' />
+    <member type='way' ref='32117121' role='forward' />
+    <member type='way' ref='32117122' role='forward' />
+    <member type='way' ref='16998914' role='forward' />
+    <member type='way' ref='16995491' role='forward' />
+    <member type='way' ref='313902801' role='backward' />
+    <member type='way' ref='460636917' role='backward' />
+    <member type='way' ref='313902799' role='backward' />
+    <member type='way' ref='313902794' role='backward' />
+    <member type='way' ref='16992218' role='backward' />
+    <member type='way' ref='49179753' role='forward' />
+    <member type='way' ref='313902796' role='forward' />
+    <member type='way' ref='313902793' role='forward' />
+    <member type='way' ref='313904845' role='forward' />
+    <member type='way' ref='313904850' role='forward' />
+    <member type='way' ref='313904856' role='forward' />
+    <member type='way' ref='313904857' role='forward' />
+    <member type='way' ref='313906716' role='forward' />
+    <member type='way' ref='313906708' role='forward' />
+    <member type='way' ref='313906703' role='forward' />
+    <member type='way' ref='313904852' role='forward' />
+    <member type='way' ref='313906710' role='forward' />
+    <member type='way' ref='313906711' role='forward' />
+    <member type='way' ref='313906704' role='forward' />
+    <member type='way' ref='313906714' role='forward' />
+    <member type='way' ref='313906713' role='forward' />
+    <member type='way' ref='313906718' role='forward' />
+    <member type='way' ref='313906706' role='forward' />
+    <member type='way' ref='313906707' role='forward' />
+    <member type='way' ref='313906709' role='forward' />
+    <member type='way' ref='313906702' role='forward' />
+    <member type='way' ref='313906719' role='forward' />
+    <member type='way' ref='313906700' role='forward' />
+    <member type='way' ref='313906705' role='forward' />
+    <member type='way' ref='313906715' role='forward' />
+    <member type='way' ref='313906712' role='forward' />
+    <member type='way' ref='313910755' role='forward' />
+    <member type='way' ref='515927114' role='forward' />
+    <member type='way' ref='313910976' role='forward' />
+    <member type='way' ref='313910975' role='forward' />
+    <member type='way' ref='313910977' role='forward' />
+    <member type='way' ref='313962908' role='forward' />
+    <member type='way' ref='313962909' role='forward' />
+    <member type='way' ref='313962904' role='forward' />
+    <member type='way' ref='313962911' role='forward' />
+    <member type='way' ref='313962912' role='forward' />
+    <member type='way' ref='313962913' role='forward' />
+    <member type='way' ref='263022348' role='forward' />
+    <member type='way' ref='313962897' role='forward' />
+    <member type='way' ref='313962917' role='forward' />
+    <member type='way' ref='313962896' role='forward' />
+    <member type='way' ref='313962905' role='forward' />
+    <member type='way' ref='313962910' role='forward' />
+    <member type='way' ref='313962898' role='forward' />
+    <member type='way' ref='230773992' role='forward' />
+    <member type='way' ref='313962900' role='forward' />
+    <member type='way' ref='313969944' role='forward' />
+    <member type='way' ref='119049109' role='forward' />
+    <member type='way' ref='279937049' role='forward' />
+    <member type='way' ref='279937053' role='forward' />
+    <member type='way' ref='313969935' role='forward' />
+    <member type='way' ref='313969939' role='forward' />
+    <member type='way' ref='314022304' role='forward' />
+    <member type='way' ref='314022305' role='forward' />
+    <member type='way' ref='314022303' role='forward' />
+    <member type='way' ref='279941747' role='forward' />
+    <member type='way' ref='387526663' role='forward' />
+    <member type='way' ref='279941744' role='forward' />
+    <member type='way' ref='314041363' role='forward' />
+    <member type='way' ref='387526664' role='forward' />
+    <member type='way' ref='230171972' role='forward' />
+    <member type='way' ref='314029915' role='backward' />
+    <member type='way' ref='314029906' role='backward' />
+    <member type='way' ref='314029903' role='backward' />
+    <member type='way' ref='314029904' role='backward' />
+    <member type='way' ref='314029917' role='backward' />
+    <member type='way' ref='230174601' role='backward' />
+    <member type='way' ref='314029900' role='forward' />
+    <member type='way' ref='495960336' role='forward' />
+    <member type='way' ref='495960338' role='forward' />
+    <member type='way' ref='495960334' role='forward' />
+    <member type='way' ref='314029919' role='forward' />
+    <member type='way' ref='314029911' role='forward' />
+    <member type='way' ref='314029918' role='forward' />
+    <member type='way' ref='314029916' role='forward' />
+    <member type='way' ref='314029920' role='forward' />
+    <member type='way' ref='314033378' role='forward' />
+    <member type='way' ref='49179754' role='forward' />
+    <member type='way' ref='314033387' role='forward' />
+    <member type='way' ref='314033390' role='forward' />
+    <member type='way' ref='314035657' role='forward' />
+    <member type='way' ref='625610287' role='forward' />
+    <member type='way' ref='314035643' role='forward' />
+    <member type='way' ref='314035655' role='forward' />
+    <member type='way' ref='120140744' role='forward' />
+    <member type='way' ref='230624371' role='forward' />
+    <member type='way' ref='478210859' role='forward' />
+    <member type='way' ref='314044986' role='forward' />
+    <member type='way' ref='16997712' role='forward' />
+    <member type='way' ref='314044987' role='forward' />
+    <member type='way' ref='314044967' role='forward' />
+    <member type='way' ref='314044971' role='forward' />
+    <member type='way' ref='314044974' role='forward' />
+    <member type='way' ref='314044966' role='forward' />
+    <member type='way' ref='314044998' role='forward' />
+    <member type='way' ref='314044990' role='forward' />
+    <member type='way' ref='314045001' role='forward' />
+    <member type='way' ref='314044972' role='forward' />
+    <member type='way' ref='314044992' role='forward' />
+    <member type='way' ref='314044993' role='forward' />
+    <member type='way' ref='314044995' role='forward' />
+    <member type='way' ref='314044983' role='forward' />
+    <member type='way' ref='314044982' role='forward' />
+    <member type='way' ref='314044969' role='forward' />
+    <member type='way' ref='314044963' role='forward' />
+    <member type='way' ref='314045002' role='forward' />
+    <member type='way' ref='314044978' role='forward' />
+    <member type='way' ref='314044985' role='forward' />
+    <member type='way' ref='314044988' role='forward' />
+    <member type='way' ref='314044975' role='forward' />
+    <member type='way' ref='230910289' role='forward' />
+    <member type='way' ref='314047101' role='forward' />
+    <member type='way' ref='314047095' role='forward' />
+    <member type='way' ref='314047102' role='forward' />
+    <member type='way' ref='314047083' role='forward' />
+    <member type='way' ref='314047075' role='forward' />
+    <member type='way' ref='314047074' role='forward' />
+    <member type='way' ref='314047092' role='forward' />
+    <member type='way' ref='314047082' role='forward' />
+    <member type='way' ref='314047093' role='forward' />
+    <member type='way' ref='314047100' role='forward' />
+    <member type='way' ref='314047103' role='forward' />
+    <member type='way' ref='314047071' role='forward' />
+    <member type='way' ref='314047094' role='forward' />
+    <member type='way' ref='314047080' role='forward' />
+    <member type='way' ref='314047086' role='forward' />
+    <member type='way' ref='314047069' role='forward' />
+    <member type='way' ref='314047097' role='forward' />
+    <member type='way' ref='314047067' role='forward' />
+    <member type='way' ref='314047098' role='forward' />
+    <member type='way' ref='314047077' role='forward' />
+    <member type='way' ref='314047096' role='forward' />
+    <member type='way' ref='314047079' role='forward' />
+    <member type='way' ref='314047087' role='forward' />
+    <member type='way' ref='314047088' role='forward' />
+    <member type='way' ref='314047090' role='forward' />
+    <member type='way' ref='230910287' role='forward' />
+    <member type='way' ref='314048240' role='forward' />
+    <member type='way' ref='314048230' role='forward' />
+    <member type='way' ref='314048236' role='forward' />
+    <member type='way' ref='314048271' role='forward' />
+    <member type='way' ref='314048263' role='forward' />
+    <member type='way' ref='314048264' role='forward' />
+    <member type='way' ref='314048234' role='forward' />
+    <member type='way' ref='314048270' role='forward' />
+    <member type='way' ref='314048239' role='forward' />
+    <member type='way' ref='314048268' role='forward' />
+    <member type='way' ref='314048259' role='forward' />
+    <member type='way' ref='314048250' role='forward' />
+    <member type='way' ref='314048232' role='forward' />
+    <member type='way' ref='314048275' role='forward' />
+    <member type='way' ref='314048248' role='forward' />
+    <member type='way' ref='314048261' role='forward' />
+    <member type='way' ref='314048238' role='forward' />
+    <member type='way' ref='314048274' role='forward' />
+    <member type='way' ref='314048258' role='forward' />
+    <member type='way' ref='314048229' role='forward' />
+    <member type='way' ref='314048262' role='forward' />
+    <member type='way' ref='314048279' role='forward' />
+    <member type='way' ref='314048272' role='forward' />
+    <member type='way' ref='314048235' role='forward' />
+    <member type='way' ref='314048242' role='forward' />
+    <member type='way' ref='314048280' role='forward' />
+    <member type='way' ref='314048252' role='forward' />
+    <member type='way' ref='480461232' role='forward' />
+    <member type='way' ref='230913516' role='forward' />
+    <member type='way' ref='314119201' role='forward' />
+    <member type='way' ref='314119197' role='forward' />
+    <member type='way' ref='314119179' role='forward' />
+    <member type='way' ref='314119171' role='forward' />
+    <member type='way' ref='314119182' role='forward' />
+    <member type='way' ref='314119160' role='forward' />
+    <member type='way' ref='314119162' role='forward' />
+    <member type='way' ref='314119159' role='forward' />
+    <member type='way' ref='314119195' role='forward' />
+    <member type='way' ref='314119192' role='forward' />
+    <member type='way' ref='314119190' role='forward' />
+    <member type='way' ref='314119180' role='forward' />
+    <member type='way' ref='314119174' role='forward' />
+    <member type='way' ref='314119198' role='forward' />
+    <member type='way' ref='314119165' role='forward' />
+    <member type='way' ref='314119155' role='forward' />
+    <member type='way' ref='314119200' role='forward' />
+    <member type='way' ref='314119158' role='forward' />
+    <member type='way' ref='314119196' role='forward' />
+    <member type='way' ref='314119187' role='forward' />
+    <member type='way' ref='314119178' role='forward' />
+    <member type='way' ref='314119156' role='forward' />
+    <member type='way' ref='314119157' role='forward' />
+    <member type='way' ref='124376154' role='forward' />
+    <member type='way' ref='230620891' role='forward' />
+    <member type='way' ref='617630089' role='forward' />
+    <member type='way' ref='617630088' role='forward' />
+    <member type='way' ref='120911111' role='forward' />
+    <member type='way' ref='314159713' role='forward' />
+    <member type='way' ref='230620897' role='forward' />
+    <member type='way' ref='230620882' role='forward' />
+    <member type='way' ref='314159736' role='forward' />
+    <member type='way' ref='314159700' role='forward' />
+    <member type='way' ref='121895502' role='forward' />
+    <member type='way' ref='120908464' role='forward' />
+    <member type='way' ref='314159718' role='forward' />
+    <member type='way' ref='314159751' role='forward' />
+    <member type='way' ref='314159706' role='forward' />
+    <member type='way' ref='314159745' role='forward' />
+    <member type='way' ref='314159733' role='forward' />
+    <member type='way' ref='314159755' role='forward' />
+    <member type='way' ref='314159709' role='forward' />
+    <member type='way' ref='314159703' role='forward' />
+    <member type='way' ref='314159734' role='forward' />
+    <member type='way' ref='314159699' role='forward' />
+    <member type='way' ref='479919291' role='forward' />
+    <member type='way' ref='314163833' role='forward' />
+    <member type='way' ref='314163839' role='forward' />
+    <member type='way' ref='314163887' role='forward' />
+    <member type='way' ref='314163879' role='forward' />
+    <member type='way' ref='314163858' role='forward' />
+    <member type='way' ref='314163823' role='forward' />
+    <member type='way' ref='314163843' role='forward' />
+    <member type='way' ref='314163883' role='forward' />
+    <member type='way' ref='314163866' role='forward' />
+    <member type='way' ref='124376146' role='forward' />
+    <member type='way' ref='479919290' role='forward' />
+    <member type='way' ref='479919289' role='forward' />
+    <member type='way' ref='119057171' role='forward' />
+    <member type='way' ref='630799510' role='forward' />
+    <member type='way' ref='230521346' role='forward' />
+    <member type='way' ref='17002149' role='forward' />
+    <member type='way' ref='230522927' role='forward' />
+    <member type='way' ref='230522926' role='forward' />
+    <member type='way' ref='479919265' role='forward' />
+    <member type='way' ref='479919259' role='forward' />
+    <member type='way' ref='479919253' role='forward' />
+    <member type='way' ref='479919246' role='forward' />
+    <member type='way' ref='479919241' role='forward' />
+    <member type='way' ref='479919274' role='forward' />
+    <member type='way' ref='16999100' role='forward' />
+    <member type='way' ref='479919224' role='backward' />
+    <member type='way' ref='17002771' role='backward' />
+    <member type='way' ref='479919220' role='backward' />
+    <member type='way' ref='119057106' role='backward' />
+    <member type='way' ref='17000309' role='backward' />
+    <member type='way' ref='17000308' role='backward' />
+    <member type='way' ref='119057175' role='backward' />
+    <member type='way' ref='541152612' role='backward' />
+    <member type='way' ref='541152615' role='backward' />
+    <member type='way' ref='49179773' role='backward' />
+    <member type='way' ref='17002767' role='backward' />
+    <member type='way' ref='515880389' role='backward' />
+    <member type='way' ref='515880386' role='backward' />
+    <member type='way' ref='32222249' role='backward' />
+    <member type='way' ref='49179789' role='forward' />
+    <member type='way' ref='49180132' role='forward' />
+    <member type='way' ref='32222857' role='forward' />
+    <member type='way' ref='32222858' role='forward' />
+    <member type='way' ref='120084152' role='forward' />
+    <member type='way' ref='120084156' role='forward' />
+    <member type='way' ref='133369000' role='forward' />
+    <member type='way' ref='32223177' role='forward' />
+    <member type='way' ref='32223178' role='forward' />
+    <member type='way' ref='32223172' role='forward' />
+    <member type='way' ref='32223179' role='forward' />
+    <member type='way' ref='32223180' role='forward' />
+    <member type='way' ref='133368997' role='forward' />
+    <member type='way' ref='49232697' role='forward' />
+    <member type='way' ref='120721513' role='forward' />
+    <member type='way' ref='120721514' role='forward' />
+    <member type='way' ref='120721508' role='forward' />
+    <member type='way' ref='120721512' role='forward' />
+    <member type='way' ref='32487197' role='forward' />
+    <member type='way' ref='32487198' role='forward' />
+    <member type='way' ref='32487335' role='forward' />
+    <member type='way' ref='32487336' role='forward' />
+    <member type='way' ref='32487463' role='forward' />
+    <member type='way' ref='520406553' role='forward' />
+    <member type='way' ref='520406552' role='forward' />
+    <member type='way' ref='520406551' role='forward' />
+    <member type='way' ref='520406550' role='forward' />
+    <member type='way' ref='32487465' role='forward' />
+    <member type='way' ref='115430708' role='forward' />
+    <member type='way' ref='115430711' role='forward' />
+    <member type='way' ref='32530118' role='forward' />
+    <member type='way' ref='32530120' role='forward' />
+    <member type='way' ref='115562974' role='forward' />
+    <member type='way' ref='115562987' role='forward' />
+    <member type='way' ref='32531038' role='forward' />
+    <member type='way' ref='32531039' role='forward' />
+    <member type='way' ref='32531220' role='forward' />
+    <member type='way' ref='49180137' role='forward' />
+    <member type='way' ref='32532433' role='forward' />
+    <member type='way' ref='32531631' role='forward' />
+    <member type='way' ref='517791546' role='forward' />
+    <member type='way' ref='49180135' role='forward' />
+    <member type='way' ref='17054066' role='forward' />
+    <member type='way' ref='286929999' role='forward' />
+    <member type='way' ref='49180852' role='forward' />
+    <member type='way' ref='286930000' role='forward' />
+    <member type='way' ref='311348970' role='forward' />
+    <member type='way' ref='311348969' role='forward' />
+    <member type='way' ref='117447329' role='forward' />
+    <member type='way' ref='117447333' role='forward' />
+    <member type='way' ref='311348282' role='forward' />
+    <member type='way' ref='49180850' role='forward' />
+    <member type='way' ref='311355362' role='forward' />
+    <member type='way' ref='311355361' role='forward' />
+    <member type='way' ref='311355802' role='backward' />
+    <member type='way' ref='311356745' role='backward' />
+    <member type='way' ref='311356741' role='backward' />
+    <member type='way' ref='311356743' role='backward' />
+    <member type='way' ref='311356738' role='backward' />
+    <member type='way' ref='311356744' role='backward' />
+    <member type='way' ref='17055062' role='backward' />
+    <member type='way' ref='17054248' role='backward' />
+    <member type='way' ref='311357568' role='backward' />
+    <member type='way' ref='311357125' role='backward' />
+    <member type='way' ref='311357124' role='backward' />
+    <member type='way' ref='311357559' role='backward' />
+    <member type='way' ref='311357565' role='forward' />
+    <member type='way' ref='517791574' role='forward' />
+    <member type='way' ref='311357564' role='forward' />
+    <member type='way' ref='17055808' role='backward' />
+    <member type='way' ref='17054067' role='forward' />
+    <member type='way' ref='311358340' role='forward' />
+    <member type='way' ref='311358341' role='forward' />
+    <member type='way' ref='311358339' role='forward' />
+    <member type='way' ref='17054246' role='forward' />
+    <member type='way' ref='311391839' role='forward' />
+    <member type='way' ref='311391845' role='forward' />
+    <member type='way' ref='311391849' role='forward' />
+    <member type='way' ref='311391837' role='forward' />
+    <member type='way' ref='311391848' role='backward' />
+    <member type='way' ref='17055285' role='backward' />
+    <member type='way' ref='17054076' role='forward' />
+    <member type='way' ref='311391846' role='forward' />
+    <member type='way' ref='311391835' role='forward' />
+    <member type='way' ref='311391840' role='forward' />
+    <member type='way' ref='311391843' role='forward' />
+    <member type='way' ref='311391842' role='forward' />
+    <member type='way' ref='311391836' role='forward' />
+    <member type='way' ref='311391844' role='forward' />
+    <member type='way' ref='311391838' role='forward' />
+    <member type='way' ref='223937670' role='forward' />
+    <member type='way' ref='223937665' role='forward' />
+    <member type='way' ref='32661725' role='forward' />
+    <member type='way' ref='517791554' role='forward' />
+    <member type='way' ref='32661726' role='forward' />
+    <member type='way' ref='49180841' role='forward' />
+    <member type='way' ref='49180844' role='forward' />
+    <member type='way' ref='49233563' role='forward' />
+    <member type='way' ref='32677882' role='forward' />
+    <member type='way' ref='25458859' role='forward' />
+    <member type='way' ref='133369004' role='forward' />
+    <member type='way' ref='32679782' role='forward' />
+    <member type='way' ref='32679783' role='forward' />
+    <member type='way' ref='32706669' role='forward' />
+    <member type='way' ref='32706670' role='forward' />
+    <member type='way' ref='32707317' role='forward' />
+    <member type='way' ref='32707318' role='forward' />
+    <member type='way' ref='105564666' role='forward' />
+    <member type='way' ref='105564669' role='forward' />
+    <member type='way' ref='223631836' role='forward' />
+    <member type='way' ref='485224515' role='forward' />
+    <member type='way' ref='179922608' role='forward' />
+    <member type='way' ref='105563640' role='forward' />
+    <member type='way' ref='179922603' role='forward' />
+    <member type='way' ref='179922613' role='forward' />
+    <member type='way' ref='179922562' role='forward' />
+    <member type='way' ref='179922614' role='forward' />
+    <member type='way' ref='179922656' role='forward' />
+    <member type='way' ref='179922578' role='forward' />
+    <member type='way' ref='105563582' role='forward' />
+    <member type='way' ref='105563581' role='forward' />
+    <member type='way' ref='179922626' role='forward' />
+    <member type='way' ref='179922658' role='forward' />
+    <member type='way' ref='179922667' role='forward' />
+    <member type='way' ref='179922669' role='forward' />
+    <member type='way' ref='42989355' role='forward' />
+    <member type='way' ref='42989349' role='forward' />
+    <member type='way' ref='62343922' role='forward' />
+    <member type='way' ref='32747539' role='forward' />
+    <member type='way' ref='32748714' role='forward' />
+    <member type='way' ref='179922623' role='forward' />
+    <member type='way' ref='42989323' role='forward' />
+    <member type='way' ref='42989328' role='forward' />
+    <member type='way' ref='159737341' role='forward' />
+    <member type='way' ref='159737343' role='forward' />
+    <member type='way' ref='32772320' role='forward' />
+    <member type='way' ref='32772321' role='forward' />
+    <member type='way' ref='42989316' role='forward' />
+    <member type='way' ref='42989317' role='forward' />
+    <member type='way' ref='451809029' role='forward' />
+    <member type='way' ref='165567949' role='forward' />
+    <member type='way' ref='165567955' role='forward' />
+    <member type='way' ref='32781665' role='forward' />
+    <member type='way' ref='99750215' role='forward' />
+    <member type='way' ref='318776296' role='forward' />
+    <member type='way' ref='451809022' role='forward' />
+    <member type='way' ref='451809020' role='forward' />
+    <member type='way' ref='364944784' role='forward' />
+    <member type='way' ref='364944785' role='forward' />
+    <member type='way' ref='364944782' role='forward' />
+    <member type='way' ref='105953455' role='forward' />
+    <member type='way' ref='32782058' role='forward' />
+    <member type='way' ref='492447759' role='backward' />
+    <member type='way' ref='492447760' role='backward' />
+    <member type='way' ref='201175175' role='backward' />
+    <member type='way' ref='201175176' role='forward' />
+    <member type='way' ref='517791575' role='forward' />
+    <member type='way' ref='201175174' role='forward' />
+    <member type='way' ref='117896142' role='backward' />
+    <member type='way' ref='117896141' role='backward' />
+    <member type='way' ref='449025271' role='backward' />
+    <member type='way' ref='449025272' role='backward' />
+    <member type='way' ref='17045679' role='backward' />
+    <member type='way' ref='203085267' role='forward' />
+    <member type='way' ref='203085403' role='forward' />
+    <member type='way' ref='203085431' role='forward' />
+    <member type='way' ref='32799541' role='backward' />
+    <member type='way' ref='517791571' role='forward' />
+    <member type='way' ref='17045743' role='forward' />
+    <member type='way' ref='118408602' role='forward' />
+    <member type='way' ref='118408603' role='forward' />
+    <member type='way' ref='240222390' role='forward' />
+    <member type='way' ref='240222384' role='forward' />
+    <member type='way' ref='494426184' role='forward' />
+    <member type='way' ref='17040493' role='forward' />
+    <member type='way' ref='32800023' role='forward' />
+    <member type='way' ref='32800024' role='forward' />
+    <member type='way' ref='17045684' role='backward' />
+    <member type='way' ref='17043965' role='backward' />
+    <member type='way' ref='106339566' role='backward' />
+    <member type='way' ref='119009567' role='backward' />
+    <member type='way' ref='119009568' role='backward' />
+    <member type='way' ref='17045727' role='backward' />
+    <member type='way' ref='17046264' role='backward' />
+    <member type='way' ref='201157607' role='backward' />
+    <member type='way' ref='201157629' role='forward' />
+    <member type='way' ref='201157633' role='forward' />
+    <member type='way' ref='201157628' role='forward' />
+    <member type='way' ref='236592920' role='backward' />
+    <member type='way' ref='236592914' role='forward' />
+    <member type='way' ref='517791585' role='forward' />
+    <member type='way' ref='236592911' role='forward' />
+    <member type='way' ref='179922733' role='backward' />
+    <member type='way' ref='49229941' role='backward' />
+    <member type='way' ref='17045710' role='forward' />
+    <member type='way' ref='17039469' role='forward' />
+    <member type='way' ref='120628493' role='forward' />
+    <member type='way' ref='172868565' role='forward' />
+    <member type='way' ref='32803830' role='forward' />
+    <member type='way' ref='31734901' role='forward' />
+    <member type='way' ref='122888710' role='forward' />
+    <member type='way' ref='165563992' role='forward' />
+    <member type='way' ref='165563988' role='forward' />
+    <member type='way' ref='32804305' role='forward' />
+    <member type='way' ref='32804309' role='forward' />
+    <member type='way' ref='32805919' role='forward' />
+    <member type='way' ref='32805920' role='forward' />
+    <member type='way' ref='32806559' role='forward' />
+    <member type='way' ref='32806560' role='forward' />
+    <member type='way' ref='32806863' role='forward' />
+    <member type='way' ref='32806864' role='forward' />
+    <member type='way' ref='32807198' role='forward' />
+    <member type='way' ref='32807199' role='forward' />
+    <member type='way' ref='125836656' role='forward' />
+    <member type='way' ref='125836655' role='forward' />
+    <member type='way' ref='32815187' role='forward' />
+    <member type='way' ref='32815189' role='forward' />
+    <member type='way' ref='135625678' role='forward' />
+    <member type='way' ref='135625680' role='forward' />
+    <member type='way' ref='125706111' role='forward' />
+    <member type='way' ref='125706112' role='forward' />
+    <member type='way' ref='125705949' role='forward' />
+    <member type='way' ref='125705950' role='forward' />
+    <member type='way' ref='125705892' role='forward' />
+    <member type='way' ref='125705893' role='forward' />
+    <member type='way' ref='125578286' role='forward' />
+    <member type='way' ref='125578285' role='forward' />
+    <member type='way' ref='135888316' role='forward' />
+    <member type='way' ref='135888317' role='forward' />
+    <member type='way' ref='135891997' role='forward' />
+    <member type='way' ref='135891962' role='forward' />
+    <member type='way' ref='135891980' role='forward' />
+    <member type='way' ref='135891977' role='forward' />
+    <member type='way' ref='135891996' role='forward' />
+    <member type='way' ref='135891973' role='forward' />
+    <member type='way' ref='89530355' role='forward' />
+    <member type='way' ref='135893346' role='forward' />
+    <member type='way' ref='17146091' role='forward' />
+    <member type='way' ref='32828855' role='forward' />
+    <member type='way' ref='32828858' role='forward' />
+    <member type='way' ref='134934084' role='forward' />
+    <member type='way' ref='32829078' role='forward' />
+    <member type='way' ref='32829079' role='forward' />
+    <member type='way' ref='106204214' role='forward' />
+    <member type='way' ref='310653140' role='forward' />
+    <member type='way' ref='310653145' role='forward' />
+    <member type='way' ref='32837567' role='forward' />
+    <member type='way' ref='32837569' role='forward' />
+    <member type='way' ref='32837791' role='forward' />
+    <member type='way' ref='310656810' role='forward' />
+    <member type='way' ref='117054852' role='forward' />
+    <member type='way' ref='117054808' role='forward' />
+    <member type='way' ref='372786879' role='forward' />
+    <member type='way' ref='135077976' role='forward' />
+    <member type='way' ref='135077981' role='forward' />
+    <member type='way' ref='17144918' role='forward' />
+    <member type='way' ref='598418318' role='forward' />
+    <member type='way' ref='90685173' role='forward' />
+    <member type='way' ref='90685174' role='forward' />
+    <member type='way' ref='117054844' role='forward' />
+    <member type='way' ref='90686851' role='forward' />
+    <member type='way' ref='90686847' role='forward' />
+    <member type='way' ref='90686573' role='forward' />
+    <member type='way' ref='570121190' role='forward' />
+    <member type='way' ref='17144934' role='forward' />
+    <member type='way' ref='570121204' role='forward' />
+    <member type='way' ref='570121208' role='forward' />
+    <member type='way' ref='570121207' role='forward' />
+    <member type='way' ref='570121214' role='forward' />
+    <member type='way' ref='570121194' role='forward' />
+    <member type='way' ref='570121188' role='forward' />
+    <member type='way' ref='570118569' role='forward' />
+    <member type='way' ref='570118573' role='forward' />
+    <member type='way' ref='135077979' role='forward' />
+    <member type='way' ref='117054987' role='forward' />
+    <member type='way' ref='90635665' role='forward' />
+    <member type='way' ref='38886626' role='forward' />
+    <member type='way' ref='38886676' role='forward' />
+    <member type='way' ref='531375320' role='forward' />
+    <member type='way' ref='17026580' role='forward' />
+    <member type='way' ref='17020989' role='forward' />
+    <member type='way' ref='179922725' role='forward' />
+    <member type='way' ref='531436613' role='forward' />
+    <member type='way' ref='49233569' role='forward' />
+    <member type='way' ref='32840983' role='forward' />
+    <member type='way' ref='32840985' role='forward' />
+    <member type='way' ref='133369002' role='forward' />
+    <member type='way' ref='32841835' role='forward' />
+    <member type='way' ref='32841837' role='forward' />
+    <member type='way' ref='32842018' role='forward' />
+    <member type='way' ref='32842021' role='forward' />
+    <member type='way' ref='32842704' role='forward' />
+    <member type='way' ref='32842707' role='forward' />
+    <member type='way' ref='617508025' role='forward' />
+    <member type='way' ref='49245438' role='forward' />
+    <member type='way' ref='617731218' role='forward' />
+    <member type='way' ref='32843419' role='forward' />
+    <member type='way' ref='32843426' role='forward' />
+    <member type='way' ref='32863781' role='forward' />
+    <member type='way' ref='32863782' role='forward' />
+    <member type='way' ref='32863786' role='forward' />
+    <member type='way' ref='32863787' role='forward' />
+    <member type='way' ref='32866483' role='forward' />
+    <member type='way' ref='32866484' role='forward' />
+    <member type='way' ref='597932551' role='forward' />
+    <member type='way' ref='80643775' role='forward' />
+    <member type='way' ref='80643767' role='forward' />
+    <member type='way' ref='617944241' role='forward' />
+    <member type='way' ref='617944250' role='forward' />
+    <member type='way' ref='81343472' role='forward' />
+    <member type='way' ref='81343471' role='forward' />
+    <member type='way' ref='32903081' role='forward' />
+    <member type='way' ref='32903084' role='forward' />
+    <member type='way' ref='617948531' role='forward' />
+    <member type='way' ref='32904057' role='forward' />
+    <member type='way' ref='32904058' role='forward' />
+    <member type='way' ref='32904064' role='forward' />
+    <member type='way' ref='32904061' role='forward' />
+    <member type='way' ref='618152047' role='forward' />
+    <member type='way' ref='56007359' role='forward' />
+    <member type='way' ref='56007356' role='forward' />
+    <member type='way' ref='372645678' role='forward' />
+    <member type='way' ref='32904198' role='forward' />
+    <member type='way' ref='426162659' role='forward' />
+    <member type='way' ref='426162658' role='forward' />
+    <member type='way' ref='32904199' role='forward' />
+    <member type='way' ref='372645679' role='forward' />
+    <member type='way' ref='618192151' role='forward' />
+    <member type='way' ref='618192147' role='forward' />
+    <member type='way' ref='618192158' role='forward' />
+    <member type='way' ref='618192140' role='forward' />
+    <member type='way' ref='17026608' role='forward' />
+    <member type='way' ref='179922747' role='forward' />
+    <member type='way' ref='618372591' role='forward' />
+    <member type='way' ref='618372592' role='forward' />
+    <member type='way' ref='618372590' role='forward' />
+    <member type='way' ref='618372593' role='forward' />
+    <member type='way' ref='618372595' role='forward' />
+    <member type='way' ref='618372589' role='forward' />
+    <member type='way' ref='618372594' role='forward' />
+    <member type='way' ref='618372587' role='forward' />
+    <member type='way' ref='49245447' role='forward' />
+    <member type='way' ref='618372588' role='forward' />
+    <member type='way' ref='618373519' role='forward' />
+    <member type='way' ref='618373520' role='forward' />
+    <member type='way' ref='56051419' role='forward' />
+    <member type='way' ref='56051420' role='forward' />
+    <member type='way' ref='35899035' role='forward' />
+    <member type='way' ref='35899034' role='forward' />
+    <member type='way' ref='618376843' role='forward' />
+    <member type='way' ref='618376844' role='forward' />
+    <member type='way' ref='618376842' role='forward' />
+    <member type='way' ref='56051471' role='forward' />
+    <member type='way' ref='56051470' role='forward' />
+    <member type='way' ref='35899014' role='forward' />
+    <member type='way' ref='35899013' role='forward' />
+    <member type='way' ref='618378733' role='forward' />
+    <member type='way' ref='618378737' role='forward' />
+    <member type='way' ref='328271672' role='forward' />
+    <member type='way' ref='618378736' role='backward' />
+    <member type='way' ref='618378734' role='backward' />
+    <member type='way' ref='56121008' role='backward' />
+    <member type='way' ref='618382962' role='backward' />
+    <member type='way' ref='618382978' role='backward' />
+    <member type='way' ref='618382953' role='backward' />
+    <member type='way' ref='56121011' role='backward' />
+    <member type='way' ref='35896685' role='backward' />
+    <member type='way' ref='35896684' role='backward' />
+    <member type='way' ref='35896686' role='backward' />
+    <member type='way' ref='35896687' role='backward' />
+    <member type='way' ref='56121088' role='backward' />
+    <member type='way' ref='56121089' role='backward' />
+    <member type='way' ref='56121143' role='backward' />
+    <member type='way' ref='56121142' role='backward' />
+    <member type='way' ref='35896829' role='backward' />
+    <member type='way' ref='35896830' role='backward' />
+    <member type='way' ref='642776349' role='backward' />
+    <member type='way' ref='642765276' role='backward' />
+    <member type='way' ref='119057166' role='backward' />
+    <member type='way' ref='119057114' role='backward' />
+    <member type='way' ref='642765273' role='backward' />
+    <member type='way' ref='642765274' role='backward' />
+    <member type='way' ref='642765275' role='backward' />
+    <member type='way' ref='627829712' role='backward' />
+    <member type='way' ref='17088048' role='backward' />
+    <member type='way' ref='627829718' role='backward' />
+    <member type='way' ref='642763382' role='backward' />
+    <member type='way' ref='642763381' role='backward' />
+    <member type='way' ref='642763383' role='backward' />
+    <member type='way' ref='35309129' role='backward' />
+    <member type='way' ref='627829719' role='backward' />
+    <member type='way' ref='35309128' role='backward' />
+    <member type='way' ref='17088053' role='backward' />
+    <member type='way' ref='642315649' role='backward' />
+    <member type='way' ref='533494590' role='backward' />
+    <member type='way' ref='484287802' role='forward' />
+    <member type='way' ref='642354070' role='forward' />
+    <member type='way' ref='533679737' role='forward' />
+    <member type='way' ref='533503593' role='forward' />
+    <member type='way' ref='645156331' role='forward' />
+    <member type='way' ref='533496340' role='forward' />
+    <member type='way' ref='427838689' role='forward' />
+    <member type='way' ref='427838692' role='forward' />
+    <member type='way' ref='427838690' role='forward' />
+    <member type='way' ref='427838691' role='forward' />
+    <member type='way' ref='289242826' role='forward' />
+    <member type='way' ref='484287797' role='forward' />
+    <member type='way' ref='484287796' role='forward' />
+    <member type='way' ref='427696024' role='forward' />
+    <member type='way' ref='427696021' role='forward' />
+    <member type='way' ref='427696023' role='forward' />
+    <member type='way' ref='427696022' role='forward' />
+    <member type='way' ref='100027744' role='forward' />
+    <member type='way' ref='131493000' role='forward' />
+    <member type='way' ref='131493003' role='forward' />
+    <member type='way' ref='38557096' role='forward' />
+    <member type='way' ref='37586193' role='forward' />
+    <member type='way' ref='17078938' role='forward' />
+    <member type='way' ref='427816527' role='forward' />
+    <member type='way' ref='334647997' role='forward' />
+    <member type='way' ref='427816528' role='forward' />
+    <member type='way' ref='334648008' role='forward' />
+    <member type='way' ref='133952911' role='forward' />
+    <member type='way' ref='125595671' role='forward' />
+    <member type='way' ref='38557565' role='forward' />
+    <member type='way' ref='38557566' role='forward' />
+    <member type='way' ref='335158767' role='forward' />
+    <member type='way' ref='125595673' role='forward' />
+    <member type='way' ref='38558004' role='forward' />
+    <member type='way' ref='38558003' role='forward' />
+    <member type='way' ref='37586122' role='forward' />
+    <member type='way' ref='646950167' role='forward' />
+    <member type='way' ref='38560300' role='forward' />
+    <member type='way' ref='334419015' role='forward' />
+    <member type='way' ref='37586123' role='forward' />
+    <member type='way' ref='37585503' role='forward' />
+    <member type='way' ref='334271332' role='forward' />
+    <member type='way' ref='335711877' role='forward' />
+    <member type='way' ref='334270424' role='forward' />
+    <member type='way' ref='367047522' role='forward' />
+    <member type='way' ref='367047521' role='forward' />
+    <member type='way' ref='367047518' role='forward' />
+    <member type='way' ref='367047519' role='forward' />
+    <member type='way' ref='335709756' role='forward' />
+    <member type='way' ref='38575771' role='forward' />
+    <member type='way' ref='312851126' role='forward' />
+    <member type='way' ref='304657239' role='forward' />
+    <member type='way' ref='335708995' role='forward' />
+    <member type='way' ref='335705581' role='forward' />
+    <member type='way' ref='335705585' role='forward' />
+    <member type='way' ref='38575837' role='forward' />
+    <member type='way' ref='38575838' role='forward' />
+    <member type='way' ref='38575839' role='forward' />
+    <member type='way' ref='335706751' role='forward' />
+    <member type='way' ref='427654923' role='forward' />
+    <member type='way' ref='49230944' role='forward' />
+    <member type='way' ref='335857794' role='forward' />
+    <member type='way' ref='25679240' role='forward' />
+    <member type='way' ref='335857803' role='forward' />
+    <member type='way' ref='95468330' role='forward' />
+    <member type='way' ref='95468332' role='forward' />
+    <member type='way' ref='95468331' role='forward' />
+    <member type='way' ref='95468329' role='forward' />
+    <member type='way' ref='25679241' role='forward' />
+    <member type='way' ref='95462064' role='forward' />
+    <member type='way' ref='95462061' role='forward' />
+    <member type='way' ref='16984899' role='forward' />
+    <member type='way' ref='628599831' role='forward' />
+    <member type='way' ref='628599832' role='forward' />
+    <member type='way' ref='325373358' role='forward' />
+    <member type='way' ref='628599827' role='forward' />
+    <member type='way' ref='628599825' role='forward' />
+    <member type='way' ref='325373360' role='forward' />
+    <member type='way' ref='318918744' role='forward' />
+    <member type='way' ref='628401848' role='forward' />
+    <member type='way' ref='628401855' role='forward' />
+    <member type='way' ref='37355956' role='forward' />
+    <member type='way' ref='37355957' role='forward' />
+    <member type='way' ref='35757048' role='forward' />
+    <member type='way' ref='36083274' role='forward' />
+    <member type='way' ref='36083277' role='forward' />
+    <member type='way' ref='95437359' role='forward' />
+    <member type='way' ref='49230946' role='forward' />
+    <member type='way' ref='34386572' role='forward' />
+    <member type='way' ref='628376847' role='forward' />
+    <member type='way' ref='119057162' role='forward' />
+    <member type='way' ref='88471336' role='forward' />
+    <member type='way' ref='511386075' role='forward' />
+    <member type='way' ref='628433089' role='forward' />
+    <member type='way' ref='88471337' role='forward' />
+    <member type='way' ref='88471274' role='forward' />
+    <member type='way' ref='49230950' role='forward' />
+    <member type='way' ref='628433096' role='forward' />
+    <member type='way' ref='628433120' role='forward' />
+    <member type='way' ref='628433130' role='forward' />
+    <member type='way' ref='597935915' role='forward' />
+    <member type='way' ref='16981547' role='forward' />
+    <member type='way' ref='99818942' role='forward' />
+    <member type='way' ref='440279211' role='forward' />
+    <member type='way' ref='131551048' role='forward' />
+    <member type='way' ref='628628838' role='forward' />
+    <member type='way' ref='628628839' role='forward' />
+    <member type='way' ref='628628837' role='forward' />
+    <member type='way' ref='628628818' role='forward' />
+    <member type='way' ref='628628817' role='forward' />
+    <member type='way' ref='49231018' role='forward' />
+    <member type='way' ref='427827138' role='forward' />
+    <member type='way' ref='427827136' role='forward' />
+    <member type='way' ref='628628812' role='forward' />
+    <member type='way' ref='43075621' role='forward' />
+    <member type='way' ref='628628807' role='forward' />
+    <member type='way' ref='111871656' role='forward' />
+    <member type='way' ref='628628804' role='forward' />
+    <member type='way' ref='16963538' role='forward' />
+    <member type='way' ref='42084099' role='forward' />
+    <member type='way' ref='628655284' role='forward' />
+    <member type='way' ref='628655283' role='forward' />
+    <member type='way' ref='16977977' role='forward' />
+    <member type='way' ref='16963559' role='forward' />
+    <member type='way' ref='111871658' role='forward' />
+    <member type='way' ref='44769374' role='forward' />
+    <member type='way' ref='117055027' role='forward' />
+    <member type='way' ref='427833036' role='forward' />
+    <member type='way' ref='628655286' role='forward' />
+    <member type='way' ref='628655287' role='forward' />
+    <member type='way' ref='42084090' role='forward' />
+    <member type='way' ref='628649482' role='forward' />
+    <member type='way' ref='132712640' role='forward' />
+    <member type='way' ref='628649494' role='forward' />
+    <member type='way' ref='427833034' role='forward' />
+    <member type='way' ref='16967748' role='forward' />
+    <member type='way' ref='628649496' role='forward' />
+    <member type='way' ref='16963544' role='forward' />
+    <member type='way' ref='628821984' role='forward' />
+    <member type='way' ref='628821987' role='forward' />
+    <member type='way' ref='628821988' role='forward' />
+    <member type='way' ref='628821989' role='forward' />
+    <member type='way' ref='628821992' role='forward' />
+    <member type='way' ref='628821993' role='forward' />
+    <member type='way' ref='427885441' role='forward' />
+    <member type='way' ref='427885442' role='forward' />
+    <member type='way' ref='427885443' role='forward' />
+    <member type='way' ref='628821998' role='forward' />
+    <member type='way' ref='628821999' role='forward' />
+    <member type='way' ref='427880187' role='forward' />
+    <member type='way' ref='427880197' role='forward' />
+    <member type='way' ref='628822003' role='forward' />
+    <member type='way' ref='628822008' role='forward' />
+    <member type='way' ref='628822018' role='forward' />
+    <member type='way' ref='427835081' role='forward' />
+    <member type='way' ref='616855378' role='forward' />
+    <member type='way' ref='427880182' role='forward' />
+    <member type='way' ref='427880178' role='forward' />
+    <member type='way' ref='427880192' role='forward' />
+    <member type='way' ref='628822027' role='forward' />
+    <member type='way' ref='46869927' role='forward' />
+    <member type='way' ref='46869926' role='forward' />
+    <member type='way' ref='99819796' role='forward' />
+    <member type='way' ref='117054898' role='forward' />
+    <member type='way' ref='49233570' role='forward' />
+    <member type='way' ref='136556272' role='forward' />
+    <member type='way' ref='136556274' role='forward' />
+    <member type='way' ref='52709362' role='forward' />
+    <member type='way' ref='136556268' role='forward' />
+    <member type='way' ref='136556266' role='forward' />
+    <member type='way' ref='265107118' role='forward' />
+    <member type='way' ref='265107114' role='forward' />
+    <member type='way' ref='265150268' role='forward' />
+    <member type='way' ref='265150269' role='forward' />
+    <member type='way' ref='259155856' role='forward' />
+    <member type='way' ref='259155857' role='forward' />
+    <member type='way' ref='81287145' role='forward' />
+    <member type='way' ref='81287147' role='forward' />
+    <member type='way' ref='259154662' role='forward' />
+    <member type='way' ref='259154663' role='forward' />
+    <member type='way' ref='133369009' role='forward' />
+    <member type='way' ref='417752257' role='forward' />
+    <member type='way' ref='417752236' role='forward' />
+    <member type='way' ref='417752250' role='forward' />
+    <member type='way' ref='417752258' role='forward' />
+    <member type='way' ref='81278723' role='forward' />
+    <member type='way' ref='81278719' role='forward' />
+    <member type='way' ref='263264485' role='forward' />
+    <member type='way' ref='81292450' role='forward' />
+    <member type='way' ref='81292451' role='forward' />
+    <member type='way' ref='7686078' role='forward' />
+    <member type='way' ref='81276681' role='forward' />
+    <member type='way' ref='81276677' role='forward' />
+    <member type='way' ref='81275310' role='forward' />
+    <member type='way' ref='81275312' role='forward' />
+    <member type='way' ref='81275068' role='forward' />
+    <member type='way' ref='81275071' role='forward' />
+    <member type='way' ref='17111009' role='forward' />
+    <member type='way' ref='136554975' role='forward' />
+    <member type='way' ref='136554974' role='forward' />
+    <member type='way' ref='263265830' role='forward' />
+    <member type='way' ref='263265828' role='forward' />
+    <member type='way' ref='52482628' role='forward' />
+    <member type='way' ref='136554980' role='forward' />
+    <member type='way' ref='136554979' role='forward' />
+    <member type='way' ref='52482619' role='forward' />
+    <member type='way' ref='136554971' role='forward' />
+    <member type='way' ref='48987973' role='forward' />
+    <member type='way' ref='136554928' role='forward' />
+    <member type='way' ref='136554923' role='forward' />
+    <member type='way' ref='136554926' role='forward' />
+    <member type='way' ref='136554921' role='forward' />
+    <member type='way' ref='136554925' role='forward' />
+    <member type='way' ref='136554937' role='forward' />
+    <member type='way' ref='263266618' role='forward' />
+    <member type='way' ref='164922826' role='forward' />
+    <member type='way' ref='164922827' role='forward' />
+    <member type='way' ref='631858468' role='forward' />
+    <member type='way' ref='631858469' role='forward' />
+    <member type='way' ref='136554933' role='forward' />
+    <member type='way' ref='136554946' role='forward' />
+    <member type='way' ref='136554930' role='forward' />
+    <member type='way' ref='136554947' role='forward' />
+    <member type='way' ref='263387964' role='forward' />
+    <member type='way' ref='89389187' role='forward' />
+    <member type='way' ref='263387967' role='forward' />
+    <member type='way' ref='136554932' role='forward' />
+    <member type='way' ref='136554942' role='forward' />
+    <member type='way' ref='136554939' role='forward' />
+    <member type='way' ref='136554941' role='forward' />
+    <member type='way' ref='17108412' role='forward' />
+    <member type='way' ref='17109917' role='forward' />
+    <member type='way' ref='330796746' role='forward' />
+    <member type='way' ref='330796747' role='forward' />
+    <member type='way' ref='473588326' role='forward' />
+    <member type='way' ref='142883967' role='forward' />
+    <member type='way' ref='49231407' role='forward' />
+    <member type='way' ref='550625467' role='forward' />
+    <member type='way' ref='253280317' role='forward' />
+    <member type='way' ref='253280307' role='forward' />
+    <member type='way' ref='253280306' role='forward' />
+    <member type='way' ref='253280312' role='forward' />
+    <member type='way' ref='17111912' role='forward' />
+    <member type='way' ref='17111497' role='forward' />
+    <member type='way' ref='233124777' role='forward' />
+    <member type='way' ref='233124779' role='forward' />
+    <member type='way' ref='233065159' role='forward' />
+    <member type='way' ref='233065160' role='forward' />
+    <member type='way' ref='42032099' role='forward' />
+    <member type='way' ref='16989762' role='forward' />
+    <member type='way' ref='136958497' role='forward' />
+    <member type='way' ref='136958499' role='forward' />
+    <member type='way' ref='136958549' role='forward' />
+    <member type='way' ref='136958551' role='forward' />
+    <member type='way' ref='137186177' role='forward' />
+    <member type='way' ref='137186176' role='forward' />
+    <member type='way' ref='136958550' role='forward' />
+    <member type='way' ref='136958552' role='forward' />
+    <member type='way' ref='16990805' role='forward' />
+    <member type='way' ref='16989745' role='forward' />
+    <member type='way' ref='137368933' role='forward' />
+    <member type='way' ref='186241531' role='forward' />
+    <member type='way' ref='233812094' role='forward' />
+    <member type='way' ref='137367364' role='forward' />
+    <member type='way' ref='137367365' role='forward' />
+    <member type='way' ref='137367500' role='forward' />
+    <member type='way' ref='137367501' role='forward' />
+    <member type='way' ref='137367462' role='forward' />
+    <member type='way' ref='230455474' role='forward' />
+    <member type='way' ref='140486415' role='forward' />
+    <member type='way' ref='16989489' role='forward' />
+    <member type='way' ref='16990606' role='forward' />
+    <member type='way' ref='119057126' role='forward' />
+    <member type='way' ref='16989888' role='forward' />
+    <member type='way' ref='137624944' role='backward' />
+    <member type='way' ref='16990245' role='backward' />
+    <member type='way' ref='16989591' role='backward' />
+    <member type='way' ref='137283362' role='backward' />
+    <member type='way' ref='137283361' role='backward' />
+    <member type='way' ref='137283798' role='backward' />
+    <member type='way' ref='137283795' role='backward' />
+    <member type='way' ref='137283796' role='backward' />
+    <member type='way' ref='137283797' role='backward' />
+    <member type='way' ref='33539786' role='backward' />
+    <member type='way' ref='374657584' role='backward' />
+    <member type='way' ref='169469796' role='forward' />
+    <member type='way' ref='472425738' role='forward' />
+    <member type='way' ref='119057172' role='backward' />
+    <member type='way' ref='119057178' role='backward' />
+    <member type='way' ref='263610004' role='backward' />
+    <member type='way' ref='16989754' role='backward' />
+    <member type='way' ref='16990754' role='backward' />
+    <member type='way' ref='16989757' role='forward' />
+    <member type='way' ref='16990438' role='backward' />
+    <member type='way' ref='16990286' role='backward' />
+    <member type='way' ref='140728632' role='backward' />
+    <member type='way' ref='140728626' role='backward' />
+    <member type='way' ref='397588060' role='backward' />
+    <member type='way' ref='16989766' role='backward' />
+    <member type='way' ref='168309336' role='backward' />
+    <member type='way' ref='17116763' role='backward' />
+    <member type='way' ref='17117104' role='backward' />
+    <member type='way' ref='17116936' role='backward' />
+    <member type='way' ref='17117227' role='backward' />
+    <member type='way' ref='17116934' role='backward' />
+    <member type='way' ref='17116770' role='forward' />
+    <member type='way' ref='140779022' role='forward' />
+    <member type='way' ref='140779023' role='forward' />
+    <member type='way' ref='17117042' role='forward' />
+    <member type='way' ref='141018339' role='forward' />
+    <member type='way' ref='141018338' role='forward' />
+    <member type='way' ref='17116928' role='forward' />
+    <member type='way' ref='539232940' role='forward' />
+    <member type='way' ref='539232941' role='forward' />
+    <member type='way' ref='628604535' role='' />
+    <member type='way' ref='628604536' role='' />
+    <tag k='direction' v='east' />
+    <tag k='is_in:state' v='CO' />
+    <tag k='name' v='US 6 (CO, Eastbound)' />
+    <tag k='network' v='US:US' />
+    <tag k='ref' v='6' />
+    <tag k='route' v='road' />
+    <tag k='symbol' v='http://upload.wikimedia.org/wikipedia/commons/e/ef/US_6.svg' />
+    <tag k='type' v='route' />
+    <tag k='wikidata' v='Q2139368' />
+    <tag k='wikipedia' v='en:U.S. Route 6 in Colorado' />
+  </relation>
+</osm>
