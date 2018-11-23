@@ -25,11 +25,13 @@ import org.openstreetmap.josm.gui.progress.ProgressMonitor;
  */
 
 public class TurnLanes extends Test {
-    public static final int UNCONNECTED_TURN_LANES = 3800;
-    public static final int TURN_LANES_DO_NOT_CONTINUE = 3801;
-    public static final int TURN_LANES_DO_NOT_END_ON_CONNECTED_WAY = 3802;
-    public static final int UNCLEAR_TURN_LANES = 3803;
-    public static final int LANES_DO_NO_MATCH_AND_NO_TURN_LANES = 3804;
+    private static final int TURNLANESCODE = 3800;
+    public static final int UNCONNECTED_TURN_LANES = TURNLANESCODE + 0;
+    public static final int TURN_LANES_DO_NOT_CONTINUE = TURNLANESCODE + 1;
+    public static final int TURN_LANES_DO_NOT_END_ON_CONNECTED_WAY = TURNLANESCODE + 2;
+    public static final int UNCLEAR_TURN_LANES = TURNLANESCODE + 3;
+    public static final int LANES_DO_NO_MATCH_AND_NO_TURN_LANES = TURNLANESCODE + 4;
+    public static final int NO_TURN_LANES_CHANGING_LANES = TURNLANESCODE + 5;
 
     private List<Way> turnLaneWays;
     private List<Way> ways;
@@ -318,6 +320,23 @@ public class TurnLanes extends Test {
                         .primitives(way, wayContinue)
                         .build());
             }
+        }
+        String[] turnLanes = way.get("turn:".concat(key)).split("[|]");
+        int possibleAdditionalLanes = 0;
+        int possibleRemovedLanes = 0;
+        for (String lane : turnLanes) {
+            if (lane.contains("slight_left") && lane.contains("through")) possibleAdditionalLanes++;
+            if (lane.contains("slight_right") && lane.contains("through")) possibleAdditionalLanes++;
+            if (lane.contains("merge_to_right") || lane.contains("merge_to_left")) possibleRemovedLanes++;
+        }
+        int lanes = Integer.parseInt(way.get(key));
+        int lanesContinue = Integer.parseInt(wayContinue.get(key));
+        if (lanes != lanesContinue + possibleAdditionalLanes - possibleRemovedLanes
+                || possibleAdditionalLanes > 2 || possibleRemovedLanes > 2) {
+            errors.add(TestError.builder(this, Severity.WARNING, NO_TURN_LANES_CHANGING_LANES)
+                    .message(tr("There is no indication of which lanes change"))
+                    .primitives(way, wayContinue)
+                    .build());
         }
     }
     public void checkContinuingLanes(Way way) {
