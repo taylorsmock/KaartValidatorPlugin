@@ -29,8 +29,10 @@ public class TurnLanes extends Test {
     public static final int TURN_LANES_DO_NOT_CONTINUE = 3801;
     public static final int TURN_LANES_DO_NOT_END_ON_CONNECTED_WAY = 3802;
     public static final int UNCLEAR_TURN_LANES = 3803;
+    public static final int LANES_DO_NO_MATCH_AND_NO_TURN_LANES = 3804;
 
     private List<Way> turnLaneWays;
+    private List<Way> ways;
 
     /**
      * Constructor
@@ -43,15 +45,20 @@ public class TurnLanes extends Test {
     public void startTest(ProgressMonitor monitor) {
         super.startTest(monitor);
         turnLaneWays = new LinkedList<>();
+        ways = new LinkedList<>();
     }
-    
+
     @Override
     public void endTest() {
         for (Way p : turnLaneWays) {
             checkConnections(p);
             checkLanesIntersection(p);
         }
+        for (Way p : ways) {
+            checkContinuingLanes(p);
+        }
         turnLaneWays = null;
+        ways = null;
         super.endTest();
     }
     /**
@@ -136,7 +143,7 @@ public class TurnLanes extends Test {
             }
         }
     }
-    
+
     public void checkConnections(Way p) {
         // Check turn:lanes:backward and turn:lanes:forward
         String turnLanesBackward = p.get("turn:lanes:backward");
@@ -153,7 +160,7 @@ public class TurnLanes extends Test {
             List<OsmPrimitive> refs = n.getReferrers();
             for (OsmPrimitive wp : refs) {
                 if (wp != p && wp instanceof Way) {
-                   connectedWays.add((Way) wp); 
+                   connectedWays.add((Way) wp);
                 }
             }
             if (refs.size() > 1) {
@@ -275,7 +282,7 @@ public class TurnLanes extends Test {
         int[] returnint = {left, right, through, leftthrough, rightthrough, leftright, leftthroughright};
         return returnint;
     }
-    
+
     /**
      * Get the possible directions of turning
      * @param from Initial way
@@ -308,7 +315,39 @@ public class TurnLanes extends Test {
             else return null;
         }
     }
-    
+
+    private void checkContinuingWays(Way way, String key) {
+        Way wayContinue = null;
+        for (OsmPrimitive ref : way.getNode(way.getNodesCount() - 1).getReferrers()) {
+            if (ref instanceof Way && ref != way) {
+                if ((ref.hasKey("name") && ref.get("name") == way.get("name"))
+                        || (ref.hasKey("ref") && ref.get("ref") == way.get("ref"))) {
+                    wayContinue = (Way) ref;
+                    break;
+                }
+            }
+        }
+        if (wayContinue != null) {
+            if ((!wayContinue.hasKey(key) || (wayContinue.hasKey(key) && wayContinue.get(key) != way.get(key)))
+                    && (!way.hasKey("turn:lanes") && !way.hasKey("turn:lanes:forward") && !way.hasKey("turn:lanes:backward"))) {
+                errors.add(TestError.builder(this, Severity.WARNING, LANES_DO_NO_MATCH_AND_NO_TURN_LANES)
+                        .message(tr("There are not turn lanes going into a continuing road with a different number of lanes"))
+                        .primitives(way, wayContinue)
+                        .build());
+            }
+        }
+    }
+    public void checkContinuingLanes(Way way) {
+        if (way.hasKey("lanes:forward")) {
+            checkContinuingWays(way, "lanes:forward");
+        }
+        if (way.hasKey("lanes:backward")) {
+            checkContinuingWays(way, "lanes:backward");
+        }
+        if (!way.hasKey("lanes:backward") && !way.hasKey("lanes:forward") && way.hasKey("lanes")) {
+            checkContinuingWays(way, "lanes");
+        }
+    }
     @Override
     public void visit(Way way) {
         if (!way.isUsable()) {
@@ -316,6 +355,8 @@ public class TurnLanes extends Test {
         }
         if (hasTurnLanes(way)) {
             turnLaneWays.add(way);
+        } else {
+            ways.add(way);
         }
     }
 
