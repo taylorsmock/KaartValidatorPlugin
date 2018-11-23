@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <bounds minlat='40.2297424' minlon='-51.783886' maxlat='40.232298' maxlon='-51.7785645' origin='CGImap 0.6.1 (2525 thorn-01.openstreetmap.org)' />
+  <bounds minlat='40.2297424' minlon='-51.783886' maxlat='40.232298' maxlon='-51.7785645' origin='OpenStreetMap server' />
+  <node id='-38997' action='modify' visible='true' lat='40.23100519379' lon='-51.78214468449' />
+  <node id='-38999' action='modify' visible='true' lat='40.2309862093' lon='-51.78018434999' />
+  <node id='-39001' action='modify' visible='true' lat='40.2316917961' lon='-51.78207422849' />
+  <node id='-39003' action='modify' visible='true' lat='40.23030909218' lon='-51.78210738426' />
+  <node id='-39005' action='modify' visible='true' lat='40.2316728118' lon='-51.78036670669' />
+  <node id='-39007' action='modify' visible='true' lat='40.2302015122' lon='-51.78024651704' />
+  <node id='-39009' action='modify' visible='true' lat='40.23029959984' lon='-51.78119974524' />
+  <node id='-39011' action='modify' visible='true' lat='40.23099580238' lon='-51.78117492931' />
+  <node id='-39013' action='modify' visible='true' lat='40.23157780468' lon='-51.78115418382' />
+  <way id='-39015' action='modify' visible='true'>
+    <nd ref='-38997' />
+    <nd ref='-39011' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='4' />
+    <tag k='name' v='Two' />
+    <tag k='turn:lanes:backward' v='left|right' />
+    <tag k='turn:lanes:forward' v='left;through|through;right' />
+  </way>
+  <way id='-39017' action='modify' visible='true'>
+    <nd ref='-39001' />
+    <nd ref='-38997' />
+    <nd ref='-39003' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='One' />
+    <tag k='surface' v='asphalt' />
+  </way>
+  <way id='-39019' action='modify' visible='true'>
+    <nd ref='-39005' />
+    <nd ref='-38999' />
+    <nd ref='-39007' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='Three' />
+    <tag k='surface' v='asphalt' />
+  </way>
+  <way id='-39021' action='modify' visible='true'>
+    <nd ref='-39009' />
+    <nd ref='-39011' />
+    <nd ref='-39013' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='Four' />
+    <tag k='surface' v='asphalt' />
+  </way>
+  <way id='-39027' action='modify' visible='true'>
+    <nd ref='-39011' />
+    <nd ref='-38999' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='4' />
+    <tag k='name' v='Two' />
+    <tag k='turn:lanes:backward' v='left;through|through;right' />
+    <tag k='turn:lanes:forward' v='left|right' />
+  </way>
+</osm>
