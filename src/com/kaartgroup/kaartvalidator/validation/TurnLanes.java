@@ -77,70 +77,53 @@ public class TurnLanes extends Test {
      */
     public void checkLanesIntersection(Way p) {
         String oneway = p.get("oneway");
-        String name = p.get("name");
-        String ref = p.get("ref");
-        Boolean turnLanesContinueForward = false;
-        Boolean turnLanesContinueBackward = false;
-        Way pContinue = null;
         if (oneway == null) { oneway = "no"; }
-        Node lastNode = p.getNode(p.getNodesCount() - 1);
-        Boolean lastNodeOneway = false;
-        Boolean firstNodeOneway = false;
         if (oneway == "yes" || oneway == "no") {
-            List<OsmPrimitive> refs = lastNode.getReferrers();
-            for (OsmPrimitive wp : refs) {
-                if (!(wp instanceof Way)) continue;
-                if (wp != p && (name != null && name == wp.get("name") || ref != null && ref == wp.get("ref"))) {
-                    pContinue = (Way) wp;
-                } else if (wp.get("oneway") == "yes") {
-                    lastNodeOneway = true;
-                }
-            }
-            int[] continuingLanes = getContinuingLanes(p, "forward");
-            Boolean pContinueTurnlanes = false;
-            if (pContinue != null) pContinueTurnlanes = hasTurnLanes(pContinue);
-            int pContinueLanes = 0;
-            if (pContinue.hasKey("lanes:forward")) pContinueLanes = Integer.parseInt(pContinue.get("lanes:forward"));
-            else if (pContinue.hasKey("lanes")) pContinueLanes = Integer.parseInt(pContinue.get("lanes"));
-            if (lastNodeOneway && (
-                    (pContinueTurnlanes && pContinueLanes == continuingLanes[0])
-                    || (!pContinueTurnlanes && pContinueLanes == continuingLanes[1] && continuingLanes[2] == 0))) {
-                turnLanesContinueForward = true;
-            }
-            if (!turnLanesContinueForward) {
-                errors.add(TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
-                        .message(tr("Turn lanes do not continue through intersection"))
-                        .primitives(p, pContinue)
-                        .build());
-            }
+            checkLanesIntersection(p, "forward");
         }
         if (oneway == "no") {
-            Node firstNode = p.getNode(0);
-            List<OsmPrimitive> refs = firstNode.getReferrers();
-            for (OsmPrimitive wp : refs) {
-                if (!(wp instanceof Way)) continue;
-                if (wp != p && (name != null && name == wp.get("name") || ref != null && ref == wp.get("ref"))) {
-                    pContinue = (Way) wp;
-                } else if (wp.get("oneway") == "yes") {
-                    firstNodeOneway = true;
+            checkLanesIntersection(p, "backward");
+        }
+    }
+    private void checkLanesIntersection (Way p, String direction) {
+        String name = p.get("name");
+        String ref = p.get("ref");
+        Boolean turnLanesContinue = false;
+        Node node = null;
+        Boolean nodeOneway = false;
+        if (direction == "forward") node = p.getNode(p.getNodesCount() - 1);
+        else if (direction == "backward") node = p.getNode(0);
+
+        Way pContinue = null;
+        List<OsmPrimitive> refs = node.getReferrers();
+        int attachedWays = 0;
+        for (OsmPrimitive wp : refs) {
+            if (!(wp instanceof Way)) continue;
+            if (wp != p && (name != null && name == wp.get("name") || ref != null && ref == wp.get("ref"))) {
+                pContinue = (Way) wp;
+                if (wp.get("oneway") == "yes") {
+                    nodeOneway = true;
                 }
             }
-            int[] continuingLanes = getContinuingLanes(p, "backward");
-            Boolean pContinueTurnlanes = false;
-            if (pContinue != null) pContinueTurnlanes = hasTurnLanes(pContinue);
-            int pContinueLanes = 0;
-            if (pContinue.hasKey("lanes:backward")) pContinueLanes = Integer.parseInt(pContinue.get("lanes:backward"));
-            if (firstNodeOneway && (
-                    (pContinueTurnlanes && pContinueLanes == continuingLanes[0])
-                    || (!pContinueTurnlanes && pContinueLanes == continuingLanes[1] && continuingLanes[2] == 0))) {
-                turnLanesContinueBackward = true;
-            }
-            if (!turnLanesContinueBackward) {
-                errors.add(TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
-                        .message(tr("Turn lanes do not continue through intersection"))
-                        .primitives(p, pContinue)
-                        .build());
-            }
+            attachedWays++;
+        }
+        if (attachedWays == 2) return;
+        int[] continuingLanes = getContinuingLanes(p, "forward");
+        Boolean pContinueTurnlanes = false;
+        if (pContinue != null) pContinueTurnlanes = hasTurnLanes(pContinue);
+        int pContinueLanes = 0;
+        if (pContinue.hasKey("lanes:forward")) pContinueLanes = Integer.parseInt(pContinue.get("lanes:forward"));
+        else if (pContinue.hasKey("lanes")) pContinueLanes = Integer.parseInt(pContinue.get("lanes"));
+        if (nodeOneway && (
+                (pContinueTurnlanes && pContinueLanes == continuingLanes[0])
+                || (!pContinueTurnlanes && pContinueLanes == continuingLanes[1] && continuingLanes[2] == 0))) {
+            turnLanesContinue = true;
+        }
+        if (!turnLanesContinue) {
+            errors.add(TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
+                    .message(tr("Turn lanes do not continue through intersection"))
+                    .primitives(p, pContinue)
+                    .build());
         }
     }
 
