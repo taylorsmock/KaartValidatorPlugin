@@ -93,7 +93,8 @@ public class TurnLanes extends Test {
             Boolean pContinueTurnlanes = false;
             if (pContinue != null) pContinueTurnlanes = hasTurnLanes(pContinue);
             int pContinueLanes = 0;
-            if (pContinue.hasKey("lanes")) pContinueLanes = Integer.parseInt(pContinue.get("lanes"));
+            if (pContinue.hasKey("lanes:forward")) pContinueLanes = Integer.parseInt(pContinue.get("lanes:forward"));
+            else if (pContinue.hasKey("lanes")) pContinueLanes = Integer.parseInt(pContinue.get("lanes"));
             if (lastNodeOneway && (
                     (pContinueTurnlanes && pContinueLanes == continuingLanes[0])
                     || (!pContinueTurnlanes && pContinueLanes == continuingLanes[1] && continuingLanes[2] == 0))) {
@@ -120,9 +121,11 @@ public class TurnLanes extends Test {
             int[] continuingLanes = getContinuingLanes(p, "backward");
             Boolean pContinueTurnlanes = false;
             if (pContinue != null) pContinueTurnlanes = hasTurnLanes(pContinue);
-            if (firstNodeOneway && ((pContinueTurnlanes ||
-                    continuingLanes[0] != continuingLanes[1])) ||
-                    (!pContinueTurnlanes && pContinue.get("lanes") == Integer.toString(continuingLanes[1]))) {
+            int pContinueLanes = 0;
+            if (pContinue.hasKey("lanes:backward")) pContinueLanes = Integer.parseInt(pContinue.get("lanes:backward"));
+            if (firstNodeOneway && (
+                    (pContinueTurnlanes && pContinueLanes == continuingLanes[0])
+                    || (!pContinueTurnlanes && pContinueLanes == continuingLanes[1] && continuingLanes[2] == 0))) {
                 turnLanesContinueBackward = true;
             }
             if (!turnLanesContinueBackward) {
@@ -157,6 +160,20 @@ public class TurnLanes extends Test {
                 numNodesConnected++;
             }
         }
+        Boolean connectedTurnLanesForward = false;
+        Boolean connectedTurnLanesBackward = false;
+        if (turnLanesForward != null || turnLanes != null) {
+            List<OsmPrimitive> refs = p.getNode(p.getNodesCount() - 1).getReferrers();
+            for (OsmPrimitive wp : refs) {
+                if (wp instanceof Way && wp != p) connectedTurnLanesForward = true;
+            }
+        }
+        if (turnLanesBackward != null) {
+            List<OsmPrimitive> refs = p.getNode(0).getReferrers();
+            for (OsmPrimitive wp : refs) {
+                if (wp instanceof Way && wp != p) connectedTurnLanesBackward = true;
+            }
+        }
 
         if (numNodesConnected > 2) {
             errors.add(TestError.builder(this, Severity.WARNING, UNCLEAR_TURN_LANES)
@@ -164,7 +181,9 @@ public class TurnLanes extends Test {
                     .primitives(p)
                     .build());
         }
-        if (connectedWays.isEmpty()) {
+        if (connectedWays.isEmpty()
+                || (!connectedTurnLanesForward && (turnLanesForward != null || turnLanes != null))
+                || (!connectedTurnLanesBackward && (turnLanesBackward != null))) {
             errors.add(TestError.builder(this, Severity.WARNING, UNCONNECTED_TURN_LANES)
                     .message(tr("Road with turn lanes not connected to anything"))
                     .primitives(p)
