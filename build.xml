@@ -8,7 +8,7 @@
     <property name="plugin.author" value="Taylor Smock"/>
     <property name="plugin.class" value="com.kaartgroup.kaartvalidator.KaartPlugin"/>
     <property name="plugin.description" value="Kaart Validation Checks"/>
-    <property name="plugin.icon" value="resources/images/Kaart-Logo-2.svg"/>
+    <property name="plugin.icon" value="images/Kaart-Logo-2.svg"/>
     <property name="plugin.link" value="http://kaartgroup.com"/>
     <property name="plugin.canloadatruntime" value="true"/>
 

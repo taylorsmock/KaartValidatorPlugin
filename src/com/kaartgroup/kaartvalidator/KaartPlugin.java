@@ -22,8 +22,8 @@ public class KaartPlugin extends Plugin {
 		OsmValidator.addTest(RoadEndsWithLinks.class);
 	}
 
-	@Override
+	/*@Override
 	public PreferenceSetting getPreferenceSetting() {
 		return new KaartPluginPreferences();
-	}
+	}*/
 }
