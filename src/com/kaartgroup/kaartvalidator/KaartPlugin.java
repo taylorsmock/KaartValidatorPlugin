@@ -6,7 +6,7 @@ import org.openstreetmap.josm.gui.preferences.PreferenceSetting;
 import org.openstreetmap.josm.plugins.Plugin;
 import org.openstreetmap.josm.plugins.PluginInformation;
 
-import com.kaartgroup.kaartvalidator.validation.TurnLanes;
+import com.kaartgroup.kaartvalidator.validation.*;
 
 /**
  * Primary class of the Kaart plugin
@@ -19,7 +19,9 @@ public class KaartPlugin extends Plugin {
 	public KaartPlugin(PluginInformation info) {
 		super(info);
 		OsmValidator.addTest(TurnLanes.class);
+		OsmValidator.addTest(RoadEndsWithLinks.class);
 	}
+
 	@Override
 	public PreferenceSetting getPreferenceSetting() {
 		return new KaartPluginPreferences();
