@@ -65,11 +65,11 @@ public class RoadEndsWithLinks extends Test {
             if (!(ref instanceof Way) || ref == p) continue;
             else way = (Way) ref;
             if (way.hasKey("highway") && way.get("highway").contains("_link")) {
-                if (way.getNode(0) == end) {
+                if (way.firstNode() == end) {
                     linkForward++;
                     links.add(way);
                 }
-                else if (way.getNode(way.getNodesCount() - 1) == end) {
+                else if (way.lastNode() == end) {
                     linkBackward++;
                     links.add(way);
                 }
@@ -104,7 +104,7 @@ public class RoadEndsWithLinks extends Test {
         Way way;
         if (p instanceof Way) way = (Way) p;
         else return;
-        checkEnd(way, way.getNode(0));
-        checkEnd(way, way.getNode(way.getNodesCount() - 1));
+        checkEnd(way, way.firstNode());
+        checkEnd(way, way.lastNode());
     }
 }

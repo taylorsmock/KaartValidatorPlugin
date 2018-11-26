@@ -92,9 +92,8 @@ public class TurnLanes extends Test {
         String ref = p.get("ref");
         Boolean turnLanesContinue = false;
         Node node = null;
-        Boolean nodeOneway = false;
-        if (direction == "forward") node = p.getNode(p.getNodesCount() - 1);
-        else if (direction == "backward") node = p.getNode(0);
+        if (direction == "forward") node = p.lastNode();
+        else if (direction == "backward") node = p.firstNode();
 
         Way pContinue = null;
         List<OsmPrimitive> refs = node.getReferrers();
@@ -103,16 +102,15 @@ public class TurnLanes extends Test {
             if (!(wp instanceof Way)) continue;
             if (wp != p && (name != null && name == wp.get("name") || ref != null && ref == wp.get("ref"))) {
                 pContinue = (Way) wp;
-                if (wp.get("oneway") == "yes") {
-                    nodeOneway = true;
-                }
             }
             attachedWays++;
         }
         if (attachedWays == 2) return;
         int[] continuingLanes = getContinuingLanes(p, "forward");
+        if (continuingLanes.equals(new int[] {-1, -1, -1})) return;
         Boolean pContinueTurnlanes = false;
         if (pContinue != null) pContinueTurnlanes = hasTurnLanes(pContinue);
+        else return;
         int pContinueLanes = 0;
         if (pContinue.hasKey("lanes:forward")) pContinueLanes = Integer.parseInt(pContinue.get("lanes:forward"));
         else if (pContinue.hasKey("lanes")) {
@@ -124,9 +122,9 @@ public class TurnLanes extends Test {
                 || (!pContinueTurnlanes && pContinueLanes == continuingLanes[1] && continuingLanes[2] == 0))) {
             turnLanesContinue = true;
         }
-        if (!turnLanesContinue && nodeOneway) {
+        if (!turnLanesContinue) {
             errors.add(TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
-                    .message(tr("Turn lanes do not continue through intersection"))
+                    .message(tr("Turn lanes do not continue through intersection or do not match up with lanes"))
                     .primitives(p, pContinue)
                     .build());
         }
@@ -164,7 +162,7 @@ public class TurnLanes extends Test {
             }
         }
         if (turnLanesBackward != null) {
-            List<OsmPrimitive> refs = p.getNode(0).getReferrers();
+            List<OsmPrimitive> refs = p.firstNode().getReferrers();
             for (OsmPrimitive wp : refs) {
                 if (wp instanceof Way && wp != p) connectedTurnLanesBackward = true;
             }
@@ -191,17 +189,20 @@ public class TurnLanes extends Test {
      * @param way The highway with lanes
      * @param direction The direction of travel (forward|backward)
      * @return [lanes continuing through intersection, through lanes only, turn lanes continuing through intersection]
+     *            returns [-1, -1, -1] if there is no "turn:lanes" in the specified direction.
      */
     public int[] getContinuingLanes(Way way, String direction) {
         String turnLanes;
         Node node = null;
-        if (way.get("oneway") == "yes") {
+        if (way.get("oneway") == "yes" && way.hasKey("turn:lanes")) {
             turnLanes = way.get("turn:lanes");
-        } else {
+        } else if (way.hasKey("turn:lanes:" + direction)){
             turnLanes = way.get("turn:lanes:" + direction);
+        } else {
+            return new int[] {-1, -1, -1};
         }
         if (direction == "forward" || way.get("oneway") == "yes") {
-            node = way.getNode(way.getNodesCount() - 1);
+            node = way.lastNode();
         } else if (direction == "backward") {
             node = way.getNode(0);
         }
@@ -216,11 +217,11 @@ public class TurnLanes extends Test {
             if (way.get("name") != null && way.get("name") != wpt.get("name")
                     || way.get("ref") != null && way.get("ref") != wpt.get("ref")) {
                 /* Make certain that the oneway does NOT end on the same node */
-                if (wpt.get("oneway") == "yes" && wpt.getNode(wpt.getNodesCount() - 1) != node) {
+                if (wpt.get("oneway") == "yes" && wpt.lastNode() != node) {
                     directions = getTurnDirection(way, node, wpt);
                     if (directions != null) break;
-                } else if ((!wpt.hasKey("oneway") || wpt.get("oneway") == "no") && wpt.getNode(0) != node
-                        && wpt.getNode(wpt.getNodesCount() - 1) != node) {
+                } else if ((!wpt.hasKey("oneway") || wpt.get("oneway") == "no") && wpt.firstNode() != node
+                        && wpt.lastNode() != node) {
                     directions = "left|right";
                 }
             }
@@ -283,8 +284,8 @@ public class TurnLanes extends Test {
         if (!to.hasKey("oneway") || to.get("oneway") == "no") return "left|right";
         Node prevFromNode = null;
         Node nextToNode = null;
-        if (from.getNode(0) == via) prevFromNode = from.getNode(1);
-        else if (from.getNode(from.getNodesCount() - 1) == via) prevFromNode = from.getNode(from.getNodesCount() - 2);
+        if (from.firstNode() == via) prevFromNode = from.getNode(1);
+        else if (from.lastNode() == via) prevFromNode = from.getNode(from.getNodesCount() - 2);
         for (int i = 0; i < to.getNodesCount(); i++) {
             if (to.getNode(i) == via && i != to.getNodesCount() - 1) {
                 nextToNode = to.getNode(i);
@@ -348,13 +349,13 @@ public class TurnLanes extends Test {
         }
     }
     public void checkContinuingLanes(Way way) {
-        if (way.hasKey("lanes:forward")) {
+        if (way.hasKey("turn:lanes:forward")) {
             checkContinuingWays(way, "lanes:forward");
         }
-        if (way.hasKey("lanes:backward")) {
+        if (way.hasKey("turn:lanes:backward")) {
             checkContinuingWays(way, "lanes:backward");
         }
-        if (!way.hasKey("lanes:backward") && !way.hasKey("lanes:forward") && way.hasKey("lanes")) {
+        if (!way.hasKey("turn:lanes:backward") && !way.hasKey("turn:lanes:forward") && way.hasKey("turn:lanes")) {
             checkContinuingWays(way, "lanes");
         }
     }
