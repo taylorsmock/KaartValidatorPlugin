@@ -115,13 +115,16 @@ public class TurnLanes extends Test {
         if (pContinue != null) pContinueTurnlanes = hasTurnLanes(pContinue);
         int pContinueLanes = 0;
         if (pContinue.hasKey("lanes:forward")) pContinueLanes = Integer.parseInt(pContinue.get("lanes:forward"));
-        else if (pContinue.hasKey("lanes")) pContinueLanes = Integer.parseInt(pContinue.get("lanes"));
-        if (nodeOneway && (
+        else if (pContinue.hasKey("lanes")) {
+            pContinueLanes = Integer.parseInt(pContinue.get("lanes"));
+            if (!pContinue.hasKey("oneway") || pContinue.get("oneway") != "yes") pContinueLanes = pContinueLanes / 2;
+        }
+        if ((
                 (pContinueTurnlanes && pContinueLanes == continuingLanes[0])
                 || (!pContinueTurnlanes && pContinueLanes == continuingLanes[1] && continuingLanes[2] == 0))) {
             turnLanesContinue = true;
         }
-        if (!turnLanesContinue) {
+        if (!turnLanesContinue && nodeOneway) {
             errors.add(TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
                     .message(tr("Turn lanes do not continue through intersection"))
                     .primitives(p, pContinue)
@@ -320,8 +323,13 @@ public class TurnLanes extends Test {
                         .primitives(way, wayContinue)
                         .build());
             }
+        } else if (wayContinue == null) {
+            return;
         }
-        String[] turnLanes = way.get("turn:".concat(key)).split("[|]");
+        String keyConcat = "turn:".concat(key);
+        String[] turnLanes;
+        if (way.hasKey(keyConcat)) turnLanes = way.get(keyConcat).split("[|]");
+        else turnLanes = new String[] {"unknown"};
         int possibleAdditionalLanes = 0;
         int possibleRemovedLanes = 0;
         for (String lane : turnLanes) {
