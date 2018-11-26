@@ -20,6 +20,7 @@ public class KaartPlugin extends Plugin {
 		super(info);
 		OsmValidator.addTest(TurnLanes.class);
 		OsmValidator.addTest(RoadEndsWithLinks.class);
+		OsmValidator.addTest(NameRefConsistency.class);
 	}
 
 	/*@Override
