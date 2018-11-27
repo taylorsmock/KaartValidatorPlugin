@@ -13,18 +13,19 @@ import com.kaartgroup.kaartvalidator.validation.*;
  * @author Taylor Smock
  */
 public class KaartPlugin extends Plugin {
-	/**
-	 * Primary constructor
-	 */
-	public KaartPlugin(PluginInformation info) {
-		super(info);
-		OsmValidator.addTest(TurnLanes.class);
-		OsmValidator.addTest(RoadEndsWithLinks.class);
-		OsmValidator.addTest(NameRefConsistency.class);
-	}
+    /**
+     * Primary constructor
+     */
+    public KaartPlugin(PluginInformation info) {
+        super(info);
+        OsmValidator.addTest(TurnLanes.class);
+        OsmValidator.addTest(RoadEndsWithLinks.class);
+        OsmValidator.addTest(NameRefConsistency.class);
+        OsmValidator.addTest(Maxspeed.class);
+    }
 
-	/*@Override
-	public PreferenceSetting getPreferenceSetting() {
-		return new KaartPluginPreferences();
-	}*/
+    /*@Override
+    public PreferenceSetting getPreferenceSetting() {
+        return new KaartPluginPreferences();
+    }*/
 }
