@@ -87,42 +87,69 @@ public class TurnLanes extends Test {
             checkLanesIntersection(p, "backward");
         }
     }
+
+    /**
+     * Make certain that turn:lanes on way in a direction make sense
+     * @param p The way to check the turn lanes on
+     * @param direction The direction in which to check the turn lanes (forward/backward)
+     */
     private void checkLanesIntersection (Way p, String direction) {
         String name = p.get("name");
         String ref = p.get("ref");
-        Boolean turnLanesContinue = false;
         Node node = null;
         if (direction == "forward") node = p.lastNode();
         else if (direction == "backward") node = p.firstNode();
 
         Way pContinue = null;
-        List<OsmPrimitive> refs = node.getReferrers();
+        List<Way> refs = node.getParentWays();
         int attachedWays = 0;
-        for (OsmPrimitive wp : refs) {
-            if (!(wp instanceof Way)) continue;
+        for (Way wp : refs) {
             if (wp != p && (name != null && name == wp.get("name") || ref != null && ref == wp.get("ref"))) {
                 pContinue = (Way) wp;
             }
             attachedWays++;
         }
         if (attachedWays == 2) return;
-        int[] continuingLanes = getContinuingLanes(p, "forward");
-        if (continuingLanes.equals(new int[] {-1, -1, -1})) return;
-        Boolean pContinueTurnlanes = false;
-        if (pContinue != null) pContinueTurnlanes = hasTurnLanes(pContinue);
-        else return;
-        int pContinueLanes = 0;
-        if (pContinue.hasKey("lanes:forward")) pContinueLanes = Integer.parseInt(pContinue.get("lanes:forward"));
-        else if (pContinue.hasKey("lanes")) {
-            pContinueLanes = Integer.parseInt(pContinue.get("lanes"));
-            if (!pContinue.hasKey("oneway") || pContinue.get("oneway") != "yes") pContinueLanes = pContinueLanes / 2;
+        String[] continuingLanes = getContinuingLanes(p, direction);
+        if (continuingLanes == null || pContinue == null) return;
+        Boolean continuingLanesOnlyForward = true;
+        for (String lane : continuingLanes) {
+            if (lane.contains("left") || lane.contains("right") || lane.isEmpty()) {
+                continuingLanesOnlyForward = false;
+                break;
+            }
         }
-        if ((
-                (pContinueTurnlanes && pContinueLanes == continuingLanes[0])
-                || (!pContinueTurnlanes && pContinueLanes == continuingLanes[1] && continuingLanes[2] == 0))) {
-            turnLanesContinue = true;
+        if (continuingLanes.length == 0) continuingLanesOnlyForward = false;
+        if (continuingLanesOnlyForward) return;
+        String[] pContinueLanes = null;
+        if (direction == "forward" && !pContinue.hasKey("turn:lanes:" + direction) && pContinue.hasKey("turn:lanes")) {
+            pContinueLanes = pContinue.get("turn:lanes").split("[|]");
+        } else if (pContinue.hasKey("turn:lanes:" + direction)) {
+            pContinueLanes = pContinue.get("turn:lanes:" + direction).split("[|]");
         }
-        if (!turnLanesContinue) {
+        Boolean doesContinue = true;
+        if (pContinueLanes != null && continuingLanes != null && pContinueLanes.length == continuingLanes.length) {
+	        for (int i = 0; i < pContinueLanes.length; i++) {
+	        	if (pContinueLanes[i].equals(continuingLanes[i])) continue;
+	        	doesContinue = false;
+	        	break;
+	        }
+        } else if ((pContinue.hasKey("lanes") || pContinue.hasKey("lanes:" + direction)) && continuingLanes != null) {
+        	int lanes;
+        	if (!pContinue.hasKey("lanes:" + direction)) lanes = Integer.parseInt(pContinue.get("lanes"));
+        	else lanes = Integer.parseInt(pContinue.get("lanes:" + direction));
+        	for (String lane : continuingLanes) {
+        		if (lane.contains("through")) lanes--;
+        		else {
+        			doesContinue = false;
+        			break;
+        		}
+        	}
+        	if (lanes != 0) doesContinue = false;
+        } else {
+        	doesContinue = false;
+        }
+        if (!doesContinue) {
             errors.add(TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
                     .message(tr("Turn lanes do not continue through intersection or do not match up with lanes"))
                     .primitives(p, pContinue)
@@ -130,6 +157,10 @@ public class TurnLanes extends Test {
         }
     }
 
+    /**
+     * Check that a way with turn lanes only has connections to different ways at a maximum of two different nodes
+     * @param p Way to check
+     */
     public void checkConnections(Way p) {
         // Check turn:lanes:backward and turn:lanes:forward
         String turnLanesBackward = p.get("turn:lanes:backward");
@@ -185,13 +216,12 @@ public class TurnLanes extends Test {
     }
 
     /**
-     * Gets the probable number of lanes continuing in a direction
+     * Gets the probable lanes continuing in a direction
      * @param way The highway with lanes
      * @param direction The direction of travel (forward|backward)
-     * @return [lanes continuing through intersection, through lanes only, turn lanes continuing through intersection]
-     *            returns [-1, -1, -1] if there is no "turn:lanes" in the specified direction.
+     * @return remaining lanes or null if there are no remaining lanes
      */
-    public int[] getContinuingLanes(Way way, String direction) {
+    public String[] getContinuingLanes(Way way, String direction) {
         String turnLanes;
         Node node = null;
         if (way.get("oneway") == "yes" && way.hasKey("turn:lanes")) {
@@ -199,77 +229,43 @@ public class TurnLanes extends Test {
         } else if (way.hasKey("turn:lanes:" + direction)){
             turnLanes = way.get("turn:lanes:" + direction);
         } else {
-            return new int[] {-1, -1, -1};
+            return null;
         }
         if (direction == "forward" || way.get("oneway") == "yes") {
             node = way.lastNode();
         } else if (direction == "backward") {
-            node = way.getNode(0);
+            node = way.firstNode();
         }
         String[] lanes = turnLanes.split("[|]");
-        int[] laneBreakdown = getTurnLanes(lanes);
-        List<OsmPrimitive> refs = node.getReferrers();
-        String directions = null;
-        for (OsmPrimitive wp : refs) {
-            if (!(wp instanceof Way)) continue;
-            Way wpt = (Way) wp;
-            if (wpt == way) continue;
-            if (way.get("name") != null && way.get("name") != wpt.get("name")
-                    || way.get("ref") != null && way.get("ref") != wpt.get("ref")) {
-                /* Make certain that the oneway does NOT end on the same node */
-                if (wpt.get("oneway") == "yes" && wpt.lastNode() != node) {
-                    directions = getTurnDirection(way, node, wpt);
-                    if (directions != null) break;
-                } else if ((!wpt.hasKey("oneway") || wpt.get("oneway") == "no") && wpt.firstNode() != node
-                        && wpt.lastNode() != node) {
-                    directions = "left|right";
+        for (int i = 0; i < lanes.length; i++) {
+            if (lanes[i].isBlank()) lanes[i] = "through";
+        }
+        List<Way> refs = node.getParentWays();
+        String[] directions = null;
+        for (Way wp : refs) {
+            if (wp == way) continue;
+            if (way.hasKey("name") && !way.get("name").equals(wp.get("name"))
+                    || way.hasKey("ref") && !way.get("ref").equals(wp.get("ref"))) {
+                directions = getTurnDirection(way, node, wp);
+                if (directions != null && directions[0].equals("through")) continue;
+                else if (directions != null) break;
+            }
+        }
+        for (String turn : directions) {
+            for (int i = 0; i < lanes.length; i++) {
+                while (lanes[i].contains(turn)) {
+                    lanes[i] = lanes[i].replaceAll(turn, "");
+                    lanes[i] = lanes[i].replaceAll("^;|;$", "");
+                    lanes[i] = lanes[i].replaceAll(";;", ";");
                 }
             }
         }
-        int returnValue = 0;
-        for (int i = 0; i < laneBreakdown.length; i++) {
-            returnValue += laneBreakdown[i];
+        List<String> rlanes = new LinkedList<>();
+        for (String lane : lanes) {
+            if (!lane.isBlank()) rlanes.add(lane);
         }
-        int turnLanesThrough = 0;
-        if (directions != null && directions.contains("left")) {
-            returnValue -= laneBreakdown[0];
-            turnLanesThrough = laneBreakdown[1] + laneBreakdown[4] + laneBreakdown[5] + laneBreakdown[6];
-        }
-        if (directions != null && directions.contains("right")) {
-            returnValue -= laneBreakdown[1];
-            turnLanesThrough = laneBreakdown[0] + laneBreakdown[3] + laneBreakdown[5] + laneBreakdown[6];
-        }
-        if (directions != null && directions.contains("right") && directions.contains("left")) {
-            turnLanesThrough = 0;
-        }
-        int onlyThrough = laneBreakdown[2] + laneBreakdown[3] + laneBreakdown[4] + laneBreakdown[6];
-        return new int[]{returnValue, onlyThrough, turnLanesThrough};
-    }
-
-    /**
-     * Get the number of turn lanes going in different directions (left|through|right)
-     * @param lanes the turn:lanes
-     * @return [left, right, through, left;through, right;through, left;right, left;through;right]
-     */
-    public int[] getTurnLanes(String[] lanes) {
-        int left = 0;
-        int right = 0;
-        int through = 0;
-        int leftthrough = 0;
-        int rightthrough = 0;
-        int leftright = 0;
-        int leftthroughright = 0;
-        for (String i : lanes) {
-            if (i.contains("left") && !i.contains("through") && !i.contains("right")) left++;
-            if (!i.contains("left") && !i.contains("through") && i.contains("right")) right++;
-            if (!i.contains("left") && i.contains("through") && !i.contains("right")) through++;
-            if (i.contains("left") && i.contains("through") && !i.contains("right")) leftthrough++;
-            if (!i.contains("left") && i.contains("through") && i.contains("right")) rightthrough++;
-            if (i.contains("left") && !i.contains("through") && i.contains("right")) leftright++;
-            if (i.contains("left") && i.contains("through") && i.contains("right")) leftthroughright++;
-        }
-        int[] returnint = {left, right, through, leftthrough, rightthrough, leftright, leftthroughright};
-        return returnint;
+        String[] array = new String[rlanes.size()];
+        return rlanes.toArray(array);
     }
 
     /**
@@ -277,18 +273,18 @@ public class TurnLanes extends Test {
      * @param from Initial way
      * @param via Node connecting
      * @param to Final way
-     * @return "left", "right", "left|right", null
+     * @return ["left"], ["right"], ["left", "right"], null if they are not connected at Node via
      */
-    public String getTurnDirection(Way from, Node via, Way to) {
+    public String[] getTurnDirection(Way from, Node via, Way to) {
         if (!from.containsNode(via) || !to.containsNode(via)) return null;
-        if (!to.hasKey("oneway") || to.get("oneway") == "no") return "left|right";
+        if (!to.hasKey("oneway") || to.get("oneway") == "no") return new String[] {"left", "right"};
         Node prevFromNode = null;
         Node nextToNode = null;
         if (from.firstNode() == via) prevFromNode = from.getNode(1);
         else if (from.lastNode() == via) prevFromNode = from.getNode(from.getNodesCount() - 2);
         for (int i = 0; i < to.getNodesCount(); i++) {
             if (to.getNode(i) == via && i != to.getNodesCount() - 1) {
-                nextToNode = to.getNode(i);
+                nextToNode = to.getNode(i + 1);
                 break;
             }
         }
@@ -297,14 +293,20 @@ public class TurnLanes extends Test {
             LatLon tcoord = nextToNode.getCoor();
             LatLon vcoord = via.getCoor();
             LatLon fcoord = prevFromNode.getCoor();
-            Double bearing = vcoord.bearing(fcoord) - vcoord.bearing(tcoord);
-            // TODO check if right (I just switched left/right)
-            if (bearing > 0) return "left";
-            else if (bearing < 0) return "right";
-            else return null;
+            Double fbearing = vcoord.bearing(fcoord);
+            Double tbearing = vcoord.bearing(tcoord);
+            Double bearing = fbearing - tbearing;
+            if ((bearing > 0 && bearing < Math.PI) || (bearing < -Math.PI && bearing > -2 * Math.PI)) return new String[] {"right"};
+            else if ((bearing < 0 && bearing > -Math.PI) || (bearing > Math.PI && bearing < 2 * Math.PI)) return new String[] {"left"};
+            else return new String[] {"through"};
         }
     }
 
+    /**
+     * Check a way that connects to another way with the same ref/name has lane change indications
+     * @param way The way to check
+     * @param key The key (ref/name) that we are interested in
+     */
     private void checkContinuingWays(Way way, String key) {
         Way wayContinue = null;
         for (OsmPrimitive ref : way.getNode(way.getNodesCount() - 1).getReferrers()) {
@@ -348,6 +350,10 @@ public class TurnLanes extends Test {
                     .build());
         }
     }
+    /**
+     * Check way to ensure that we have indications of which lanes appear/disappear.
+     * @param way Way to check
+     */
     public void checkContinuingLanes(Way way) {
         if (way.hasKey("turn:lanes:forward")) {
             checkContinuingWays(way, "lanes:forward");
