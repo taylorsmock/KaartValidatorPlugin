@@ -82,14 +82,15 @@ public class LinkDestinations extends Test {
         if (refs.size() == 1 || refs.size() == 2
                 && (refs.get(0).lastNode() == refs.get(1).firstNode()
                 || refs.get(0).firstNode() == refs.get(1).lastNode())) {
-            if (refs.get(0).hasKey("ref")) {
-                testError.fix(() -> new ChangePropertyCommand(way, "destination:ref", refs.get(0).get("ref")));
-            } else if (refs.get(0).hasKey("name")) {
-                testError.fix(() -> new ChangePropertyCommand(way, "destination:street", refs.get(0).get("name")));
-            } else if (refs.get(0).hasKey("destination:ref")) {
-                testError.fix(() -> new ChangePropertyCommand(way, "destination:ref", refs.get(0).get("destination:ref")));
-            } else if (refs.get(0).hasKey("destination:street")) {
-                testError.fix(() -> new ChangePropertyCommand(way, "destination:street", refs.get(0).get("destination:street")));
+            Way ref = refs.get(0);
+            if (ref.hasKey("destination:ref") && !ref.hasKey("destination:ref")) {
+                testError.fix(() -> new ChangePropertyCommand(way, "destination:ref", ref.get("destination:ref")));
+            } else if (ref.hasKey("ref") && !ref.hasKey("destination:ref")) {
+                testError.fix(() -> new ChangePropertyCommand(way, "destination:ref", ref.get("ref")));
+            } else if (ref.hasKey("destination:street") && !ref.hasKey("name")) {
+                testError.fix(() -> new ChangePropertyCommand(way, "destination:street", ref.get("destination:street")));
+            } else if (ref.hasKey("name") && !ref.hasKey("destination:street")) {
+                testError.fix(() -> new ChangePropertyCommand(way, "destination:street", ref.get("name")));
             }
         }
         errors.add(testError.build());
