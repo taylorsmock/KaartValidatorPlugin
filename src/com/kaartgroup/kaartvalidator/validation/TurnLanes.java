@@ -34,6 +34,8 @@ public class TurnLanes extends Test {
     public static final int LANES_DO_NO_MATCH_AND_NO_TURN_LANES = TURNLANESCODE + 4;
     public static final int NO_TURN_LANES_CHANGING_LANES = TURNLANESCODE + 5;
 
+	public static final int MAXLENGTH = 30; //meters
+
     private List<Way> turnLaneWays;
     private List<Way> ways;
 
@@ -164,15 +166,24 @@ public class TurnLanes extends Test {
             TestError.Builder testError = TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
                     .message(tr("Turn lanes do not continue through intersection or do not match up with lanes"))
                     .primitives(p, pContinue);
-            if (getNumberOfConnections(pContinue, "highway", ".*(motorway|trunk|primary|secondary|tertiary|unclassified|residential|service).*") <= 2) {
+            int connections = getNumberOfConnections(pContinue, "highway", ".*(motorway|trunk|primary|secondary|tertiary|unclassified|residential|service|_link).*");
+            if (connections > 0 && connections <= 2 && tWay.getLength() < MAXLENGTH) {
                 testError.fix(() -> new ChangePropertyCommand(tWay, key, finalContinuingLanesValue));
             }
             errors.add(testError.build());
         }
     }
 
+    /**
+     * Get the number of connections a way has that have a key with regex
+     * @param way
+     * @param key
+     * @param regex
+     * @return
+     */
     private int getNumberOfConnections(Way way, String key, String regex) {
         int returnValue = 0;
+        if (way.firstNode().isOutsideDownloadArea() || way.lastNode().isOutsideDownloadArea()) return -1;
         for (int i = 0; i < way.getNodesCount(); i++) {
             List<Way> refs = way.getNode(i).getParentWays();
             Boolean connected = false;
