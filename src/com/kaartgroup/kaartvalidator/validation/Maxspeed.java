@@ -31,8 +31,17 @@ public class Maxspeed extends Test {
 
     @Override
     public void endTest() {
-        for (Way way : ways) {
-            checkMaxspeedConsistency(way);
+        Way pWay = null;
+        try {
+            for (Way way : ways) {
+                pWay = way;
+                checkMaxspeedConsistency(way);
+            }
+        } catch (Exception e) {
+            if (pWay != null) {
+                System.out.printf("Way https://osm.org/way/%d caused an error" + System.lineSeparator(), pWay.getOsmId());
+            }
+            e.printStackTrace();
         }
         ways = null;
         super.endTest();

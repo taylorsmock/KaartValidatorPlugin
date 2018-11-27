@@ -34,7 +34,7 @@ public class TurnLanes extends Test {
     public static final int LANES_DO_NO_MATCH_AND_NO_TURN_LANES = TURNLANESCODE + 4;
     public static final int NO_TURN_LANES_CHANGING_LANES = TURNLANESCODE + 5;
 
-	public static final int MAXLENGTH = 30; //meters
+    public static final int MAXLENGTH = 30; //meters
 
     private List<Way> turnLaneWays;
     private List<Way> ways;
@@ -55,12 +55,22 @@ public class TurnLanes extends Test {
 
     @Override
     public void endTest() {
-        for (Way p : turnLaneWays) {
-            checkConnections(p);
-            checkLanesIntersection(p);
-        }
-        for (Way p : ways) {
-            checkContinuingLanes(p);
+        Way way = null;
+        try {
+            for (Way p : turnLaneWays) {
+                way = p;
+                checkConnections(p);
+                checkLanesIntersection(p);
+            }
+            for (Way p : ways) {
+                way = p;
+                checkContinuingLanes(p);
+            }
+        } catch (Exception e) {
+            if (way != null) {
+                System.out.printf("Way https://osm.org/way/%d caused an error" + System.lineSeparator(), way.getOsmId());
+            }
+            e.printStackTrace();
         }
         turnLaneWays = null;
         ways = null;
@@ -154,7 +164,7 @@ public class TurnLanes extends Test {
         }
         if (!doesContinue) {
             String key;
-            if (direction == "forward" && pContinue.get("oneway").equals("yes")) key = "turn:lanes";
+            if (direction == "forward" && pContinue.hasKey("oneway") && pContinue.get("oneway").equals("yes")) key = "turn:lanes";
             else key = "turn:lanes:" + direction;
             String continuingLanesValue = "";
             for (int i = 0; i < continuingLanes.length; i++) {
@@ -301,6 +311,7 @@ public class TurnLanes extends Test {
                 else if (directions != null) break;
             }
         }
+        if (directions == null) return null;
         for (String turn : directions) {
             for (int i = 0; i < lanes.length; i++) {
                 while (lanes[i].contains(turn)) {

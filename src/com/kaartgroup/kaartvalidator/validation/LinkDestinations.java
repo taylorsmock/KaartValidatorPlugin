@@ -34,8 +34,17 @@ public class LinkDestinations extends Test {
 
     @Override
     public void endTest() {
-        for (Way way : ways) {
-            checkDestination(way);
+        Way pWay = null;
+        try {
+            for (Way way : ways) {
+                pWay = way;
+                checkDestination(way);
+            }
+        } catch (Exception e) {
+            if (pWay != null) {
+                System.out.printf("Way https://osm.org/way/%d caused an error" + System.lineSeparator(), pWay.getOsmId());
+            }
+            e.printStackTrace();
         }
         ways = null;
         super.endTest();

@@ -40,8 +40,17 @@ public class RoadEndsWithLinks extends Test {
 
     @Override
     public void endTest() {
-        for (Way p : ways) {
-            checkForY(p);
+        Way way = null;
+        try {
+            for (Way p : ways) {
+                way = p;
+                checkForY(p);
+            }
+        } catch (Exception e) {
+            if (way != null ) {
+                System.out.printf("Way https://osm.org/way/%d caused an error" + System.lineSeparator(), way.getOsmId());
+            }
+            e.printStackTrace();
         }
         ways = null;
         super.endTest();
