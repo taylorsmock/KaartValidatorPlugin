@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.openstreetmap.josm.data.coor.LatLon;
+import org.openstreetmap.josm.command.ChangePropertyCommand;
 import org.openstreetmap.josm.data.osm.Node;
 import org.openstreetmap.josm.data.osm.OsmPrimitive;
 import org.openstreetmap.josm.data.osm.Way;
@@ -99,7 +100,7 @@ public class TurnLanes extends Test {
         Node node = null;
         if (direction == "forward") node = p.lastNode();
         else if (direction == "backward") node = p.firstNode();
-
+        if (node.isOutsideDownloadArea()) return;
         Way pContinue = null;
         List<Way> refs = node.getParentWays();
         int attachedWays = 0;
@@ -129,34 +130,64 @@ public class TurnLanes extends Test {
         }
         Boolean doesContinue = true;
         if (pContinueLanes != null && continuingLanes != null && pContinueLanes.length == continuingLanes.length) {
-	        for (int i = 0; i < pContinueLanes.length; i++) {
-	        	if (pContinueLanes[i].equals(continuingLanes[i])) continue;
-	        	doesContinue = false;
-	        	break;
-	        }
+            for (int i = 0; i < pContinueLanes.length; i++) {
+                if (pContinueLanes[i].equals(continuingLanes[i])) continue;
+                doesContinue = false;
+                break;
+            }
         } else if ((pContinue.hasKey("lanes") || pContinue.hasKey("lanes:" + direction)) && continuingLanes != null) {
-        	int lanes;
-        	if (!pContinue.hasKey("lanes:" + direction)) lanes = Integer.parseInt(pContinue.get("lanes"));
-        	else lanes = Integer.parseInt(pContinue.get("lanes:" + direction));
-        	for (String lane : continuingLanes) {
-        		if (lane.contains("through")) lanes--;
-        		else {
-        			doesContinue = false;
-        			break;
-        		}
-        	}
-        	if (lanes != 0) doesContinue = false;
+            int lanes;
+            if (!pContinue.hasKey("lanes:" + direction)) lanes = Integer.parseInt(pContinue.get("lanes"));
+            else lanes = Integer.parseInt(pContinue.get("lanes:" + direction));
+            for (String lane : continuingLanes) {
+                if (lane.contains("through")) lanes--;
+                else {
+                    doesContinue = false;
+                    break;
+                }
+            }
+            if (lanes != 0) doesContinue = false;
         } else {
-        	doesContinue = false;
+            doesContinue = false;
         }
         if (!doesContinue) {
-            errors.add(TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
+            String key;
+            if (direction == "forward" && pContinue.get("oneway").equals("yes")) key = "turn:lanes";
+            else key = "turn:lanes:" + direction;
+            String continuingLanesValue = "";
+            for (int i = 0; i < continuingLanes.length; i++) {
+                continuingLanesValue += continuingLanes[i];
+                if (i < continuingLanes.length - 1) continuingLanesValue += "|";
+            }
+            final Way tWay = pContinue;
+            final String finalContinuingLanesValue = continuingLanesValue;
+            TestError.Builder testError = TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
                     .message(tr("Turn lanes do not continue through intersection or do not match up with lanes"))
-                    .primitives(p, pContinue)
-                    .build());
+                    .primitives(p, pContinue);
+            if (getNumberOfConnections(pContinue, "highway", ".*(motorway|trunk|primary|secondary|tertiary|unclassified|residential|service).*") <= 2) {
+                testError.fix(() -> new ChangePropertyCommand(tWay, key, finalContinuingLanesValue));
+            }
+            errors.add(testError.build());
         }
     }
 
+    private int getNumberOfConnections(Way way, String key, String regex) {
+        int returnValue = 0;
+        for (int i = 0; i < way.getNodesCount(); i++) {
+            List<Way> refs = way.getNode(i).getParentWays();
+            Boolean connected = false;
+            refs.remove(way);
+            for (Way wp : refs) {
+                if (!wp.hasKey(key)) continue;
+                if (wp.get(key).matches(regex)) {
+                    connected = true;
+                    break;
+                }
+            }
+            if (connected) returnValue++;
+        }
+        return returnValue;
+    }
     /**
      * Check that a way with turn lanes only has connections to different ways at a maximum of two different nodes
      * @param p Way to check
@@ -174,10 +205,18 @@ public class TurnLanes extends Test {
         Set<Way> connectedWays = new HashSet<>();
         for (int i = 0; i < numNodes; i++) {
             Node n = p.getNode(i);
-            List<OsmPrimitive> refs = n.getReferrers();
-            for (OsmPrimitive wp : refs) {
-                if (wp != p && wp instanceof Way) {
-                   connectedWays.add((Way) wp);
+            if (n.isOutsideDownloadArea()) return;
+            List<Way> refs = n.getParentWays();
+            for (Way wp : refs) {
+                if (!wp.hasKey("highway")) continue;
+                if (wp.get("highway").matches(".*(motorway|trunk|primary|secondary|tertiary|unclassified|residential|service).*")) {
+                    connectedWays.add(wp);
+                }
+            }
+            List<Way> refs2 = n.getParentWays();
+            for (Way wp : refs2) {
+                if (!connectedWays.contains(wp)) {
+                    refs.remove(wp);
                 }
             }
             if (refs.size() > 1) {
