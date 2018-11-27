@@ -1,0 +1,12 @@
+.DS_Store
+.classpath
+.project
+/bin/
+/build/
+/builds/
+/buildtest/
+/cache/
+/javadoc/
+/test_output/
+/test/build/
+/test/jacoco*
