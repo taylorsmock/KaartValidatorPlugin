@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <bounds minlat='27.7499366' minlon='-91.6278648' maxlat='27.7531268' maxlon='-91.6242599' origin='CGImap 0.6.1 (2531 thorn-01.openstreetmap.org)' />
+  <bounds minlat='27.7499366' minlon='-91.6278648' maxlat='27.7531268' maxlon='-91.6242599' origin='OpenStreetMap server' />
+  <node id='-39642' action='modify' visible='true' lat='27.75008626008' lon='-91.62631452527' />
+  <node id='-39643' action='modify' visible='true' lat='27.75279945466' lon='-91.62626482961' />
+  <node id='-39658' action='modify' visible='true' lat='27.75038735359' lon='-91.62733137495' />
+  <node id='-39659' action='modify' visible='true' lat='27.75089142962' lon='-91.62688793674' />
+  <node id='-39661' action='modify' visible='true' lat='27.75134475774' lon='-91.62658976278' />
+  <node id='-39663' action='modify' visible='true' lat='27.75178455188' lon='-91.62642920756' />
+  <node id='-39665' action='modify' visible='true' lat='27.75248148152' lon='-91.62627065376' />
+  <node id='-39669' action='modify' visible='true' lat='27.75060739008' lon='-91.62630498019' />
+  <node id='-39673' action='modify' visible='true' lat='27.75129401215' lon='-91.62613103359' />
+  <node id='-39675' action='modify' visible='true' lat='27.75169997623' lon='-91.62584432786' />
+  <node id='-39677' action='modify' visible='true' lat='27.75206872561' lon='-91.62536266221' />
+  <node id='-39682' action='modify' visible='true' lat='27.75278592268' lon='-91.62507977922' />
+  <node id='-39683' action='modify' visible='true' lat='27.750563273' lon='-91.62511800665' />
+  <node id='-39685' action='modify' visible='true' lat='27.75208903068' lon='-91.62509176517' />
+  <node id='-39745' action='modify' visible='true' lat='27.75211306996' lon='-91.62633914635' />
+  <way id='-39644' action='modify' visible='true'>
+    <nd ref='-39642' />
+    <nd ref='-39669' />
+    <nd ref='-39665' />
+    <nd ref='-39643' />
+    <tag k='highway' v='motorway' />
+    <tag k='ref' v='I70' />
+  </way>
+  <way id='-39660' action='modify' visible='true'>
+    <nd ref='-39658' />
+    <nd ref='-39659' />
+    <nd ref='-39661' />
+    <nd ref='-39663' />
+    <nd ref='-39745' />
+    <tag k='highway' v='motorway_link' />
+  </way>
+  <way id='-39674' action='modify' visible='true'>
+    <nd ref='-39669' />
+    <nd ref='-39673' />
+    <nd ref='-39675' />
+    <tag k='highway' v='motorway_link' />
+  </way>
+  <way id='-39684' action='modify' visible='true'>
+    <nd ref='-39682' />
+    <nd ref='-39685' />
+    <nd ref='-39683' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='This' />
+  </way>
+  <way id='-39750' action='modify' visible='true'>
+    <nd ref='-39675' />
+    <nd ref='-39677' />
+    <tag k='destination:street' v='This' />
+    <tag k='highway' v='motorway_link' />
+  </way>
+  <way id='-39751' action='modify' visible='true'>
+    <nd ref='-39677' />
+    <nd ref='-39685' />
+    <tag k='destination:street' v='This' />
+    <tag k='highway' v='motorway_link' />
+  </way>
+  <way id='-39760' action='modify' visible='true'>
+    <nd ref='-39745' />
+    <nd ref='-39665' />
+    <tag k='highway' v='motorway_link' />
+  </way>
+</osm>
