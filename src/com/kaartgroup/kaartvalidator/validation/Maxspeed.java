@@ -49,8 +49,9 @@ public class Maxspeed extends Test {
 
     @Override
     public void visit(Way way) {
-        if (!way.isUsable()) return;
-        int connections = getNumberOfConnections(way, "highway", "^(motorway|trunk|primary|secondary|tertiary|unclassified|residential|service|)$");
+        if (!way.isUsable() || way.hasKey("highway") && way.get("highway").matches("^.*_link$")) return;
+        int connections = getNumberOfConnections(way, "highway",
+                "^(motorway|trunk|primary|secondary|tertiary|unclassified|residential|service|.*_link)$");
         if (connections == 2) ways.add(way);
     }
 
