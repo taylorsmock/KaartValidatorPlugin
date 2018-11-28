@@ -20,6 +20,7 @@ public class LinkDestinations extends Test {
     public static final int MAXLENGTH = 30; //meters
 
     private List<Way> ways;
+    private List<Way> links;
     private String[] destinationTags = {"destination:ref", "destination:street"};
 
     public LinkDestinations() {
@@ -36,9 +37,22 @@ public class LinkDestinations extends Test {
     public void endTest() {
         Way pWay = null;
         try {
-            for (Way way : ways) {
-                pWay = way;
-                checkDestination(way);
+            while (ways.size() > 0) {
+                links = new LinkedList<>();
+                pWay = ways.get(0);
+                List<Way> tway = pWay.lastNode().getParentWays();
+                Boolean connectsToRoad = false;
+                for (Way way : tway) {
+                    if (way.hasKey("highway") && !way.get("highway").matches("^.*_link$")) {
+                        connectsToRoad = true;
+                        break;
+                    }
+                }
+                if (connectsToRoad) {
+                    checkDestination(pWay);
+                }
+                ways.remove(pWay);
+                links = null;
             }
         } catch (Exception e) {
             if (pWay != null) {
@@ -58,10 +72,43 @@ public class LinkDestinations extends Test {
         }
     }
 
+    /**
+     * Checks if there is a destination on the link
+     * @param way to check if there is a destination
+     * @return true if there is a destination, false otherwise
+     */
     public boolean checkDestination(Way way) {
+        return this.checkDestination(way, 0);
+    }
+    /**
+     * Checks if there is a destination on the link
+     * @param way to check if there is a destination
+     * @param recursion the number of times we have recursed into the function already
+     * @return true if there is a destination, false otherwise
+     */
+    protected boolean checkDestination(Way way, int recursion) {
+        if (way.lastNode().isOutsideDownloadArea()) return false;
+        if (way.hasKey("highway") && way.get("highway").matches("^.*_link$") && !links.contains(way)) {
+            links.add(way);
+            List<Way> refs = way.firstNode().getParentWays();
+            refs.remove(way);
+            for (Way ref : refs) {
+                if (refs.size() > 1 || recursion >= 100) break;
+                if (ref.lastNode() != way.firstNode()) continue;
+                if (!checkDestination(ref, recursion + 1)) {
+                    if (!links.contains(ref) && ref.hasKey("highway") && ref.get("highway").matches("^.*_link$")) {
+                        links.add(ref);
+                        ways.remove(ref);
+                    }
+                }
+            }
+        }
+
+        Boolean hasDestinationTag = false;
         for (String destinationTag : destinationTags) {
             String wayValue = way.get(destinationTag);
             if (!way.hasKey(destinationTag)) continue;
+            else hasDestinationTag = true;
             Node lastNode = way.lastNode();
             List<Way> refs = lastNode.getParentWays();
             refs.remove(way);
@@ -73,34 +120,37 @@ public class LinkDestinations extends Test {
                 }
             }
         }
-        Node lastNode = way.lastNode();
-        List<Way> refs = lastNode.getParentWays();
-        refs.remove(way);
-        List<Way> trefs = lastNode.getParentWays();
-        for (Way ref : refs) {
-            if (ref.get("oneway") == "yes" && ref.lastNode().equals(lastNode)) {
-                trefs.remove(ref);
+        if (recursion == 0) {
+            Node lastNode = way.lastNode();
+            List<Way> refs = lastNode.getParentWays();
+            List<Way> trefs = lastNode.getParentWays();
+            trefs.remove(way);
+            for (Way ref : refs) {
+                if (ref.get("oneway") == "yes" && ref.lastNode().equals(lastNode)) {
+                    trefs.remove(ref);
+                }
             }
-        }
-        refs = trefs;
-        TestError.Builder testError = TestError.builder(this, Severity.WARNING, DESTINATION_TAG_DOES_NOT_MATCH)
-                .primitives(way)
-                .message(tr("The destination tag does not match or does not exist"));
-        if (refs.size() == 1 || refs.size() == 2
-                && (refs.get(0).lastNode() == refs.get(1).firstNode()
-                || refs.get(0).firstNode() == refs.get(1).lastNode())) {
+            refs = trefs;
+            TestError.Builder testError = TestError.builder(this, Severity.WARNING, DESTINATION_TAG_DOES_NOT_MATCH)
+                    .primitives(links)
+                    .message(tr("The destination tag does not match or does not exist"));
             Way ref = refs.get(0);
-            if (ref.hasKey("destination:ref") && !ref.hasKey("ref")) {
-                testError.fix(() -> new ChangePropertyCommand(way, "destination:ref", ref.get("destination:ref")));
-            } else if (ref.hasKey("ref") && !ref.hasKey("destination:ref")) {
-                testError.fix(() -> new ChangePropertyCommand(way, "destination:ref", ref.get("ref")));
-            } else if (ref.hasKey("destination:street") && !ref.hasKey("name")) {
-                testError.fix(() -> new ChangePropertyCommand(way, "destination:street", ref.get("destination:street")));
-            } else if (ref.hasKey("name") && !ref.hasKey("destination:street")) {
-                testError.fix(() -> new ChangePropertyCommand(way, "destination:street", ref.get("name")));
+            final List<Way> fLinks = links;
+            if (refs.size() == 1 && !hasDestinationTag
+                    && ref.hasKey("highway") && !ref.get("highway").matches("^.*_link$")
+                    && ref.lastNode() != lastNode) {
+                if (ref.hasKey("destination:ref") && !ref.hasKey("ref")) {
+                    testError.fix(() -> new ChangePropertyCommand(fLinks, "destination:ref", ref.get("destination:ref")));
+                } else if (ref.hasKey("ref") && !ref.hasKey("destination:ref")) {
+                    testError.fix(() -> new ChangePropertyCommand(fLinks, "destination:ref", ref.get("ref")));
+                } else if (ref.hasKey("destination:street") && !ref.hasKey("name")) {
+                    testError.fix(() -> new ChangePropertyCommand(fLinks, "destination:street", ref.get("destination:street")));
+                } else if (ref.hasKey("name") && !ref.hasKey("destination:street")) {
+                    testError.fix(() -> new ChangePropertyCommand(fLinks, "destination:street", ref.get("name")));
+                }
             }
+            errors.add(testError.build());
         }
-        errors.add(testError.build());
         return false;
     }
 }
