@@ -65,14 +65,20 @@ public class RoadEndsWithLinks extends Test {
     }
 
     private void checkEnd(Way p, Node end) {
-        List<OsmPrimitive> refs = end.getReferrers();
+        List<Way> refs = end.getParentWays();
+        refs.remove(p);
         int linkForward = 0;
         int linkBackward = 0;
         List<Way> links = new LinkedList<>();
-        for (OsmPrimitive ref : refs) {
-            Way way;
-            if (!(ref instanceof Way) || ref == p) continue;
-            else way = (Way) ref;
+        for (Way ref : refs) {
+            if (ref.hasKey("highway") && ref.get("highway").contains("_link")) continue;
+            if (ref.hasKey("name") && p.hasKey("name") && ref.get("name").equals(p.get("name"))
+                    || (ref.hasKey("ref") && p.hasKey("ref") && ref.get("ref").equals(p.get("ref")))) {
+                return;
+            }
+        }
+        for (Way ref : refs) {
+            Way way = ref;
             if (way.hasKey("highway") && way.get("highway").contains("_link")) {
                 if (way.firstNode() == end) {
                     linkForward++;
@@ -84,7 +90,7 @@ public class RoadEndsWithLinks extends Test {
                 }
                 else {
                     errors.add(TestError.builder(this, Severity.WARNING, ROAD_HAS_LINK_GOING_THROUGH)
-                            .message(tr("Link goes through road without stopping"))
+                            .message(tr("Check for Y junction links (link passes through road)"))
                             .primitives(p, way)
                             .build());
                 }
@@ -93,7 +99,7 @@ public class RoadEndsWithLinks extends Test {
         if (linkForward + linkBackward == 2 && links.size() >= 2) {
             if (links.get(0).getLength() < MAX_LINK_LENGTH && links.get(1).getLength() < MAX_LINK_LENGTH) {
                 errors.add(TestError.builder(this, Severity.WARNING, ROAD_ENDS_WITH_LINKS)
-                        .message(tr("Road has two links leaving from the end"))
+                        .message(tr("Check for Y junction links (road has two links at the end)"))
                         .primitives(p, links.get(0), links.get(1))
                         .build());
             }
@@ -104,7 +110,7 @@ public class RoadEndsWithLinks extends Test {
             }
             osm[osm.length - 1] = p;
             errors.add(TestError.builder(this, Severity.WARNING, ROAD_ENDS_WITH_LINKS)
-                    .message(tr("Road has multiple links leaving from the end"))
+                    .message(tr("Check for Y junction links (road has multiple links leaving from the end)"))
                     .primitives(osm)
                     .build());
         }
