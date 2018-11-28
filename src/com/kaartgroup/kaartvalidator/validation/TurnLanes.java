@@ -125,6 +125,7 @@ public class TurnLanes extends Test {
         if (attachedWays == 2) return;
         String[] continuingLanes = getContinuingLanes(p, direction);
         if (continuingLanes == null || pContinue == null) return;
+        if (pContinue.isOneway() == 1 && pContinue.lastNode() == node) return;
         Boolean continuingLanesOnlyForward = true;
         for (String lane : continuingLanes) {
             if (lane.contains("left") || lane.contains("right") || lane.isEmpty()) {
@@ -134,54 +135,54 @@ public class TurnLanes extends Test {
         }
         if (continuingLanes.length == 0) continuingLanesOnlyForward = false;
         if (continuingLanesOnlyForward) return;
-        String[] pContinueLanes = null;
-        if (direction == "forward" && !pContinue.hasKey("turn:lanes:" + direction) && pContinue.hasKey("turn:lanes")) {
-            pContinueLanes = pContinue.get("turn:lanes").split("[|]");
-        } else if (pContinue.hasKey("turn:lanes:" + direction)) {
-            pContinueLanes = pContinue.get("turn:lanes:" + direction).split("[|]");
+
+        String continuingLanesValue = "";
+        for (int i = 0; i < continuingLanes.length; i++) {
+            continuingLanesValue += continuingLanes[i];
+            if (i < continuingLanes.length - 1) continuingLanesValue += "|";
         }
-        Boolean doesContinue = true;
-        if (pContinueLanes != null && continuingLanes != null && pContinueLanes.length == continuingLanes.length) {
-            for (int i = 0; i < pContinueLanes.length; i++) {
-                if (pContinueLanes[i].equals(continuingLanes[i])) continue;
-                doesContinue = false;
-                break;
-            }
-        } else if ((pContinue.hasKey("lanes") || pContinue.hasKey("lanes:" + direction)) && continuingLanes != null) {
-            int lanes;
-            if (!pContinue.hasKey("lanes:" + direction)) lanes = Integer.parseInt(pContinue.get("lanes"));
-            else lanes = Integer.parseInt(pContinue.get("lanes:" + direction));
-            for (String lane : continuingLanes) {
-                if (lane.contains("through")) lanes--;
-                else {
-                    doesContinue = false;
-                    break;
-                }
-            }
-            if (lanes != 0) doesContinue = false;
-        } else {
-            doesContinue = false;
+
+        String pContinueLanes = null;
+
+        String key = null;
+        if (pContinue.lastNode() == node && pContinue.isOneway() == 1 && continuingLanesValue == "") return;
+        if (pContinue.hasKey("oneway") && pContinue.get("oneway").equals("yes") && pContinue.firstNode() == node) {
+            key = "turn:lanes";
+        } else if (pContinue.lastNode() == node && direction == "forward"
+                || pContinue.firstNode() == node && direction == "backward") {
+            String reversedDirection = null;
+            if (direction == "forward") reversedDirection = "backward";
+            else if (direction == "backward") reversedDirection = "forward";
+            key = "turn:lanes:" + reversedDirection;
+        } else if (pContinue.firstNode() == node && direction == "forward"
+                || pContinue.lastNode() == node && direction == "backward") {
+            key = "turn:lanes:" + direction;
         }
-        if (!doesContinue) {
-            String key;
-            if (direction == "forward" && pContinue.hasKey("oneway") && pContinue.get("oneway").equals("yes")) key = "turn:lanes";
-            else key = "turn:lanes:" + direction;
-            String continuingLanesValue = "";
-            for (int i = 0; i < continuingLanes.length; i++) {
-                continuingLanesValue += continuingLanes[i];
-                if (i < continuingLanes.length - 1) continuingLanesValue += "|";
-            }
-            final Way tWay = pContinue;
-            final String finalContinuingLanesValue = continuingLanesValue;
-            TestError.Builder testError = TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
-                    .message(tr("Turn lanes do not continue through intersection or do not match up with lanes"))
-                    .primitives(p, pContinue);
-            int connections = getNumberOfConnections(pContinue, "highway", ".*(motorway|trunk|primary|secondary|tertiary|unclassified|residential|service|_link).*");
-            if (connections > 0 && connections <= 2 && tWay.getLength() < MAXLENGTH) {
-                testError.fix(() -> new ChangePropertyCommand(tWay, key, finalContinuingLanesValue));
-            }
-            errors.add(testError.build());
+        if (key != null && pContinue.hasKey(key)) {
+            pContinueLanes = pContinue.get(key);
         }
+        if (pContinueLanes != null && pContinueLanes.equals(continuingLanesValue)) return;
+
+        final String rkey = key;
+        final Way tWay = pContinue;
+        final String finalContinuingLanesValue = continuingLanesValue;
+        TestError.Builder testError = TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
+                .message(tr("Turn lanes do not continue through intersection or do not match up with lanes"))
+                .primitives(p, pContinue);
+        int connections = getNumberOfConnections(pContinue, "highway", "^(motorway|trunk|primary|secondary|tertiary|unclassified|residential)$");
+        int miscConnections = getNumberOfConnections(pContinue, "highway", "^(service|.*_link)$");
+        try {
+            Double bearingTopContinue;
+            bearingTopContinue = getBearing(p, node, pContinue);
+            if (connections > 0 && connections <= 2 && tWay.getLength() < MAXLENGTH && miscConnections == 0
+                    && bearingTopContinue > (3/4) * Math.PI && bearingTopContinue < (5/4) * Math.PI) {
+                testError.fix(() -> new ChangePropertyCommand(tWay, rkey, finalContinuingLanesValue));
+            }
+        } catch (Exception e) {
+            System.out.printf("Way https://openstreetmap.org/way/%d failed" + System.lineSeparator(), p.getOsmId());
+            e.printStackTrace();
+        }
+        errors.add(testError.build());
     }
 
     /**
@@ -296,6 +297,9 @@ public class TurnLanes extends Test {
         } else if (direction == "backward") {
             node = way.firstNode();
         }
+        turnLanes = turnLanes.replace("||", "|none|");
+        turnLanes = turnLanes.replaceAll("^[|]", "none|");
+        turnLanes = turnLanes.replaceAll("[|]$", "|none");
         String[] lanes = turnLanes.split("[|]");
         for (int i = 0; i < lanes.length; i++) {
             if (lanes[i].isBlank()) lanes[i] = "through";
@@ -339,28 +343,57 @@ public class TurnLanes extends Test {
     public String[] getTurnDirection(Way from, Node via, Way to) {
         if (!from.containsNode(via) || !to.containsNode(via)) return null;
         if (!to.hasKey("oneway") || to.get("oneway") == "no") return new String[] {"left", "right"};
+        try {
+            Double bearing = getBearing(from, via, to);
+            if (bearing > 0 && bearing < Math.PI) return new String[] {"right"};
+            else if (bearing > Math.PI && bearing < 2 * Math.PI) return new String[] {"left"};
+            else return new String[] {"through"};
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    /**
+     * Get the bearing from Way from to Way to via Node via returning the relative bearing
+     * @param from Way that we are coming from
+     * @param via Node that we are transversing
+     * @param to Way we are going to
+     * @return Relative bearing in radians
+     * @throws Exception if the ways are not connected
+     */
+    public Double getBearing(Way from, Node via, Way to) throws Exception {
+        if (!from.containsNode(via) || !to.containsNode(via)) {
+            throw new Exception();
+        }
+
         Node prevFromNode = null;
         Node nextToNode = null;
         if (from.firstNode() == via) prevFromNode = from.getNode(1);
         else if (from.lastNode() == via) prevFromNode = from.getNode(from.getNodesCount() - 2);
         for (int i = 0; i < to.getNodesCount(); i++) {
-            if (to.getNode(i) == via && i != to.getNodesCount() - 1) {
+            Node tmp = to.getNode(i);
+            if (tmp == via && i != to.getNodesCount() - 1) {
                 nextToNode = to.getNode(i + 1);
                 break;
             }
         }
-        if (nextToNode == null || prevFromNode == null) return null;
-        else {
-            LatLon tcoord = nextToNode.getCoor();
-            LatLon vcoord = via.getCoor();
-            LatLon fcoord = prevFromNode.getCoor();
-            Double fbearing = vcoord.bearing(fcoord);
-            Double tbearing = vcoord.bearing(tcoord);
-            Double bearing = fbearing - tbearing;
-            if ((bearing > 0 && bearing < Math.PI) || (bearing < -Math.PI && bearing > -2 * Math.PI)) return new String[] {"right"};
-            else if ((bearing < 0 && bearing > -Math.PI) || (bearing > Math.PI && bearing < 2 * Math.PI)) return new String[] {"left"};
-            else return new String[] {"through"};
+        if (nextToNode == null && (!to.hasKey("oneway") || !to.get("oneway").equals("yes"))) {
+            nextToNode = to.getNode(to.getNodesCount() - 2);
         }
+        if (nextToNode == null || prevFromNode == null) {
+            throw new Exception();
+        }
+        LatLon tcoord = nextToNode.getCoor();
+        LatLon vcoord = via.getCoor();
+        LatLon fcoord = prevFromNode.getCoor();
+        Double fbearing = vcoord.bearing(fcoord);
+        Double tbearing = vcoord.bearing(tcoord);
+        Double bearing = fbearing - tbearing;
+        while (bearing < 0) {
+            // Convert to positive radians
+            bearing = bearing + 2 * Math.PI;
+        }
+        return bearing;
     }
 
     /**
