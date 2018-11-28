@@ -76,6 +76,13 @@ public class LinkDestinations extends Test {
         Node lastNode = way.lastNode();
         List<Way> refs = lastNode.getParentWays();
         refs.remove(way);
+        List<Way> trefs = lastNode.getParentWays();
+        for (Way ref : refs) {
+            if (ref.get("oneway") == "yes" && ref.lastNode().equals(lastNode)) {
+                trefs.remove(ref);
+            }
+        }
+        refs = trefs;
         TestError.Builder testError = TestError.builder(this, Severity.WARNING, DESTINATION_TAG_DOES_NOT_MATCH)
                 .primitives(way)
                 .message(tr("The destination tag does not match or does not exist"));
@@ -83,7 +90,7 @@ public class LinkDestinations extends Test {
                 && (refs.get(0).lastNode() == refs.get(1).firstNode()
                 || refs.get(0).firstNode() == refs.get(1).lastNode())) {
             Way ref = refs.get(0);
-            if (ref.hasKey("destination:ref") && !ref.hasKey("destination:ref")) {
+            if (ref.hasKey("destination:ref") && !ref.hasKey("ref")) {
                 testError.fix(() -> new ChangePropertyCommand(way, "destination:ref", ref.get("destination:ref")));
             } else if (ref.hasKey("ref") && !ref.hasKey("destination:ref")) {
                 testError.fix(() -> new ChangePropertyCommand(way, "destination:ref", ref.get("ref")));
