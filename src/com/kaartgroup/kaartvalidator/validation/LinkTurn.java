@@ -67,11 +67,11 @@ public class LinkTurn extends Test {
         }
         List<Way> roads = new LinkedList<>();
         for (Way ref : link.firstNode().getParentWays()) {
-            if (ref.equals(link) || !ref.get("highway").matches("^(motorway|trunk|primary|secondary|tertiary|unclassified|residential)$")) continue;
+            if (ref.equals(link)|| !ref.hasKey("highway") || !ref.get("highway").matches("^(motorway|trunk|primary|secondary|tertiary|unclassified|residential)$")) continue;
             for (Node node : ref.getNodes()) {
                 if (node.equals(link.firstNode())) continue;
                 for (Way ref2 : node.getParentWays()) {
-                    if (ref2.equals(ref) || !ref2.get("highway").matches("^(motorway|trunk|primary|secondary|tertiary|unclassified|residential)$")) continue;
+                    if (ref2.equals(ref) || !ref2.hasKey("highway") || !ref2.get("highway").matches("^(motorway|trunk|primary|secondary|tertiary|unclassified|residential)$")) continue;
                     for (Node node2 : ref2.getNodes()) {
                         if (node.equals(node2)) continue;
                         if (node2.getParentWays().contains(link)) {

@@ -92,6 +92,7 @@ public class NameRefConsistency extends Test {
         if (way.hasKey("oneway") && way.get("oneway").equals("yes")) expectedWays++;
         else if (way != null) expectedWays += 2;
         for (Way i : rways) {
+            if (!i.hasKey("highway")) continue;
             if (i.hasKey("oneway") && i.get("oneway").equals("yes") && i.get(key) == way.get(key)) {
                 actualWays++;
             } else if (i != null && i.get(key) == way.get(key)) {

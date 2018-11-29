@@ -58,7 +58,7 @@ public class RoadEndsWithLinks extends Test {
 
     @Override
     public void visit(Way way) {
-        if (!way.isUsable() || way.hasKey("highway") && way.get("highway").contains("_link")) {
+        if (!way.isUsable() || way.hasKey("highway") && !way.get("highway").matches("^(motorway|trunk|primary|secondary|tertiary|unclassified|residential)$")) {
             return;
         }
         ways.add(way);
