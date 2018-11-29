@@ -69,6 +69,7 @@ public class NameRefConsistency extends Test {
         List<Way> tmpList = new LinkedList<>();
         Hashtable<String, Integer> names = new Hashtable<String, Integer>();
         for (Way ref : rways) {
+            if (!ref.hasKey("highway")) continue;
             tmpList.add(ref);
             if (ref.firstNode() != node && ref.lastNode() != node) {
                 tmpList.remove(ref);
@@ -87,20 +88,15 @@ public class NameRefConsistency extends Test {
         }
         rways = tmpList;
         tmpList = null;
-        int expectedWays = 0;
-        int actualWays = 0;
-        if (way.hasKey("oneway") && way.get("oneway").equals("yes")) expectedWays++;
-        else if (way != null) expectedWays += 2;
+        Boolean continues = false;
         for (Way i : rways) {
             if (!i.hasKey("highway")) continue;
-            if (i.hasKey("oneway") && i.get("oneway").equals("yes") && i.get(key) == way.get(key)) {
-                actualWays++;
-            } else if (i != null && i.get(key) == way.get(key)) {
-                actualWays += 2;
+            if (i != null && i.get(key) == way.get(key)) {
+                continues = true;
+                break;
             }
         }
-        if ((expectedWays != actualWays && expectedWays + actualWays != 4)
-                && rways.size() >= 1) {
+        if (!continues && rways.size() >= 1) {
             int code = NAMEREFCODE;
             String message = "A key changes";
             if (key == "ref") {
