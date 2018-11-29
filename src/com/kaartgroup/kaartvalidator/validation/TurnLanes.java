@@ -167,7 +167,7 @@ public class TurnLanes extends Test {
         final Way tWay = pContinue;
         final String finalContinuingLanesValue = continuingLanesValue;
         TestError.Builder testError = TestError.builder(this, Severity.WARNING, TURN_LANES_DO_NOT_CONTINUE)
-                .message(tr("Turn lanes do not continue through intersection or do not match up with lanes"))
+                .message(tr("kaart"), tr("Turn lanes do not continue through intersection or do not match up with lanes"))
                 .primitives(p, pContinue);
         int connections = getNumberOfConnections(pContinue, "highway", "^(motorway|trunk|primary|secondary|tertiary|unclassified|residential)$");
         int miscConnections = getNumberOfConnections(pContinue, "highway", "^(service|.*_link)$");
@@ -262,7 +262,7 @@ public class TurnLanes extends Test {
 
         if (numNodesConnected > 2) {
             errors.add(TestError.builder(this, Severity.WARNING, UNCLEAR_TURN_LANES)
-                    .message(tr("Road has multiple possibilities for turning"))
+                    .message(tr("kaart"), tr("Road has multiple possibilities for turning"))
                     .primitives(p)
                     .build());
         }
@@ -270,7 +270,7 @@ public class TurnLanes extends Test {
                 || (!connectedTurnLanesForward && (turnLanesForward != null || turnLanes != null))
                 || (!connectedTurnLanesBackward && (turnLanesBackward != null))) {
             errors.add(TestError.builder(this, Severity.WARNING, UNCONNECTED_TURN_LANES)
-                    .message(tr("Road with turn lanes not connected to anything"))
+                    .message(tr("kaart"), tr("Road with turn lanes not connected to anything"))
                     .primitives(p)
                     .build());
         }
@@ -416,7 +416,7 @@ public class TurnLanes extends Test {
             if ((!wayContinue.hasKey(key) || (wayContinue.hasKey(key) && wayContinue.get(key) != way.get(key)))
                     && (!way.hasKey("turn:lanes") && !way.hasKey("turn:lanes:forward") && !way.hasKey("turn:lanes:backward"))) {
                 errors.add(TestError.builder(this, Severity.WARNING, LANES_DO_NO_MATCH_AND_NO_TURN_LANES)
-                        .message(tr("There are not turn lanes going into a continuing road with a different number of lanes"))
+                        .message(tr("kaart"), tr("There are not turn lanes going into a continuing road with a different number of lanes"))
                         .primitives(way, wayContinue)
                         .build());
             }
@@ -439,7 +439,7 @@ public class TurnLanes extends Test {
         if (lanes != lanesContinue + possibleAdditionalLanes - possibleRemovedLanes
                 || possibleAdditionalLanes > 2 || possibleRemovedLanes > 2) {
             errors.add(TestError.builder(this, Severity.WARNING, NO_TURN_LANES_CHANGING_LANES)
-                    .message(tr("There is no indication of which lanes change"))
+                    .message(tr("kaart"), tr("There is no indication of which lanes change"))
                     .primitives(way, wayContinue)
                     .build());
         }

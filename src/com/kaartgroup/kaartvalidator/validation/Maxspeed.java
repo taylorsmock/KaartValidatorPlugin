@@ -101,7 +101,7 @@ public class Maxspeed extends Test {
         if (way.hasKey("maxspeed")) needsMaxspeed = false;
         if (firstNode != null && lastNode != null && firstNode.equals(lastNode) && needsMaxspeed) {
             TestError.Builder testError = TestError.builder(this, Severity.WARNING, MAXSPEED_BLANKSPOT)
-                    .message(tr("Maxspeed has a blank spot with equal maxspeeds on either side"))
+                    .message(tr("kaart"), tr("Maxspeed has a blank spot with equal maxspeeds on either side"))
                     .primitives(way);
             if (way.getLength() < MAXLENGTH) {
                 testError.fix(() -> new ChangePropertyCommand(way, "maxspeed", firstNode));

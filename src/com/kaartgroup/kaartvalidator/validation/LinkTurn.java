@@ -110,7 +110,7 @@ public class LinkTurn extends Test {
             roads.add(link);
             TestError.Builder testError = TestError.builder(this, Severity.WARNING, LINK_ROAD_NO_TURN_RESTRICTION)
                     .primitives(roads)
-                    .message(tr("Link connects two roads without a turn restriction"));
+                    .message(tr("kaart"), tr("Link connects two roads without a turn restriction"));
             Node node = null;
             if (roads.get(0).isFirstLastNode(roads.get(1).lastNode())) node = roads.get(1).lastNode();
             else if (roads.get(0).isFirstLastNode(roads.get(1).firstNode())) node = roads.get(1).firstNode();

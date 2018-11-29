@@ -90,7 +90,7 @@ public class RoadEndsWithLinks extends Test {
                 }
                 else {
                     errors.add(TestError.builder(this, Severity.WARNING, ROAD_HAS_LINK_GOING_THROUGH)
-                            .message(tr("Check for Y junction links (link passes through road)"))
+                            .message(tr("kaart"), tr("Check for Y junction links (link passes through road)"))
                             .primitives(p, way)
                             .build());
                 }
@@ -99,7 +99,7 @@ public class RoadEndsWithLinks extends Test {
         if (linkForward + linkBackward == 2 && links.size() >= 2) {
             if (links.get(0).getLength() < MAX_LINK_LENGTH && links.get(1).getLength() < MAX_LINK_LENGTH) {
                 errors.add(TestError.builder(this, Severity.WARNING, ROAD_ENDS_WITH_LINKS)
-                        .message(tr("Check for Y junction links (road has two links at the end)"))
+                        .message(tr("kaart"), tr("Check for Y junction links (road has two links at the end)"))
                         .primitives(p, links.get(0), links.get(1))
                         .build());
             }
@@ -110,7 +110,7 @@ public class RoadEndsWithLinks extends Test {
             }
             osm[osm.length - 1] = p;
             errors.add(TestError.builder(this, Severity.WARNING, ROAD_ENDS_WITH_LINKS)
-                    .message(tr("Check for Y junction links (road has multiple links leaving from the end)"))
+                    .message(tr("kaart"), tr("Check for Y junction links (road has multiple links leaving from the end)"))
                     .primitives(osm)
                     .build());
         }

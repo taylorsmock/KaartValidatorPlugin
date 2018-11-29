@@ -117,7 +117,7 @@ public class NameRefConsistency extends Test {
             }
             if (osm.length == 0) return;
             errors.add(TestError.builder(this, Severity.WARNING, code)
-                    .message(message)
+                    .message(tr("kaart"), tr(message))
                     .primitives(osm)
                     .build());
         }

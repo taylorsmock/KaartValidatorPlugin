@@ -133,7 +133,7 @@ public class LinkDestinations extends Test {
             refs = trefs;
             TestError.Builder testError = TestError.builder(this, Severity.WARNING, DESTINATION_TAG_DOES_NOT_MATCH)
                     .primitives(links)
-                    .message(tr("The destination tag does not match or does not exist"));
+                    .message(tr("kaart"), tr("The destination tag does not match or does not exist"));
             Way ref = refs.get(0);
             final List<Way> fLinks = links;
             if (refs.size() == 1 && !hasDestinationTag
