@@ -5,7 +5,6 @@ import static org.openstreetmap.josm.tools.I18n.tr;
 import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
-
 import org.openstreetmap.josm.data.osm.Node;
 import org.openstreetmap.josm.data.osm.OsmPrimitive;
 import org.openstreetmap.josm.data.osm.Way;
@@ -68,8 +67,11 @@ public class NameRefConsistency extends Test {
         if (rways.size() == 0) return;
         List<Way> tmpList = new LinkedList<>();
         Hashtable<String, Integer> names = new Hashtable<String, Integer>();
+        String pedestrianMatch = "^(pedestrian|footway)$";
         for (Way ref : rways) {
-            if (!ref.hasKey("highway")) continue;
+            if (!ref.hasKey("highway")
+            		|| !way.get("highway").matches(pedestrianMatch)
+            		&& ref.get("highway").matches(pedestrianMatch)) continue;
             tmpList.add(ref);
             if (ref.firstNode() != node && ref.lastNode() != node) {
                 tmpList.remove(ref);
