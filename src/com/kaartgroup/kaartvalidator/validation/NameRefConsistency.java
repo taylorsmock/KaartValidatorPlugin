@@ -67,16 +67,17 @@ public class NameRefConsistency extends Test {
         if (rways.size() == 0) return;
         List<Way> tmpList = new LinkedList<>();
         Hashtable<String, Integer> names = new Hashtable<String, Integer>();
-        String pedestrianMatch = "^(pedestrian|footway)$";
+        String ignore = "pedestrian|footway|.*_link";
         for (Way ref : rways) {
-            if (!ref.hasKey("highway")
-            		|| !way.get("highway").matches(pedestrianMatch)
-            		&& ref.get("highway").matches(pedestrianMatch)) continue;
-            tmpList.add(ref);
+            if (ref.hasKey("junction") && ref.get("junction") == "roundabout") continue;
+            if ((!ref.hasKey("highway")
+                    || way.get("highway").matches("^(" + ignore + ")$")
+                    && !ref.get("highway").matches("^(" + ignore + ")$"))
+                    && (!ref.hasKey(key) || ref.get(key) != way.get(key))) continue;
             if (ref.firstNode() != node && ref.lastNode() != node) {
-                tmpList.remove(ref);
                 continue;
             }
+            tmpList.add(ref);
             if (!ref.hasKey(key)) continue;
             if (!names.containsKey(ref.get(key)) && ref.get(key) != way.get(key)) {
                 names.put(ref.get(key), 1);
