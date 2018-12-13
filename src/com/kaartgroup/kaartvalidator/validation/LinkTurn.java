@@ -115,6 +115,8 @@ public class LinkTurn extends Test {
             if (roads.get(0).isFirstLastNode(roads.get(1).lastNode())) node = roads.get(1).lastNode();
             else if (roads.get(0).isFirstLastNode(roads.get(1).firstNode())) node = roads.get(1).firstNode();
             if (node != null) {
+                if (roads.get(1).hasKey("oneway") && roads.get(1).get("oneway") != "no"
+                        && roads.get(1).lastNode(true) == node) return;
                 final Node node1 = node;
                 testError.fix(() -> fixErrorByCreatingTurnRestriction(roads.get(0), node1, roads.get(1)));
             }
