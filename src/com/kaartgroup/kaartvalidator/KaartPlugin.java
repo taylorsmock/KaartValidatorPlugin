@@ -24,6 +24,7 @@ public class KaartPlugin extends Plugin {
         OsmValidator.addTest(Maxspeed.class);
         OsmValidator.addTest(LinkDestinations.class);
         OsmValidator.addTest(LinkTurn.class);
+        OsmValidator.addTest(Abbreviations.class);
     }
 
     /*@Override
