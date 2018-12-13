@@ -135,6 +135,19 @@ public class LinkDestinations extends Test {
                     .primitives(links)
                     .message(tr("kaart"), tr("The destination tag does not match or does not exist"));
             Way ref = refs.get(0);
+            int i = 0;
+	    /* TODO fix this
+            while (i < refs.size()) {
+                Way tway = refs.get(i);
+                if (!tway.hasKey(key)) continue;
+                for (Way nway : refs) {
+                    if (nway == tway || !nway.hasKey(key)) continue;
+                    if (nway.get(key).equals(tway.get(key))) {
+                    refs.remove(nway);
+                    }
+                }
+                i++;
+            } */
             final List<Way> fLinks = links;
             if (refs.size() == 1 && !hasDestinationTag
                     && ref.hasKey("highway") && !ref.get("highway").matches("^.*_link$")
