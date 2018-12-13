@@ -161,8 +161,9 @@ public class TurnLanes extends Test {
         if (key != null && pContinue.hasKey(key)) {
             pContinueLanes = pContinue.get(key);
         }
-        if (pContinueLanes != null && pContinueLanes.equals(continuingLanesValue)) return;
-
+        if (pContinueLanes != null && pContinueLanes.replace("none","").equals(continuingLanesValue.replace("none",""))) {
+            return;
+        }
         final String rkey = key;
         final Way tWay = pContinue;
         final String finalContinuingLanesValue = continuingLanesValue;
