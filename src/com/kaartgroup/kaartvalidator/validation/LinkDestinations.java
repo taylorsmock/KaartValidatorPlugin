@@ -21,7 +21,7 @@ public class LinkDestinations extends Test {
 
     private List<Way> ways;
     private List<Way> links;
-    private String[] destinationTags = {"destination:ref", "destination:street"};
+    private String[] destinationTags = {"destination", "destination:ref", "destination:street"};
 
     public LinkDestinations() {
         super(tr("Link Destinations"), tr("This test checks link destinations"));
