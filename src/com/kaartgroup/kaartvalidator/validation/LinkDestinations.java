@@ -108,6 +108,7 @@ public class LinkDestinations extends Test {
         for (String destinationTag : destinationTags) {
             String wayValue = way.get(destinationTag);
             if (!way.hasKey(destinationTag)) continue;
+            if (destinationTag.equals("destination")) return true;
             else hasDestinationTag = true;
             Node lastNode = way.lastNode();
             List<Way> refs = lastNode.getParentWays();
