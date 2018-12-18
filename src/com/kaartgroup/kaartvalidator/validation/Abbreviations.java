@@ -8,6 +8,7 @@ import static org.openstreetmap.josm.tools.I18n.tr;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import org.openstreetmap.josm.command.ChangePropertyCommand;
@@ -38,6 +39,7 @@ public class Abbreviations extends Test {
         ways = new LinkedList<>();
         abbreviations = new HashMap<>();
         addGreekAbbreviations();
+        addEnglishAbbreviations();
     }
 
     @Override
@@ -66,7 +68,7 @@ public class Abbreviations extends Test {
         }
         boolean nametags = false;
         for (Tag tag : way.getKeys().getTags()) {
-            if (tag.getKey().contains("name")) {
+            if (tag.getKey().contains("name") && !tag.getKey().equals("int_name")) {
                 nametags = true;
                 break;
             }
@@ -80,8 +82,12 @@ public class Abbreviations extends Test {
             expansions = new String[] {position};
             position = "unknown";
         }
-        String[] key = new String[] {abbreviation, position};
         ArrayList<String> expansion = new ArrayList<String>(Arrays.asList(expansions));
+        if (!position.equals("unknown") && !position.equals("suffix") && !position.equals("prefix")) {
+            expansion.add(position);
+            position = "unknown";
+        }
+        String[] key = new String[] {abbreviation, position};
         if (abbreviations.containsKey(key)) {
             for (String tstr : expansion) {
                 if (!abbreviations.get(key).contains(tstr)) {
@@ -130,10 +136,93 @@ public class Abbreviations extends Test {
         addAbbreviations("ΤΕΙ", "prefix", "Τεχνολογικό Εκπαιδευτικό Ίδρυμα");
     }
 
+    private void addEnglishAbbreviations() {
+        addAbbreviations("Accs", "Access");
+        addAbbreviations("AFB", "Air Force Base");
+        addAbbreviations("ANGB", "Air National Guard Base");
+        addAbbreviations("Aprt", "Airport");
+        addAbbreviations("Al", "Alley");
+        addAbbreviations("All", "Alley");
+        addAbbreviations("Ally", "Alley");
+        addAbbreviations("Aly", "Alley");
+        addAbbreviations("Alwy", "Alleyway");
+        addAbbreviations("Ambl", "Amble");
+        addAbbreviations("Apts", "Apartments");
+        addAbbreviations("Apch", "Approach");
+        addAbbreviations("Arc", "Arcade");
+        addAbbreviations("Artl", "Arterial");
+        addAbbreviations("Arty", "Artery");
+        addAbbreviations("Av", "Avenue");
+        addAbbreviations("Ave", "Avenue");
+        addAbbreviations("Bk", "Back");
+        addAbbreviations("Ba", "Banan");
+        addAbbreviations("Basn", "Basin");
+        addAbbreviations("Bsn", "Basin");
+        addAbbreviations("Bch", "Beach");
+        addAbbreviations("Bnd", "Bend");
+        addAbbreviations("Blk", "Block");
+        addAbbreviations("Bwlk", "Boardwalk");
+        addAbbreviations("Blvd", "Boulevard");
+        addAbbreviations("Bvd", "Boulevard");
+        addAbbreviations("Bdy", "Boundary");
+        addAbbreviations("Bl", "Bowl");
+        addAbbreviations("Br", "Brace", "Brae", "Bridge");
+        addAbbreviations("Brk", "Break");
+        addAbbreviations("Bdge", "Bridge");
+        addAbbreviations("Bri", "Bridge");
+        addAbbreviations("Bdwy", "Broadway");
+        addAbbreviations("Bway", "Broadway");
+        addAbbreviations("Bwy", "Broadway");
+        addAbbreviations("Brk", "Brook");
+        addAbbreviations("Brw", "brow");
+        addAbbreviations("Bldgs", "Buildings");
+        addAbbreviations("Bldngs", "Buildings");
+        //addAbbreviations("Bus", "Business");
+        addAbbreviations("Bps", "Bypass");
+        addAbbreviations("Byp", "Bypass");
+        addAbbreviations("Bypa", "Bypass");
+        addAbbreviations("Bywy", "Byway");
+        addAbbreviations("Cvn", "Caravan");
+        //addAbbreviations("Caus", "Causway");
+        addAbbreviations("Cswy", "Causeway");
+        addAbbreviations("Cway", "Causeway");
+        addAbbreviations("Cen", "Center", "Centre");
+        addAbbreviations("Ctr", "Center", "Centre");
+        addAbbreviations("Ctrl", "Central");
+        addAbbreviations("Cnwy", "Centreway");
+        addAbbreviations("Ch", "Chase", "Church");
+        addAbbreviations("Cir", "Circle");
+        addAbbreviations("Cct", "Circuit");
+        addAbbreviations("Ci", "Circuit");
+        addAbbreviations("Crc", "Circus");
+        addAbbreviations("Crcs", "Circus");
+        addAbbreviations("Cty", "City");
+        addAbbreviations("Cl", "Close");
+        addAbbreviations("Cmn", "Common");
+        addAbbreviations("Comm", "Common", "Community");
+        addAbbreviations("Cnc", "Concourse");
+        //addAbbreviations("Con", "Concourse");
+        addAbbreviations("Cps", "Copse");
+        addAbbreviations("Cnr", "Corner");
+        addAbbreviations("Crn", "Corner");
+        addAbbreviations("Cso", "Corso");
+        addAbbreviations("Cotts", "Cottages");
+        //addAbbreviations("Co", "County");
+        addAbbreviations("CR", "County Road", "County Route");
+        addAbbreviations("Crt", "Court");
+        addAbbreviations("Ct", "Court");
+        addAbbreviations("Cyd", "Courtyard");
+        addAbbreviations("Ctyd", "Courtyard");
+        addAbbreviations("Ce", "Cove");
+        addAbbreviations("Cov", "Cove");
+
+        // TODO add more
+    }
+
 
     protected void checkForAbbreviations(Way way) {
         for (Tag tag : way.getKeys().getTags()) {
-            if (tag.toString().contains("name")) {
+            if (tag.getKey().contains("name") && !tag.getKey().equals("int_name")) {
                 process(way, tag.getKey());
             }
         }
@@ -146,7 +235,8 @@ public class Abbreviations extends Test {
             String abbreviation = keys[0];
             String position = keys[1];
             Boolean found = false;
-            if (position.equals("unknown") && name.contains(abbreviation)) {
+            if (position.equals("unknown") && (name.matches(".*\\b" + abbreviation + "(\\b|\\.\\b).*")
+                    || name.matches(".*\\b" + abbreviation.replace(".", "") + "(\\b|\\.\\b).*"))) {
                 found = true;
             } else if (position.equals("prefix") && (name.startsWith(abbreviation) || name.startsWith(abbreviation.replace(".", "").concat(" ")))) {
                 found = true;
@@ -154,18 +244,53 @@ public class Abbreviations extends Test {
                 found = true;
             }
             if (found) {
-                foundAbbreviation(way, key, abbreviation, abbreviations.get(keys));
+                foundAbbreviation(way, key, abbreviation, position, abbreviations.get(keys));
                 break;
             }
         }
     }
 
-    protected void foundAbbreviation(Way way, String key, String abbreviation, ArrayList<String> expansions) {
+    protected int countInstancesOf(String findIn, String find) {
+        int index = findIn.indexOf(find);
+        int count = 0;
+        while (index != -1) {
+            count++;
+            findIn = findIn.substring(index + 1);
+            index = findIn.indexOf(find);
+        }
+        return count;
+    }
+
+    protected void foundAbbreviation(Way way, String key, String abbreviation, String position, ArrayList<String> expansions) {
+        HashSet<String> arrayList = new HashSet<>();
+        arrayList.addAll(expansions);
+        if (!position.equals("unknown")) {
+            ArrayList<String> array = abbreviations.get(new String[] {abbreviation, "unknown"});
+            if (array != null) {
+                arrayList.addAll(array);
+            }
+        }
+        if (!position.equals("prefix")) {
+            ArrayList<String> array = abbreviations.get(new String[] {abbreviation, "prefix"});
+            if (array != null) {
+                arrayList.addAll(array);
+            }
+        }
+        if (!position.equals("postfix")) {
+            ArrayList<String> array = abbreviations.get(new String[] {abbreviation, "postfix"});
+            if (array != null) {
+                arrayList.addAll(array);
+            }
+        }
         TestError.Builder testError = TestError.builder(this, Severity.WARNING, CONTAINS_ABBREVIATION)
                 .primitives(way)
-                .message(tr("kaart"), way.get(key).concat(tr(" is an abbreviation, try expanding to one of the following: ")).concat(expansions.toString()));
-        if (expansions.size() == 1 && way.get(key).contains(abbreviation)) {
-            testError.fix(() -> new ChangePropertyCommand(way, key, way.get(key).replace(abbreviation, expansions.get(0))));
+                .message(tr("kaart"), abbreviation.concat(tr(" is an abbreviation in \"")).concat(key).concat(tr("\", try expanding to one of the following: ")).concat(arrayList.toString()));
+        if (arrayList.size() == 1 && way.get(key).contains(abbreviation) && countInstancesOf(way.get(key), abbreviation) == 1) {
+            String replaceValue = way.get(key);
+            replaceValue = replaceValue.replace(abbreviation, expansions.get(0));
+            replaceValue = replaceValue.replace(expansions.get(0).concat("."), expansions.get(0));
+            final String rv = replaceValue;
+            testError.fix(() -> new ChangePropertyCommand(way, key, rv));
         }
         errors.add(testError.build());
     }
